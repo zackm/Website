@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Zack Mayeda | Style and Syntax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="Font-Awesome/css/font-awesome.css" rel="stylesheet">
+	<!-- My Styles -->
+	<link href="docs/assets/css/home.css" rel="stylesheet">
+	<link href="docs/assets/css/lang.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="docs/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+
+	<!-- Google Analytics Information -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-34292020-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.csvToTable.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+	
+  </head>
+
+  <body style="background-image:url(img/furley_bg.png); background-repeat:repeat;">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html" style="color:white">Zack Mayeda</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="work.html">Work</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+	<h1>Style and Syntax Helper <small style="font-size:15px">alpha</small></h1>
+	
+	<br />
+	
+	<div class="well" style="height:360px">
+		<h3 class="lead">a quick reference guide for programmers</h3>
+		<p>
+			Common style practices and basic programming syntax for several languages are listed below for side-by-side comparison. More features are soon to come! If you have any corrections, additions, or suggestions please don't hesitate to contact me! (There's a feedback form below, or you can reach me with the links at the bottom of the page.)
+		</p>
+		<br />
+		<div style="float:right; text-align:right">
+	
+				<!-- style="background-image:url(img/white_carbonfiber.png); background-repeat:repeat;" -->
+			
+			<button class="btn" id="form-btn" style="margin-bottom:6px"><h4><i class="icon-comment-alt" style="font-size:19px; margin-right:5px"></i> Feedback </h4></button>
+					<!--<div style="border-bottom:1px solid #c9cdc6"></div> -->
+			<div id="comment-form" style="display:none">
+			<form class="form-horizontal" method="post" action="mailer.php">
+				<div class="control-group">
+					<label class="control-label" for="inputname">Name</label>
+					<div class="controls">
+						<input type="text" id="inputname" name="name" placeholder="Bob Lawblah"></input>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputemail">Email</label>
+					<div class="controls">
+						<input type="text" id="inputemail" name="email" placeholder="bob@BobLahblawLawBlog.com"></input>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputcomment">Comment</label>
+					<div class="controls">
+						<textarea id="inputcomment" name="comment" rows=5 placeholder="get rid of Matlab"></textarea>
+					</div>
+				</div>
+				<input class="btn" type="submit" name="submit" value="Submit"/>
+			</form>
+			</div>
+			
+			<span id="thanks" style="display:none">Thanks for the feedback!</span>
+			
+		</div>
+		
+		<div style="float:left; text-align:left">
+			Choose which languages you'd like to compare:
+			<div>
+				<form id="choice-form">
+					<label class="checkbox"> <input type="checkbox" id="choice-java" CHECKED>Java</label>
+					<label class="checkbox"> <input type="checkbox" id="choice-javascript" CHECKED>Javascript</label>
+					<label class="checkbox"> <input type="checkbox" id="choice-c" CHECKED>C</label>
+					<label class="checkbox"> <input type="checkbox" id="choice-python" CHECKED>Python</label>
+					<button type="submit" class="btn" id="update-btn"><i class="icon-refresh" style=""></i> Update!</button>
+					<br />
+						Choose which sections you'd like to view:
+
+							<label class="checkbox"> <input type="checkbox" id="choice-syntax" CHECKED>Syntax</label>
+							<label class="checkbox"> <input type="checkbox" id="choice-style" CHECKED>Style</label>
+							<label class="checkbox"> <input type="checkbox" id="choice-tips" CHECKED>Tips</label>
+					
+				</form>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="syntax-table" class="table table-bordered" style="background-color:#f5f5f5;">
+		
+	</div>
+	
+	<script>
+		$('#syntax-table').CSVToTable('ss.csv', 
+		    { 
+		       loadingImage: 'img/loading.gif'
+		    }
+		);
+	</script>
+	
+	<!--
+		<table class="table table-bordered">
+			<tr style="background-color:#eafffc" class="col-color">
+				<td style="background-color:#ededed"></td>
+				<td id="java" style="text-align:center"><strong>Java<strong></td>
+				<td id="javascript" style="text-align:center"><strong>Javascript</strong></td>
+				<td id="c" style="text-align:center"><strong>C</strong></td>
+				<td id="python" style="text-align:center"><strong>Python</strong></td>
+			</tr>
+	
+			<tr id="syntax">
+				<td style="background-color:#eaffed">declaring variables</td>
+				<td id="java">int, double, float, String, char, Boolean<br /><code>String name = "Tobias";</code></td>
+				<td id="javascript"><code>var name = "Tobias";</code></td>
+				<td id="c">int, double, float, string, char<br /><code>string name = "Tobias";</code></td>
+				<td id="python"><code>name = "Tobias"</code>or<code>name = 'Tobias'</code></td>
+			</tr>
+			
+			<tr id="syntax">
+				<td style="background-color:#eaffed">if statement</td>
+				<td id="java"><pre>
+if (debt < -2000) { 
+  hint = "$ in banana stand";
+} else if (debt < -10000) {
+  hint = "go to Mexico";
+} else {
+  hint = "save the company";
+}
+</pre></td>
+				<td id="javascript"><pre>
+if (debt < -2000) { 
+  hint = "$ in banana stand";
+} else if (debt < -10000) {
+  hint = "go to Mexico";
+} else {
+  hint = "save the company";
+}
+</pre></td>
+				<td id="c"><pre>
+if (debt < -2000) { 
+  hint = "$ in banana stand";
+} else if (debt < -10000) {
+  hint = "go to Mexico";
+} else {
+  hint = "save the company";
+}
+</pre></td>
+				<td id="python"><pre>
+if (debt < -2000):
+  hint = "$ in banana stand"
+elsif debt < -10000:
+  hint = "go to Mexico"
+else:
+  hint = "save the company"
+</pre></td>
+			</tr>
+			
+			<tr id="syntax">
+				<td style="background-color:#eaffed">for loop</td>
+				<td id="java"><pre>
+for (int i = 0; i < 25; i++) {
+  System.out.println("annyong");
+}
+</pre></td>
+				<td id="javascript"><pre>
+if (debt < -2000) { 
+  hint = "$ in banana stand";
+} else if (debt < -10000) {
+  hint = "go to Mexico";
+} else {
+  hint = "save the company";
+}
+</pre></td>
+				<td id="c"><pre>
+if (debt < -2000) { 
+  hint = "$ in banana stand";
+} else if (debt < -10000) {
+  hint = "go to Mexico";
+} else {
+  hint = "save the company";
+}
+</pre></td>
+				<td id="python"><pre>
+if (debt < -2000):
+  hint = "$ in banana stand"
+elsif debt < -10000:
+  hint = "go to Mexico"
+else:
+  hint = "save the company"
+</pre></td>
+			</tr>			
+			
+			<tr id="syntax">
+				<td style="background-color:#eaffed">while loop</td>
+				<td id="java"><pre>
+int i = 0;
+while(i < 25) {
+  System.out.println("annyong");
+  i++;
+}
+</pre></td>
+				<td id="javascript"><pre>
+if (debt < -2000) { 
+  hint = "$ in banana stand";
+} else if (debt < -10000) {
+  hint = "go to Mexico";
+} else {
+  hint = "save the company";
+}
+</pre></td>
+				<td id="c"><pre>
+if (debt < -2000) { 
+  hint = "$ in banana stand";
+} else if (debt < -10000) {
+  hint = "go to Mexico";
+} else {
+  hint = "save the company";
+}
+</pre></td>
+				<td id="python"><pre>
+if (debt < -2000):
+  hint = "$ in banana stand"
+elsif debt < -10000:
+  hint = "go to Mexico"
+else:
+  hint = "save the company"
+</pre></td>
+			</tr>		
+			
+			
+			<tr id="syntax">
+				<td style="background-color:#eaffed">for loop</td>
+				<td id="java"><pre>
+import java.util.*;
+import java.util.Scanner;
+</pre></td>
+				<td id="javascript"><pre>
+if (debt < -2000) { 
+  hint = "$ in banana stand";
+} else if (debt < -10000) {
+  hint = "go to Mexico";
+} else {
+  hint = "save the company";
+}
+</pre></td>
+				<td id="c"><pre>
+if (debt < -2000) { 
+  hint = "$ in banana stand";
+} else if (debt < -10000) {
+  hint = "go to Mexico";
+} else {
+  hint = "save the company";
+}
+</pre></td>
+				<td id="python"><pre>
+from math import cos
+import Tkinter
+</pre></td>
+			</tr>
+						
+			<tr id="style">
+				<td colspan=5>Common Style Practices</td>
+			</tr>
+			
+			<tr id="style">
+				<td style="background-color:#eaffed">local variables</td>
+				<td id="java"><code>camelCaseLikeThis</code></td>
+				<td id="javascript">tbd</td>
+				<td id="c">underscore</td>
+				<td id="python">underscore</td>
+				
+			</tr>
+			
+			<tr id="style">
+				<td style="background-color:#eaffed">constant variables</td>
+				<td id="java"><code>ALL_CAPS_WITH_UNDERSCORES</code></td>
+				<td id="javascript">?</td>
+				<td id="c">?</td>
+				<td id="python">?</td>
+				
+			</tr>
+			
+			<tr id="tips">
+				<td colspan=5>Miscellaneous</td>
+			</tr>
+			
+			<tr id="tips">
+				<td style="background-color:#eaffed">protips<br /><span>(*rtm)</span></td>
+				<td id="java">
+					<ul>
+						<li><code>;</code></li>
+						<li>use .equals for String comparison</li>
+						<li>also, capital S in <code>String</code></li>
+					</ul>
+				</td>
+				<td id="javascript">
+					<ul>
+						<li>?</li>
+					</ul>
+				</td>
+				<td id="c">
+					<ul>
+						<li>beware the pointer</li>
+						<li>beware the memory management</li>
+					</ul>
+				</td>
+				<td id="python">
+					<ul>
+						<li>doctests</li>
+						<li>indentation always matters</li>
+					</ul>
+				</td>
+			</tr>
+			
+		</table>
+	</div>
+	-->
+
+	<div style="text-align:center;">
+		<div class="btn-group" style="text-align:center;">
+			<a class="btn" type="button" style="display:inline-block" href="http://facebook.com/zack.mayeda">
+				facebook
+			</a>
+			<a class="btn" type="button" style="display:inline-block" href="http://www.linkedin.com/pub/zack-mayeda/37/7b6/a7a">
+				linkedIn
+			</a>
+			<a class="btn" type="button" style="display:inline-block" href="https://plus.google.com/106934976931731891003">
+				google+
+			</a>
+			<a class="btn" type="button" style="display:inline-block" href="http://github.com/zackm">
+				github
+			</a>
+			<a class="btn" id="email-hover" style="display:inline-block" rel="popover" data-content="z@zackmayeda.com" data-original-title="my email" trigger="hover" href="mailto:z@zackmayeda.com">
+				email
+			</a>
+		</div>
+		
+		<br />
+		
+		<p style="text-align:center">
+			<small>Site by Zack Mayeda - 2012</small>
+		</p>
+	</div>
+    </div> <!-- /container -->
+</div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap-transition.js"></script>
+    <script src="docs/assets/js/bootstrap-alert.js"></script>
+    <script src="docs/assets/js/bootstrap-modal.js"></script>
+    <script src="docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="docs/assets/js/bootstrap-tab.js"></script>
+    <script src="docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="docs/assets/js/bootstrap-popover.js"></script>
+    <script src="docs/assets/js/bootstrap-button.js"></script>
+    <script src="docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="docs/assets/js/bootstrap-typeahead.js"></script>
+
+	<!-- My Scripts -->
+	<!-- <script type="text/javascript" src="js/lang.js"></script> -->
+	
+  </body>
+</html>
