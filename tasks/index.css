@@ -1,0 +1,113 @@
+/* Sticky footer styles
+  -------------------------------------------------- */
+html,body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -70px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 70px;
+}
+#footer {
+    background-image:url("black-Linen.png");
+    text-align:center;
+    box-shadow:inset 0px 20px 15px -15px black;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+#footer a {
+    padding-left:8px;
+    padding-right:8px;
+    text-shadow:1px 1px 2px black;
+}
+.site-type {
+    color:#c2c2c2;
+    font-weight:normal;
+    padding-top:13px;
+}
+.site-type-box {
+    text-align:left;
+}
+#z-foot-text {
+    padding-top:13px;  
+}
+/* End footer stuff*/
+
+/* Nav */
+#wrap > .container {
+    padding-top:60px;
+}   
+.t-nav {
+    height:60px;
+    background-image:url("black-Linen.png");
+    font-family:Raleway;
+    box-shadow:inset 0px -15px 20px -15px black;
+}
+.t-nav button {
+    font-family:Raleway;
+    font-weight:300;
+    font-size:17.5px;
+    line-height:19px;
+    margin-top:16px;
+}
+.t-nav .pull-left button {
+    margin-left:16px;   
+}
+.t-nav .pull-right button {
+    margin-right:16px;
+}
+/* End Nav */
+.welcome-content button {
+    box-shadow:0px 0px 15px rgba(0,0,0,.7);
+    font-family:Raleway;
+    font-weight:300;
+    font-size:25px;
+    line-height:30px;
+}
+.welcome-content h1 {
+    text-shadow:0px 1px 0px #9d9d9d;  
+    font-size:25px;
+}
+#wrap {
+    background-color: #6fd05e;
+    /* purple: 9f4bb5 or b656d0,  */
+    /* background-image:url("struckaxiom.png"); */
+    box-shadow: inset 0 0 100px 20px #427d38,
+                inset 0 160px 70px -70px #427d38,
+                inset 0px -520px 1230px -520px #427d38;
+	text-align: center;
+}
+#z-info {
+    color:lightgray;
+    text-shadow:1px 1px 2px black;
+    padding-top:5px;
+}
+.welcome-content h2 {
+    font-family:Raleway;
+    font-weight:300;
+    font-size:140px;
+    color:white;
+    text-shadow: 0px 1px 3px #2c373e, 0px 0px 85px white;
+    padding-top:100px;
+    padding-bottom:15px;
+    line-height:140px;
+}

@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
 	<!-- Website created by Zack Mayeda using many elements from Bootstrap. http://twitter.github.com/bootstrap/index.html -->
+	<title>Zack Mayeda</title>
     <meta charset="utf-8">
-    <title>Zack Mayeda | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Zack Mayeda's personal website">
+    <meta name="author" content="Zack Mayeda">
+	<meta name="keywords" content="Zack Mayeda">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<meta http-equiv="Content-Language" content="en-us">
 
     <!-- Le styles -->
-    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
-	<link href="Font-Awesome/css/font-awesome.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+
 	<!-- My Styles -->
-	<link href="docs/assets/css/home.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet prefetch' type='text/css'>
+	<link rel="stylesheet" href="css/animate.min.css" type='text/css'>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -26,11 +28,11 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="docs/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 
 	<!-- Google Analytics Information -->
 	<script type="text/javascript">
@@ -46,220 +48,360 @@
 	  })();
 
 	</script>
-  </head>
+	<!-- End of Google Analytics -->
+</head>
 
-  <body class="" style="background-image:url(img/furley_bg.png); background-repeat:repeat;">
-	<!-- arches, pinstriped_suit not bad -->
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" style="color:white" href="#">Zack Mayeda</a>
-		  <!-- possible alternate color: #70DBFF -->
-
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-			  <li><a href="about.html">About</a></li>
-			  <li><a href="work.html">Work</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+<body>
+	  <!-- Start of Nav -->
+    <div id="wrap">
+		<div class="row-fluid" id=''>
+	    <div class='span1'>
+	    </div>
+	    <div class='span2' id='logo'>
+	        <div id='circle-container'>
+	          <div id='circle' class='home-button'>
+	              <span>Z</span>
+	          </div>
+	      </div>
+	    </div>
+	    <div class='span9 hidden-phone' id='nav-box'>
+	      <div id='' class='nav-button about-button'>
+	        <span>ABOUT</span>
+	      </div>
+	      <div class='nav-button work-button'>
+	        <span>WORK</span>
+	      </div>
+	      <div class='nav-button contact-button'>
+	        <span>CONTACT</span>
+	      </div>
+	    </div>
+        
+        <div class="span9 visible-phone phone-nav">
+            <div class="about-button"><i class="icon-user"></i></div>
+            <div class="work-button"><i class="icon-folder-open-alt"></i></div>
+            <div class="contact-button"><i class="icon-envelope"></i></div>
         </div>
-      </div>
-	  <div class="" style="background-color:#007AA3; width:33.3%; height:5px; padding:0px; float:left; "></div>
-	  <div class="" style="background-color:#005C00; width:33.4%; height:5px; padding:0px; float:left; "></div>
-	  <div class="" style="background-color:#8E8E8E; width:33.3%; height:5px; padding:0px; float:left;"></div>
-    </div>
-
-    <div class="container">
-	<!--
-	<div class="brand" style="background-color:white; width:12px; height:100%; position:absolute; top:0px; z-index:-1"></div>
-    <div class="brand" style="background-color:#80BCD1; width:42px; height:100%; position:absolute; top:0px; z-index:-2"></div>
-	<div class="brand" style="background-color:#669D66; width:74px; height:100%; position:absolute; top:0px; z-index:-3"></div>
-	<div class="brand" style="background-color:#BBBBBB; width:104px; height:100%; position:absolute; top:0px; z-index:-4"></div>
-	-->
-	<!-- possible color combinations: (007AA3, 005C00, 8E8E8E)-->
-
-	<br />
+            
+		</div>
+		
+		<div class="row-fluid">
+			<div class='span12' id='page-title'></div>
+		</div>
+	  <!-- End of Nav -->
+		
+	  <!-- Start of Content-->
+	  <div id='content'>
+	    <!-- Start Home Content -->
+	    <div class='home active-content'>
+	  		<div class='row-fluid'>
+	    		<div class='span3'></div>
+		    	<div class='span6' id=''>
+	            	<h1 class="lead" id="main-hi">Hey Interwebs</h1>
+	            	<p class="line"><i class="icon-double-angle-down"></i></p>
+		            <h4 id="main-summary">my name is Zack and I'm an electrical engineering<br /> and computer science student at UC Berkeley</h4>
+		            <br />
+		            Here's a comical overview of programming languages:
+		            <br />
+		            <br />
+		            <ul>
+		                <li>To program in an expressive and powerful language: <span class="blue">Python</span></li>
+		                <li>To get a website up quickly: <span class="blue">PHP</span></li>
+		                <li>To mingle with programmers who call themselves "rockstars": <span class="blue">Ruby</span></li>
+		                <li>To really learn to program: <span class="blue">C</span></li>
+		                <li>To achieve enlightenment: <span class="blue">Scheme</span></li>
+		                <li>To feel depressed: <span class="blue">SQL</span></li>
+		                <li>To drop a chromosome: <span class="blue">Microsoft Visual Basic</span></li>
+		                <li>To get a guaranteed, mediocre, but well paying job writing financial applications in a cubicle under fluorescent lights: <span class="blue">Java</span></li>
+		                <li>To do the same thing with a certificate and letters after your name: <span class="blue">C#</span></li>
+		                <li>To achieve a magical sense of childlike wonder that you have a hard time differentiating from megalomania: <span class="blue">Objective C</span></li>
+		            </ul>
+		            <span class="pull-right small">[Unknown source]</span>
+		            <br />
+		            <br />
+			    </div>
+				<div class="span3"></div>
+	  		</div>
 	
-	<div>
-		<!-- Welcome Header -->
-		<div class="well" style="border:1px solid #c9cdc6; padding:0px;">
-			<div style="background-image:url(img/cartographer.png); background-repeat:repeat; height:170px; width: 100%; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -moz-border-top-right-radius: 4px; -moz-border-top-left-radius: 4px; border-top-right-radius: 4px; border-top-left-radius: 4px;">
-				<h1 style="color:white; font-size:100px; line-height:68px; padding-top:98px;">Welcome</h1>
+    	</div>
+	  	<!-- End of Home Content-->
+
+		<!-- Start of About Content -->
+		<div class='about'>
+			<div class='row-fluid full-row'>
+			<div class='span1'></div>
+            <div class='span2' style="text-align:center">
+                <img class="img-rounded z-pic" src="img/bayColorful.jpg">    
+            </div>
+            <div class='span1'></div>
+			<div class='span4' id=''>
+				<div class='center'>
+					<span class='z-title'>Zack</span>
+					<br />
+					<small>in one sentence</small>
+				</div>
+				<br />
+				<span class='tab'>Zack is an</span> Electrical Engineering and Computer Science student at UC Berkeley who enjoys all aspects of programming and computers, but also likes running, camping, and piano, and plans to work in software engineering or mobile development.
+			</div>
+			<div class='span4' id=''></div>
+		 </div>
+	
+		<p class="line"><i class="icon-double-angle-down"></i></p>
+		
+			<div class='row-fluid'>
+				<div class="span2"></div>
+				<div class="span4">
+					<h4 class='center'>Interests</h4>
+					<ul>
+						<li>web dev - frontend (HTML/CSS/JS/jQuery)</li>
+	                    <li>web dev - backend (node.js && Rails)</li>
+						<li>mobile development</li>
+						<li>education & technology</li>
+					</ul>
+				</div>
+				<div class="span4">
+					<h4 class='center'>Experience</h4>
+					<ul>
+						<li>iD Tech Camps programming instructor</li>
+						<li>edX video producer for UC Berkeley's CS188.1X</li>
+						<li>intern at Red Door Interactive</li>
+						<li>math & physics tutor at Answers, Plus!</li>
+					</ul>
+				</div>
+				<div class="span2"></div>
+			</div>
+		<br />
+
+		<p class="line"><i class="icon-double-angle-down"></i></p>
+			<div class="row-fluid">
+				<div class='span2'>
+				</div>
+				<div class="span8 center">
+					<p>Resumes available upon request</p>
+					<br />
+					<p class='gadgets'>
+						<i class="icon-mobile-phone small-gadget"></i>
+						<i class="icon-tablet"></i>
+						<i class="icon-laptop big-gadget"></i>
+						<i class="icon-desktop big-gadget"></i>
+						<i class="icon-laptop big-gadget"></i>
+						<i class="icon-tablet"></i>
+						<i class="icon-mobile-phone small-gadget"></i>
+					</p>
+				</div>
+				<div class="span2">
+					
+				</div>
 			</div>
 		
-			
-			
-		<div id="myCarousel" class="carousel slide">
-		  <!-- Carousel items -->
-		  <div class="carousel-inner">
-		    <div class="active item">
-		    	<img src="img/g-site-circ-good.png" alt>
-				<div class="carousel-caption">
-					<h4><a href="work.html"><strong>Work</strong></a></h4>
-					<p>class, personal, and professional projects</p>
-				</div>
-		    </div>
-
-			<div class="item">
-				<img src="img/about-words.png">
-				<div class="carousel-caption">
-					<h4><a href="about.html">About</a></h4>
-					<p>info about me</p>
-				</div>
+			<div class='row-fluid'>
+				<div class="span12 link-title-wide">Cool Interwebs Stuff</div>
 			</div>
-
-			<div class="item">
-				<img src="img/bears-wide.png">
-				<div class="carousel-caption">
-					<h4>University of California, Berkeley</h4>
-					<p>home of the Golden Bears</p>
+			<div class="row-fluid full-row">
+				<div class="span1"></div>
+				<div class="span3 link-box">
+					<h3 class='lead link-title'>Programming Stuff</h3>
+					<ul>
+						<li><a href='http://codecademy.com/'>codecademy</a> - a great, interactive way to learn javascript, python, and more online</li>
+						<li><a href="http://codepen.io">codepen</a> - a schweet site to whip up websites and HTML/CSS/JS gadgets</li>
+						<li><a href="http://obadger.com/turtle/">turtle drawing</a> - clean online implementation of turtle drawing</li>
+						<li><a href="http://jsfiddle.net">jsfiddle</a> - another site to sketch out websites/web elements</li>
+						<li><a href="http://leafletjs.com/">leaflet</a> - open source JS library for maps</li>
+					</ul>
 				</div>
-			</div>
-			<!--
-			<div class="item">
-				<img src="img/syntaxStyle.png">
-				<div class="carousel-caption">
-					<h4><a href="">Syntax and Style Guide</a></h4>
-					<p>personal project</p>
+				<div class="span4 link-box">
+					<h3 class='lead link-title'>Fun Stuff</h3>
+					<div class='border-sides'>
+					<ul>
+						<li><a href="http://craigslist.org">craigslist</a> - you probably already know craigslist, but the free listings are a hidden gem</li>
+						<li><a href="http://threadless.com">threadless</a> - online shirt shop with community chosen designs</li>
+						<li><a href="http://splitwise.com">splitwise</a> - an EXTREMELY helpful way to split rent, expenses, etc</li>
+						<li><a href="http://billable.me/">billable</a> - easily make invoices online in 2 seconds</li>
+						<li><a href="http://tomhaverfoods.com">tom haverfoods</a> - speaks for itself</li>
+						<li><a href="http://lorizzle.nl/">gangsta lorem ipsum</a> - for when you need filler text and are feeling like a gangster</li>
+						<li><a href="#">hipster lorem ipsum</a> - and one for when you're feeling like a hipster</li>
+					</ul>
+					</div>
 				</div>
-			</div>
-			-->
-			
-			<div class="item">
-				<img src="img/email-wide.png">
-				<div class="carousel-caption">
-					<h4>Contact</h4>
-					<p>feel free to email me</p>
+				<div class="span3 link-box">
+					<h3 class='lead link-title'>Design Stuff</h3>
+					<ul>
+						<li><a href="http://subtlepatterns.com/">subtlepatterns</a> - collection of clean, sleek, and free patterns for websites</li>
+						<li><a href="http://twitter.github.com/bootstrap/">bootstrap</a> - a VERY nice front-end framework for web dev (I'm using it on this site right now!)</li>
+						<li><a href="http://fortawesome.github.com/Font-Awesome/">font awesome</a> - icons that go along with bootstrap very well</li>
+						<li><a href="http://colourlovers.com">colourlovers</a> - color palettes and patterns</li>
+						
+					</ul>
 				</div>
+				<div class="span1"></div>
 			</div>
-
 		  </div>
-		  <!-- Carousel nav -->
-		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	  	<!-- End of About Content -->
+
+		<!-- Start of Work Content -->
+		<div class='work'>
+		<div class='row-fluid full-row'>
+		  <div class='span2' id=''>
+		  </div>
+		  <div class='span4 site-text'>
+		      <h3>Gordy's Bakery Website</h3>
+		        <ul>
+				    <li>website initially created with Adobe GoLive, Photoshop, and Illustrator and now being maintained with HTML/CSS/JS</li>
+				    <li>optimized for search engines</li>
+		            <li>integrated website with social networks, including a facebook widget</li>
+                    <li>set up google analytics to track web traffic</li>
+				</ul>
+				<p><a class='btn' href='http://gordysbakery.com'>Visit the site</a></p>
+		  </div>
+		  <div class='span4 img-shadow' id='img-container'>
+		      <img src='img/bakery.png'>
+		  </div>
+		  <div class='span2' id=''>
+		  </div>
 		</div>
-		
-		<!-- Welcome I'm Zack info and text -->
-		<div style="margin:19px;">
-			<h3>Zack Mayeda – Electrical Engineering and Computer Science student at UC Berkeley</h3>
-			<br />
-			<p>
-				I'm in my third year of undergraduate classes at Cal, and have found a passion for computer science here. From website creation to iPhone app development to script writing, I've been exploring several aspects of CS.
-			</p>
-			<p>
-				I have experience with Java, Javascript, C, C++, Python, HTML, CSS, jQuery, and really enjoy learning new programming languages.
-			</p>
-			<p>
-				When I'm not at my computer, I enjoy running, playing piano, camping, and hiking.
-			</p>
-		</div>
-		
-		</div>
-		
-		<!-- 3 Info Thumbnails -->
-		<div style="" class="row-fluid">
-			<ul class="thumbnails" style="text-align:center">
-			  <li class="span4" style="">
-			    <div class="thumbnail" style="padding:30px; background-color:#f5f5f5; border:1px solid #c9cdc6;">
-			      <img src="img/about-icon.png" alt="" style="-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;">
-				<div class="caption">
-			      <h3>about Zack</h3>
-			      <p style="">Info about Zack's education, interests, work experience, and more.</p>
-				  <a class="btn btn-primary"href="about.html">read more</a>
-				</div>
-			    </div>
-			  </li>
-		
-			  <li class="span4" style="">
-				<div class="thumbnail" style="padding:30px; background-color:#f5f5f5; border:1px solid #c9cdc6;">
-			      <img src="img/work-icon.png" alt="" style="-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;">
-				<div class="caption">
-			      <h3>Zack's work</h3>
-			      <p>Examples of things I've created for classes and fun side projects.</p>
-				  <a class="btn btn-primary"href="work.html">take a look!</a>
-				</div>
-				</div>
-			  </li>
-		
-			  <li class="span4">
-				<div class="thumbnail" style="padding:30px; background-color:#f5f5f5; border:1px solid #c9cdc6;">
-			      <img src="img/email-icon.png" alt="" style="-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;">
-				<div class="caption">
-			      <h3>contact Zack</h3>
-			      <p>Feel free to email me, or contact me using some form of interwebs communication.</p>
-				  <a class="btn btn-primary"href="mailto:z@zackmayeda.com">email me!</a>
-				</div>
-			    </div>
-			  </li>
+            
+        <br />
+		<div class='row-fluid full-row'>
+		  <div class='span2' id=''>
+		  </div>
+		  <div class='span4 my-site-text' id=''>
+			<h3>My Website</h3>
+			<ul>
+				<li>based on Bootstrap responsive grid system</li>
+				<li>HTML/CSS/JS/jQuery</li>
+                <li>it's an eternal work in progress (I always like to update things and test out new libraries/styles/designs)</li>
 			</ul>
+		  </div>
+		  <div class='span4' id=''>
+			<div class='img-shadow'><img src='img/mysite.png'></div>
+		  </div>
+		  <div class='span2' id=''>
+		  </div>
 		</div>
-		
-	</div>
-	
-	<!-- Social Media Links -->
-	<div class="" style="text-align:center">
-		<div class="btn-group" style="margin: 0 auto; text-align: center; width: inherit; display: inline-block;">
-			<a class="btn" type="button" style="" href="http://facebook.com/zack.mayeda">
-				facebook
-			</a>
-			<a class="btn" type="button" style="" href="http://www.linkedin.com/pub/zack-mayeda/37/7b6/a7a">
-				linkedIn
-			</a>
-			<a class="btn" type="button" style="" href="https://plus.google.com/106934976931731891003">
-				google+
-			</a>
-			<a class="btn" type="button" style="" href="http://github.com/zackm">
-				github
-			</a>
-			<a class="btn" id="email-hover" style="" rel="popover" href="mailto:z@zackmayeda.com">
-				email
-			</a>
+
+        <br />
+		<div class='row-fluid full-row'>
+		  <div class='span2' id=''>
+		  </div>
+		  <div class='span4 site-text' id=''>
+			<h3>Pacman AI</h3>
+			<ul>
+				<li>demonstration of my Pacman Q-Learning Agent made for CS188: Introduction to Artificial Intelligence</li>
+				<li>Pacman game framework and graphics made by instructors</li>
+				<li>Python</li>
+			</ul>
+            <p><a class='btn' href='http://www.youtube.com/watch?v=CnuaOBK_irI'>Watch the bot in action</a></p>  
+		  </div>
+		  <div class='span4' id=''>
+			<img src="img/pacman.jpg">
+		  </div>
+		  <div class='span2' id=''>
+		  </div>
 		</div>
-		
-		<br />
-		<!--
-		<div class="btn-group" style="text-align:center; position:relative; left:42.5%">
-			<a class="btn" type="button" style="display:inline-block; font-size:16px" href="http://facebook.com/zack.mayeda">
-				<i class="icon-facebook" style="margin-top:2px"></i>
-			</a>
-			<a class="btn" type="button" style="display:inline-block; font-size:16px" href="http://www.linkedin.com/pub/zack-mayeda/37/7b6/a7a">
-				<i class="icon-linkedin" style="margin-top:2px"></i>
-			</a>
-			<a class="btn" type="button" style="display:inline-block; font-size:16px;" href="https://plus.google.com/106934976931731891003">
-				<i class="icon-google-plus" style="margin-top:2px"></i>
-			</a>
-			<a class="btn" type="button" style="display:inline-block; font-size:16px" href="http://github.com/zackm">
-				<i class="icon-github" style="margin-top:2px"></i>
-			</a>
-			<a class="btn" id="email-hover" style="display:inline-block; font-size:16px" rel="popover" data-content="z@zackmayeda.com" data-original-title="my email" trigger="hover" href="mailto:z@zackmayeda.com">
-				<i class="icon-envelope-alt" style="margin-top:2px"></i>
-			</a>
+
+        <br />
+        <div class='row-fluid full-row'>
+		  <div class='span2' id=''>
+		  </div>
+		  <div class='span4 my-site-text' id=''>
+			<h3>EEG</h3>
+			<ul>
+				<li>designed an <a href="http://en.wikipedia.org/wiki/Electroencephalography">EEG</a> for a circuits class</li>
+				<li>my partner and I drew the layout of the components and connections with CAD software</li>
+                <li>the design was sent to a manufacturer</li>
+                <li>we received the physical circuit board a few weeks later and put it together, and it worked!</li>
+			</ul>
+		  </div>
+		  <div class='span4' id=''>
+			<div class='img-shadow-dark'><img src='img/eeg.jpg'></div>
+		  </div>
+		  <div class='span2' id=''>
+		  </div>
 		</div>
-		
-		<br />
-		-->
-		<p style="text-align:center">
-			<small>Site by Zack Mayeda - 2012</small>
-		</p>
-	</div>
-	
-    </div> <!-- /container -->
+            
+        <br />
+        <div class='row-fluid full-row'>
+		  <div class='span2' id=''>
+		  </div>
+		  <div class='span4 site-text' id=''>
+			<h3>More to come!</h3>
+			<ul>
+				<li>I'm currently working on some other projects, but they're not ready yet!</li>
+				<li>Feel free to check out my <a href="http://github.com/zackm">github</a> as well</li>
+			</ul>
+		  </div>
+		  <div class='span4' id=''>
+			<div><img style="width:160px;height:160px;" src='img/code1cool.jpg'></div>
+		  </div>
+		  <div class='span2' id=''>
+		  </div>
+		</div>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="docs/assets/js/jquery.js"></script>
+		</div>
+		<!-- End of Work Content -->
 
-
-	<!-- My Scripts -->
-	<script type="text/javascript" src="js/home.js"></script>
-
-  </body>
+		<!--  Start of Contact Content-->
+		<div class='contact'>
+		<div class='row-fluid'>
+		  <div class='span3' id=''>
+		  </div>
+		  <div class='span3' id='contact-globe'>
+			<i class='icon-globe hidden-phone'></i>
+		  </div>
+		  <div class='span3' id=''>
+		    <ul id='contact-list'>
+				<li><a href='http://www.facebook.com/zack.mayeda'><i class='icon-facebook'></i>facebook</a></li>
+				<li><a href='http://www.linkedin.com/in/zackmayeda'><i class='icon-linkedin'></i>linkedin</a></li>
+				<li><a href='http://github.com/zackm'><i class='icon-github-alt'></i>github</a></li>
+				<li><a href='https://plus.google.com/106934976931731891003/about'><i class='icon-google-plus'></i>google+</a></li>
+				<li><a href='mailto:z@zackmayeda.com'><i class='icon-envelope'></i>email</a></li>
+			</ul>
+		  </div>
+		  <div class='span3' id=''>
+		  </div>
+		</div>
+		</div>
+		<!-- End of Contact Content -->
+		<!-- End of Content -->
+    </div>
+        <div id='push'></div>
+        </div>
+		<!-- Start of Footer -->
+		<div id="footer">
+            <div class="container">
+                <div class="row-fluid hidden-phone">
+                    <div class="span2 site-type-box" id="z-foot-text">
+                        <span class="site-type visible-desktop"><i class="icon-desktop"></i> Desktop Version</span>
+                        <span class="site-type visible-tablet"><i class="icon-tablet"></i> Tablet Version</span>
+                    </div>
+                    <div class='span8'>
+                      <div id='z-foot-text'>
+                        <a href='http://www.facebook.com/zack.mayeda'>facebook</a>
+                        <a href='http://www.linkedin.com/in/zackmayeda'>linkedin</a>
+                        <a href='http://github.com/zackm'>github</a>
+                        <a href='https://plus.google.com/106934976931731891003/about'>google+</a>
+                        <a href='mailto:z@zackmayeda.com'>email</a>
+                        <p id='z-info'>site by Zack Mayeda</p>
+                      </div>
+                    </div>
+                    <div class="span2"></div>
+                </div>
+                
+                <div class="row-fluid visible-phone footer-phone">
+                    <span class="site-type"><i class="icon-mobile-phone"></i> Mobile Version</span>
+                    <br />
+                    <a href='http://www.facebook.com/zack.mayeda'><i class='icon-facebook'></i></a>
+                    <a href='http://www.linkedin.com/in/zackmayeda'><i class='icon-linkedin'></i></a>
+                    <a href='http://github.com/zackm'><i class='icon-github-alt'></i></a>
+                    <a href='https://plus.google.com/106934976931731891003/about'><i class='icon-google-plus'></i></a>
+                    <a href='mailto:z@zackmayeda.com'><i class='icon-envelope'></i></a>
+                </div>
+            </div>
+		</div>
+		<!-- End of Footer -->
+        
+    <script src="js/jquery.min.js" type='text/javascript'></script>
+	<script src='js/index.js' type='text/javascript'></script>
+	<script src='js/bootstrap.min.js' type='text/javascript'></script>
+	<script src='js/prefixfree.min.js' type='text/javascript'></script>
+</body>
 </html>

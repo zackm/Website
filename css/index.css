@@ -1,0 +1,517 @@
+/* Sticky footer styles
+  -------------------------------------------------- */
+html,body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -70px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 70px;
+}
+#footer {
+    background-image:url("../img/cartographer.png");
+    text-align:center;
+    box-shadow:inset 0px 20px 15px -15px black;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+#footer a {
+    padding-left:8px;
+    padding-right:8px;
+    text-shadow:1px 1px 2px black;
+}
+.site-type {
+    color:#c2c2c2;
+    font-weight:normal;
+    padding-top:13px;
+}
+.site-type-box {
+    text-align:left;
+}
+#z-foot-text {
+    padding-top:13px;  
+}
+.footer-phone {
+    padding-top:5px;
+}
+.footer-phone i {
+    padding-top:8px;
+    font-size:20px;
+}
+/* End footer stuff*/
+
+body {
+    background-image:url("../img/rough_diagonal.png");
+    background-repeat:repeat;
+}
+
+#z-info {
+    color:lightgray;
+    text-shadow:1px 1px 2px black;
+    margin-top:5px;
+}
+#circle {
+    border-radius: 50%;
+    border:2px solid #2790B0;
+    box-shadow:0 0 0 3px white,
+               0 0 0 5px #2790B0;
+    height: 60px;
+    text-align: center;
+    z-index:1;
+    width: 60px;
+    line-height:60px;
+    font-size:35px;
+    font-family:'Krona One',sans serif;
+    margin-left:auto;
+    margin-right:auto;
+}
+#circle:hover {
+    background-color:#8FBE00;
+    cursor:pointer;
+    box-shadow:0 0 0 5px #8FBE00;
+    border:2px solid rgba(0,0,0,0);
+}
+
+/*
+#circle:hover {
+    -webkit-animation-duration:5s;
+    -webkit-animation-name:spinn;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+}
+*/
+
+#circle-container {
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:12px;
+}
+
+#colorbar {
+    margin-bottom:10px;
+    background-image:url(http://colourlovers.com.s3.amazonaws.com/images/patterns/63/63337.png);
+    border-top:2px solid gray;
+    border-bottom:2px solid gray;
+}
+
+#title {
+    text-align:center;
+    background-image:url(http://zackmayeda.com/img/furley_bg.png);
+    padding:10px;
+    margin-top:25px;
+    margin-bottom:25px;
+    box-shadow:0 0 5px 3px black;
+}
+
+#title > h1 {
+    text-shadow:2px 2px 2px gray;
+}
+
+#link1 {
+    background:-webkit-linear-gradient(left,#3E4B51,#6F737E);
+}
+
+#link2 {
+    background:-webkit-linear-gradient(left,#3E4B51,#89A09A);
+}
+
+/* Top only inner shadow */
+/* box-shadow:inset 0px 20px 15px -15px black; */
+/* Bottom only inner shadow */
+/* box-shadow:inset 0px -15px 20px -15px black; */
+
+#nav-box {
+    margin-bottom:15px;
+}
+.nav-button {
+    text-align:center;
+    font-weight:normal;
+    font-size:1.5em;
+    letter-spacing:3px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:35px;
+    padding-bottom:35px;
+    margin-right:15px;
+    display:inline-block;
+    border-radius:0 0 10px 10px;
+}
+.nav-button:hover {
+    text-shadow:2px 2px 4px gray;
+    cursor:pointer;
+    background-color:#8FBE00;
+}
+.nav-selected {
+    background-color:#2790B0;
+    color:white;
+    text-shadow:0px 0px 3px black;
+}
+.phone-nav {
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.phone-nav div {
+    display:inline;
+    font-size:25px;
+    margin:10px 10px 10px 10px;
+    padding:5px 5px 5px 5px;
+    border-radius:5px;
+}
+.phone-nav div:hover {
+    background-color:#8FBE00;
+}
+#temp1 {
+   background-image:img/debut_dark.png;
+    color:white;
+    padding:30px;
+    box-shadow:inset 0 0 8px 2px #121212;
+}
+
+#temp2 {
+    background-image:url(http://zackmayeda.com/img/nami.png);
+    text-align:center;
+    color:lightgray;
+    padding:15px;
+    opacity:1;
+    box-shadow:inset 0 0 4px 6px black;
+}
+
+h3#normal {
+    opacity:1; 
+}
+
+#darkblue {
+    color:#2790B0;
+}
+#lightblue {
+    color:#40C0CB;
+}
+#green {
+    color:#8FBE00;
+}
+#lightgray {
+    color:#4E4D4A;
+}
+#darkgray {
+    color:#353432;
+}
+
+#tasky {
+    background-image:url(http://subtlepatterns.com/patterns/tasky_pattern.png);
+    margin-top:25px;
+    padding:45px;
+}
+
+#pin {
+    background-image:url(http://subtlepatterns.com/patterns/pinstriped_suit.png);
+    margin-top:25px;
+    padding:45px;
+}
+
+#argyle {
+    background-image:url(http://subtlepatterns.com/patterns/argyle.png);
+    margin-top:25px;
+    padding:45px;
+}
+
+#page-title {
+    text-align:center;
+    font-size:3em;
+    line-height:2em;
+    background-image:url("../img/debut_dark.png");
+    box-shadow:inset 0px 15px 10px -15px black,
+               inset 0px -10px 15px -10px black; 
+    color:white;
+    margin-bottom:25px;
+	padding:10px;
+	min-height:0px;
+	opacity:.9;
+}
+
+.about, .work, .contact {
+    display:none;
+}
+.active-content {
+    
+}
+/* General Styles */
+.full-row {
+	margin-bottom:35px;
+}
+.center {
+	text-align:center;
+}
+.tab {
+	margin-left:30px;
+}
+p.line {
+    text-align: center;
+    color: #767676;
+}
+p.line:before {
+  border-top: 1px solid #878787;
+  display: block;
+  height: 10px;
+  content: " ";
+  width: 45%;
+  position: relative;
+  left: 0;
+  top: 20px;
+}
+p.line:after {
+  border-top: 1px solid #878787;
+  display: block;
+  height: 10px;
+  content: " ";
+  width: 45%;
+  position: relative;
+  top:-10px;
+  left:55%;
+}
+/* Home Page Styles */
+#main-hi {
+    font-size: 5em;
+	text-align:center;
+}
+#main-summary {
+    font-weight:normal;
+    text-align:center;
+}
+.blue {
+    color:#2790B0;
+    font-weight:bold;
+}
+.zack {
+	font-size:9em;
+	line-height:1em;
+	letter-spacing:3px;
+}
+.extra-space {
+	letter-spacing:12px;
+}
+#home-hello > span {
+	text-shadow:1px 1px 0px #353432;
+	font-size:26px;
+	font-weight:bold;
+	line-height:10px;
+}
+.nami-circle {
+	background-image:url(http://zackmayeda.com/img/nami.png);
+	background-color:white;
+	opacity:.8;
+	height:100px;
+	width:200px;
+	border-radius:0 0 100px 100px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+.home-left {
+	text-align:right;
+	padding:15px;
+	padding-top:60px;
+}
+.home-right {
+	text-align:left;
+	padding:15px;
+	padding-top:60px;
+}
+
+/* About Page Styles */
+.z-pic {
+    width:150px;
+    text-align:center;
+    box-shadow:0px 0px 5px gray;
+}
+.link-title {
+	text-align:center;
+}
+.border-sides {
+	border-right:1px solid #BBBBBB;
+	border-left:1px solid #BBBBBB;
+}
+.link-title-wide {
+	text-align:center;
+	color:white;
+	font-size:2em;
+	line-height:2.5em;
+	background-image:url("../img/debut_dark.png");
+    box-shadow:inset 0px 15px 10px -15px black,
+               inset 0px -10px 15px -10px black;
+}
+.link-box {
+	padding-right:10px;
+	padding-left:10px;
+}
+.z-title {
+	font-size:2em;
+	font-weight:bold;
+}
+
+.gadgets {
+	font-size:2em;
+}
+.small-gadget {
+	font-size:80%;
+}
+.big-gadget {
+	font-size:120%;
+}
+/* Work Page Styles */
+.site-text {
+	box-shadow:inset 0px 0px 8px 2px gray;
+	padding:15px;
+	padding-left:25px;
+}
+.my-site-text {
+	background-image:url("../img/debut_dark.png");
+	padding:15px;
+	padding-left:25px;
+	box-shadow:inset 0px 0px 8px 2px black;
+	color:white;
+}
+.img-shadow {
+	display:block;
+	position:relative;
+}
+.img-shadow::before {
+	display:block;
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	box-shadow:inset 0px 0px 8px 2px gray,
+			   inset 0px -15px 22px -15px black;
+}
+.img-shadow-dark {
+	display:block;
+	position:relative;
+}
+.img-shadow-dark::before {
+	display:block;
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	box-shadow:inset 0px 0px 8px 2px #626262;
+}
+#left-block {
+	margin-right:0px;
+}
+#right-block {
+	margin-left:0px;
+}
+.video {
+	min-height:360px;
+}
+#img-container {
+	height:100%;
+}
+.no-pad {
+	padding:0px;
+}
+.pad {
+	padding:20px;
+}
+/* Contact Page Styles */
+#contact-list {
+	list-style-type:none;
+	text-align:left;
+}
+#contact-list > li {
+	font-size:2em;
+	margin-bottom:15px;
+}
+#contact-list > li > a > i {
+	margin-right:10px;
+}
+#contact-list > li > a {
+	color:#333333;
+}
+#contact-list > li > a:hover {
+	color:#2790B0;
+	text-decoration:none;
+	text-shadow:1px 1px 1px #bbbbbb;
+}
+#contact-globe {
+	font-size:15em;
+	text-align:right;
+}
+#contact-globe > i:hover {
+	display:inline-block;
+	/*
+	-moz-animation: spin 5s infinite linear;
+	-o-animation: spin 5s infinite linear;
+	-webkit-animation: spin 5s infinite linear;
+	*/
+	animation: spin 5s infinite linear;
+}
+.icon-spin {
+	display:inline-block;
+  	-moz-animation: spin 5s infinite linear;
+  	-o-animation: spin 5s infinite linear;
+  	-webkit-animation: spin 5s infinite linear;
+  	animation: spin 5s infinite linear;
+}
+/*
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); }
+}
+@-o-keyframes spin {
+  0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(359deg); }
+}
+@-ms-keyframes spin {
+  0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(359deg); }
+}
+*/
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+/* Error page styles */
+.error-index {
+    color:#333333;
+}
+.error-index:hover {
+    text-decoration:none;
+    color:#333333;
+}
+.error-box {
+    font-size:35px;
+    text-align:center;
+    line-height:55px;
+}
+.error-box i {
+    color:#97161d;
+}
+#error-pad {
+    padding-bottom:9px;  
+}
