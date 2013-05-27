@@ -19,21 +19,12 @@ $.each(pages,function(i,val){
       var currentPage = $('.active-content');
       if(!currentPage.hasClass(val)) {
         currentPage.fadeToggle(400,"swing", function(){
-            currentPage.removeClass('active-content');
-            $(name).addClass('active-content');
-            $(name).fadeToggle(400);
+          currentPage.removeClass('active-content');
+          $(name).addClass('active-content');
+          $(name).fadeToggle(400);
         });
       }
     });
 });
 
-});
-
-removeAnimation = function() {
-  $("#logo").removeClass("animated").removeClass("tada");
-}
-
-$("#logo").click(function(){
-  $(this).addClass("animated tada");
-  window.setTimeout(removeAnimation,1500);
 });

@@ -3,17 +3,17 @@
 <head>
 	<!-- Website created by Zack Mayeda using many elements from Bootstrap. http://twitter.github.com/bootstrap/index.html -->
 	<title>Zack Mayeda</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zack Mayeda's personal website">
-    <meta name="author" content="Zack Mayeda">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Zack Mayeda's personal website">
+	<meta name="author" content="Zack Mayeda">
 	<meta name="keywords" content="Zack Mayeda">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 	<meta http-equiv="Content-Language" content="en-us">
 
-    <!-- Le styles -->
+	<!-- Le styles -->
 	<link rel="stylesheet" href="css/bootstrap.css" />
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" />
 	<link href="css/font-awesome.min.css" rel="stylesheet" />
 
 	<!-- My Styles -->
@@ -22,386 +22,455 @@
 	<link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet prefetch' type='text/css'>
 	<link rel="stylesheet" href="css/animate.min.css" type='text/css'>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 
-	<!-- Google Analytics Information -->
-	<script type="text/javascript">
+<!-- Google Analytics Information -->
+<script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-34292020-1']);
-	  _gaq.push(['_trackPageview']);
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34292020-1']);
+_gaq.push(['_trackPageview']);
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
-	</script>
-	<!-- End of Google Analytics -->
+</script>
+<!-- End of Google Analytics -->
 </head>
 
 <body>
-	  <!-- Start of Nav -->
-    <div id="wrap">
-		<div class="row-fluid" id=''>
-	    <div class='span1'>
-	    </div>
-	    <div class='span2' id='logo'>
-	        <div id='circle-container'>
-	          <div id='circle' class='home-button'>
-	              <span>Z</span>
-	          </div>
-	      </div>
-	    </div>
-	    <div class='span9 hidden-phone' id='nav-box'>
-	      <div id='' class='nav-button about-button'>
-	        <span>ABOUT</span>
-	      </div>
-	      <div class='nav-button work-button'>
-	        <span>WORK</span>
-	      </div>
-	      <div class='nav-button contact-button'>
-	        <span>CONTACT</span>
-	      </div>
-	    </div>
-        
-        <div class="span9 visible-phone phone-nav">
-            <div class="about-button"><i class="icon-user"></i></div>
-            <div class="work-button"><i class="icon-folder-open-alt"></i></div>
-            <div class="contact-button"><i class="icon-envelope"></i></div>
-        </div>
-            
+	<!-- Start of Nav -->
+	<div id="wrap">
+		<div class="row-fluid visible-desktop">
+			<div class="span5">
+			</div>
+			<div class='span2 center' id='logo'>
+				<div class='round-container'>
+					<span class="home-button">Z</span>
+				</div>
+			</div>
+			<div class='span5'>
+				<div class='nav-button about-button pull-left'>
+					<span>ABOUT</span>
+				</div>
+				<div class='nav-button work-button pull-left'>
+					<span>WORK</span>
+				</div>
+				<div class='nav-button contact-button pull-left'>
+					<span>CONTACT</span>
+				</div>
+			</div>
 		</div>
-		
-		<div class="row-fluid">
-			<div class='span12' id='page-title'></div>
+
+		<div class="row-fluid visible-tablet">
+			<div class='span12 center' id='logo'>
+				<div class='round-container'>
+					<span class="home-button">Z</span>
+				</div>
+			</div>
 		</div>
-	  <!-- End of Nav -->
-		
-	  <!-- Start of Content-->
-	  <div id='content'>
-	    <!-- Start Home Content -->
-	    <div class='home active-content'>
-	  		<div class='row-fluid'>
-	    		<div class='span3'></div>
-		    	<div class='span6' id=''>
-	            	<h1 class="lead" id="main-hi">Hey Interwebs</h1>
-	            	<p class="line"><i class="icon-double-angle-down"></i></p>
-		            <h4 id="main-summary">my name is Zack and I'm an electrical engineering<br /> and computer science student at UC Berkeley</h4>
-		            <br />
-		            Here's a comical overview of programming languages:
-		            <br />
-		            <br />
-		            <ul>
-		                <li>To program in an expressive and powerful language: <span class="blue">Python</span></li>
-		                <li>To get a website up quickly: <span class="blue">PHP</span></li>
-		                <li>To mingle with programmers who call themselves "rockstars": <span class="blue">Ruby</span></li>
-		                <li>To really learn to program: <span class="blue">C</span></li>
-		                <li>To achieve enlightenment: <span class="blue">Scheme</span></li>
-		                <li>To feel depressed: <span class="blue">SQL</span></li>
-		                <li>To drop a chromosome: <span class="blue">Microsoft Visual Basic</span></li>
-		                <li>To get a guaranteed, mediocre, but well paying job writing financial applications in a cubicle under fluorescent lights: <span class="blue">Java</span></li>
-		                <li>To do the same thing with a certificate and letters after your name: <span class="blue">C#</span></li>
-		                <li>To achieve a magical sense of childlike wonder that you have a hard time differentiating from megalomania: <span class="blue">Objective C</span></li>
-		            </ul>
-		            <span class="pull-right small">[Unknown source]</span>
-		            <br />
-		            <br />
-			    </div>
-				<div class="span3"></div>
-	  		</div>
-	
-    	</div>
-	  	<!-- End of Home Content-->
+		<div class="row-fluid visible-tablet">
+			<div class='span12'>
+				<div class='nav-button about-button'>
+					<span>ABOUT</span>
+				</div>
+				<div class='nav-button work-button'>
+					<span>WORK</span>
+				</div>
+				<div class='nav-button contact-button'>
+					<span>CONTACT</span>
+				</div>
+			</div>
+		</div>
 
-		<!-- Start of About Content -->
-		<div class='about'>
-			<div class='row-fluid full-row'>
-			<div class='span1'></div>
-            <div class='span2' style="text-align:center">
-                <img class="img-rounded z-pic" src="img/bayColorful.jpg">    
-            </div>
-            <div class='span1'></div>
-			<div class='span4' id=''>
-				<div class='center'>
-					<span class='z-title'>Zack</span>
-					<br />
-					<small>in one sentence</small>
-				</div>
-				<br />
-				<span class='tab'>Zack is an</span> Electrical Engineering and Computer Science student at UC Berkeley who enjoys all aspects of programming and computers, but also likes running, camping, and piano, and plans to work in software engineering or mobile development.
-			</div>
-			<div class='span4' id=''></div>
-		 </div>
-	
-		<p class="line"><i class="icon-double-angle-down"></i></p>
-		
-			<div class='row-fluid'>
-				<div class="span2"></div>
-				<div class="span4">
-					<h4 class='center'>Interests</h4>
-					<ul>
-						<li>web dev - frontend (HTML/CSS/JS/jQuery)</li>
-	                    <li>web dev - backend (node.js && Rails)</li>
-						<li>mobile development</li>
-						<li>education & technology</li>
-					</ul>
-				</div>
-				<div class="span4">
-					<h4 class='center'>Experience</h4>
-					<ul>
-						<li>iD Tech Camps programming instructor</li>
-						<li>edX video producer for UC Berkeley's CS188.1X</li>
-						<li>intern at Red Door Interactive</li>
-						<li>math & physics tutor at Answers, Plus!</li>
-					</ul>
-				</div>
-				<div class="span2"></div>
-			</div>
-		<br />
-
-		<p class="line"><i class="icon-double-angle-down"></i></p>
-			<div class="row-fluid">
-				<div class='span2'>
-				</div>
-				<div class="span8 center">
-					<p>Resumes available upon request</p>
-					<br />
-					<p class='gadgets'>
-						<i class="icon-mobile-phone small-gadget"></i>
-						<i class="icon-tablet"></i>
-						<i class="icon-laptop big-gadget"></i>
-						<i class="icon-desktop big-gadget"></i>
-						<i class="icon-laptop big-gadget"></i>
-						<i class="icon-tablet"></i>
-						<i class="icon-mobile-phone small-gadget"></i>
-					</p>
-				</div>
-				<div class="span2">
-					
-				</div>
-			</div>
-		
-			<div class='row-fluid'>
-				<div class="span12 link-title-wide">Cool Interwebs Stuff</div>
-			</div>
-			<div class="row-fluid full-row">
-				<div class="span1"></div>
-				<div class="span3 link-box">
-					<h3 class='lead link-title'>Programming Stuff</h3>
-					<ul>
-						<li><a href='http://codecademy.com/'>codecademy</a> - a great, interactive way to learn javascript, python, and more online</li>
-						<li><a href="http://codepen.io">codepen</a> - a schweet site to whip up websites and HTML/CSS/JS gadgets</li>
-						<li><a href="http://obadger.com/turtle/">turtle drawing</a> - clean online implementation of turtle drawing</li>
-						<li><a href="http://jsfiddle.net">jsfiddle</a> - another site to sketch out websites/web elements</li>
-						<li><a href="http://leafletjs.com/">leaflet</a> - open source JS library for maps</li>
-					</ul>
-				</div>
-				<div class="span4 link-box">
-					<h3 class='lead link-title'>Fun Stuff</h3>
-					<div class='border-sides'>
-					<ul>
-						<li><a href="http://craigslist.org">craigslist</a> - you probably already know craigslist, but the free listings are a hidden gem</li>
-						<li><a href="http://threadless.com">threadless</a> - online shirt shop with community chosen designs</li>
-						<li><a href="http://splitwise.com">splitwise</a> - an EXTREMELY helpful way to split rent, expenses, etc</li>
-						<li><a href="http://billable.me/">billable</a> - easily make invoices online in 2 seconds</li>
-						<li><a href="http://tomhaverfoods.com">tom haverfoods</a> - speaks for itself</li>
-						<li><a href="http://lorizzle.nl/">gangsta lorem ipsum</a> - for when you need filler text and are feeling like a gangster</li>
-						<li><a href="#">hipster lorem ipsum</a> - and one for when you're feeling like a hipster</li>
-					</ul>
+		<div class="row-fluid visible-phone">
+			<div class="span12" id='logo'>
+				<div class="container">
+					<div class='round-container'>
+						<span class="home-button">Z</span>
 					</div>
 				</div>
-				<div class="span3 link-box">
-					<h3 class='lead link-title'>Design Stuff</h3>
-					<ul>
-						<li><a href="http://subtlepatterns.com/">subtlepatterns</a> - collection of clean, sleek, and free patterns for websites</li>
-						<li><a href="http://twitter.github.com/bootstrap/">bootstrap</a> - a VERY nice front-end framework for web dev (I'm using it on this site right now!)</li>
-						<li><a href="http://fortawesome.github.com/Font-Awesome/">font awesome</a> - icons that go along with bootstrap very well</li>
-						<li><a href="http://colourlovers.com">colourlovers</a> - color palettes and patterns</li>
-						
-					</ul>
-				</div>
-				<div class="span1"></div>
 			</div>
-		  </div>
-	  	<!-- End of About Content -->
-
-		<!-- Start of Work Content -->
-		<div class='work'>
-		<div class='row-fluid full-row'>
-		  <div class='span2' id=''>
-		  </div>
-		  <div class='span4 site-text'>
-		      <h3>Gordy's Bakery Website</h3>
-		        <ul>
-				    <li>website initially created with Adobe GoLive, Photoshop, and Illustrator and now being maintained with HTML/CSS/JS</li>
-				    <li>optimized for search engines</li>
-		            <li>integrated website with social networks, including a facebook widget</li>
-                    <li>set up google analytics to track web traffic</li>
-				</ul>
-				<p><a class='btn' href='http://gordysbakery.com'>Visit the site</a></p>
-		  </div>
-		  <div class='span4 img-shadow' id='img-container'>
-		      <img src='img/bakery.png'>
-		  </div>
-		  <div class='span2' id=''>
-		  </div>
 		</div>
-            
-        <br />
-		<div class='row-fluid full-row'>
-		  <div class='span2' id=''>
-		  </div>
-		  <div class='span4 my-site-text' id=''>
-			<h3>My Website</h3>
-			<ul>
-				<li>based on Bootstrap responsive grid system</li>
-				<li>HTML/CSS/JS/jQuery</li>
-                <li>it's an eternal work in progress (I always like to update things and test out new libraries/styles/designs)</li>
-			</ul>
-		  </div>
-		  <div class='span4' id=''>
-			<div class='img-shadow'><img src='img/mysite.png'></div>
-		  </div>
-		  <div class='span2' id=''>
-		  </div>
+		<div class="row-fluid visible-phone">
+			<div class="span12 phone-nav">
+				<div class="about-button"><i class="icon-user"></i></div>
+				<div class="work-button"><i class="icon-folder-open-alt"></i></div>
+				<div class="contact-button"><i class="icon-envelope"></i></div>
+			</div>
 		</div>
 
-        <br />
-		<div class='row-fluid full-row'>
-		  <div class='span2' id=''>
-		  </div>
-		  <div class='span4 site-text' id=''>
-			<h3>Pacman AI</h3>
-			<ul>
-				<li>demonstration of my Pacman Q-Learning Agent made for CS188: Introduction to Artificial Intelligence</li>
-				<li>Pacman game framework and graphics made by instructors</li>
-				<li>Python</li>
-			</ul>
-            <p><a class='btn' href='http://www.youtube.com/watch?v=CnuaOBK_irI'>Watch the bot in action</a></p>  
-		  </div>
-		  <div class='span4' id=''>
-			<img src="img/pacman.jpg">
-		  </div>
-		  <div class='span2' id=''>
-		  </div>
+		<div class="row-fluid">
+			<div class='span12 gray-row' id='color-row'></div>
 		</div>
+		<div class="row-fluid">
+			<div class="span12 blue-row" id='color-row'></div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12 light-gray-row" id='color-row'></div>
+		</div>
+		<br />
+		<br />
+		<!-- End of Nav -->
 
-        <br />
-        <div class='row-fluid full-row'>
-		  <div class='span2' id=''>
-		  </div>
-		  <div class='span4 my-site-text' id=''>
-			<h3>EEG</h3>
-			<ul>
-				<li>designed an <a href="http://en.wikipedia.org/wiki/Electroencephalography">EEG</a> for a circuits class</li>
-				<li>my partner and I drew the layout of the components and connections with CAD software</li>
-                <li>the design was sent to a manufacturer</li>
-                <li>we received the physical circuit board a few weeks later and put it together, and it worked!</li>
-			</ul>
-		  </div>
-		  <div class='span4' id=''>
-			<div class='img-shadow-dark'><img src='img/eeg.jpg'></div>
-		  </div>
-		  <div class='span2' id=''>
-		  </div>
-		</div>
-            
-        <br />
-        <div class='row-fluid full-row'>
-		  <div class='span2' id=''>
-		  </div>
-		  <div class='span4 site-text' id=''>
-			<h3>More to come!</h3>
-			<ul>
-				<li>I'm currently working on some other projects, but they're not ready yet!</li>
-				<li>Feel free to check out my <a href="http://github.com/zackm">github</a> as well</li>
-			</ul>
-		  </div>
-		  <div class='span4' id=''>
-			<div><img style="width:160px;height:160px;" src='img/code1cool.jpg'></div>
-		  </div>
-		  <div class='span2' id=''>
-		  </div>
-		</div>
+		<!-- Start of Content-->
+		<div id='content'>
+			<!-- Start Home Content -->
+			<div class='home active-content'>
+				<div class='row-fluid'>
+					<div class='span8 offset2' id=''>
+						<h1 class="lead" id="main-hi">Hi Interwebs</h1>
+						<p class="line"><i class="icon-double-angle-down"></i></p>
+						<h4 id="main-summary">my name is Zack and I'm an electrical engineering<br /> and computer science student at UC Berkeley</h4>
+						<br />
+						Here's a funny summary of programming languages:
+						<br />
+						<br />
+						<ul>
+							<li>To program in an expressive and powerful language: <span class="blue">Python</span></li>
+							<li>To get a website up quickly: <span class="blue">PHP</span></li>
+							<li>To mingle with programmers who call themselves "rockstars": <span class="blue">Ruby</span></li>
+							<li>To really learn to program: <span class="blue">C</span></li>
+							<li>To achieve enlightenment: <span class="blue">Scheme</span></li>
+							<li>To feel depressed: <span class="blue">SQL</span></li>
+							<li>To drop a chromosome: <span class="blue">Microsoft Visual Basic</span></li>
+							<li>To get a guaranteed, mediocre, but well paying job writing financial applications in a cubicle under fluorescent lights: <span class="blue">Java</span></li>
+							<li>To do the same thing with a certificate and letters after your name: <span class="blue">C#</span></li>
+							<li>To achieve a magical sense of childlike wonder that you have a hard time differentiating from megalomania: <span class="blue">Objective C</span></li>
+						</ul>
+						<span class="pull-right small">[Unknown source]</span>
+						<br />
+						<br />
+					</div>
+				</div>
 
-		</div>
-		<!-- End of Work Content -->
+			</div>
+			<!-- End of Home Content-->
 
-		<!--  Start of Contact Content-->
-		<div class='contact'>
-		<div class='row-fluid'>
-		  <div class='span3' id=''>
-		  </div>
-		  <div class='span3' id='contact-globe'>
-			<i class='icon-globe hidden-phone'></i>
-		  </div>
-		  <div class='span3' id=''>
-		    <ul id='contact-list'>
-				<li><a href='http://www.facebook.com/zack.mayeda'><i class='icon-facebook'></i>facebook</a></li>
-				<li><a href='http://www.linkedin.com/in/zackmayeda'><i class='icon-linkedin'></i>linkedin</a></li>
-				<li><a href='http://github.com/zackm'><i class='icon-github-alt'></i>github</a></li>
-				<li><a href='https://plus.google.com/106934976931731891003/about'><i class='icon-google-plus'></i>google+</a></li>
-				<li><a href='mailto:z@zackmayeda.com'><i class='icon-envelope'></i>email</a></li>
-			</ul>
-		  </div>
-		  <div class='span3' id=''>
-		  </div>
+			<!-- Start of About Content -->
+			<div class='about'>
+				<div class='row-fluid full-row'>
+					<div class='span1'></div>
+					<div class='span2' style="text-align:center">
+						<img class="img-rounded z-pic" src="img/bayColorful.jpg">    
+					</div>
+					<div class='span1'></div>
+					<div class='span4' id=''>
+						<div class='center'>
+							<span class='z-title'>Zack</span>
+							<br />
+							<small>in one sentence</small>
+						</div>
+						<br />
+						<span class='tab'>Zack is an</span> Electrical Engineering and Computer Science student at UC Berkeley who enjoys all aspects of programming and computers, but also likes running, camping, and piano.
+					</div>
+					<div class='span4' id=''></div>
+				</div>
+
+				<p class="line"><i class="icon-double-angle-down"></i></p>
+
+				<div class='row-fluid'>
+					<div class="span2"></div>
+					<div class="span4">
+						<h4 class='center'>Interests</h4>
+						<ul>
+							<li>web dev - frontend (HTML/CSS/JS/jQuery)</li>
+							<li>web dev - backend (node.js && Rails)</li>
+							<li>mobile development</li>
+							<li>education & technology</li>
+						</ul>
+					</div>
+					<div class="span4">
+						<h4 class='center'>Experience</h4>
+						<ul>
+							<li>iD Tech Camps programming instructor</li>
+							<li>edX video producer for UC Berkeley's CS188.1X</li>
+							<li>intern at Red Door Interactive</li>
+							<li>math & physics tutor at Answers, Plus!</li>
+						</ul>
+					</div>
+					<div class="span2"></div>
+				</div>
+				<br />
+
+				<p class="line"><i class="icon-double-angle-down"></i></p>
+				<div class="row-fluid">
+					<div class='span2'>
+					</div>
+					<div class="span8 center">
+						<p>Resumes available upon request</p>
+						<br />
+						<p class='gadgets'>
+							<i class="icon-mobile-phone small-gadget"></i>
+							<i class="icon-tablet"></i>
+							<i class="icon-laptop big-gadget"></i>
+							<i class="icon-desktop big-gadget"></i>
+							<i class="icon-laptop big-gadget"></i>
+							<i class="icon-tablet"></i>
+							<i class="icon-mobile-phone small-gadget"></i>
+						</p>
+					</div>
+					<div class="span2">
+
+					</div>
+				</div>
+
+				<div class='row-fluid'>
+					<div class="span12 link-title-wide dark-bg">Cool Interwebs Stuff</div>
+				</div>
+				<div class="row-fluid full-row">
+					<div class="span1"></div>
+					<div class="span3 link-box">
+						<h3 class='lead link-title'>Programming Stuff</h3>
+						<ul>
+							<li><a href='http://codecademy.com/'>codecademy</a> - a great, interactive way to learn javascript, python, and more online</li>
+							<li><a href="http://codepen.io">codepen</a> - a schweet site to whip up websites and HTML/CSS/JS gadgets</li>
+							<li><a href="http://obadger.com/turtle/">turtle drawing</a> - clean online implementation of turtle drawing</li>
+							<li><a href="http://jsfiddle.net">jsfiddle</a> - another site to sketch out websites/web elements</li>
+							<li><a href="http://leafletjs.com/">leaflet</a> - open source JS library for maps</li>
+						</ul>
+					</div>
+					<div class="span4 link-box">
+						<h3 class='lead link-title'>Fun Stuff</h3>
+						<div class='border-sides'>
+							<ul>
+								<li><a href="http://craigslist.org">craigslist</a> - you probably already know craigslist, but the free listings are a hidden gem</li>
+								<li><a href="http://threadless.com">threadless</a> - online shirt shop with community chosen designs</li>
+								<li><a href="http://splitwise.com">splitwise</a> - an EXTREMELY helpful way to split rent, expenses, etc</li>
+								<li><a href="http://billable.me/">billable</a> - easily make invoices online in 2 seconds</li>
+								<li><a href="http://tomhaverfoods.com">tom haverfoods</a> - speaks for itself</li>
+								<li><a href="http://lorizzle.nl/">gangsta lorem ipsum</a> - for when you need filler text and are feeling like a gangster</li>
+								<li><a href="#">hipster lorem ipsum</a> - and one for when you're feeling like a hipster</li>
+							</ul>
+						</div>
+					</div>
+					<div class="span3 link-box">
+						<h3 class='lead link-title'>Design Stuff</h3>
+						<ul>
+							<li><a href="http://subtlepatterns.com/">subtlepatterns</a> - collection of clean, sleek, and free patterns for websites</li>
+							<li><a href="http://twitter.github.com/bootstrap/">bootstrap</a> - a VERY nice front-end framework for web dev (I'm using it on this site right now!)</li>
+							<li><a href="http://fortawesome.github.com/Font-Awesome/">font awesome</a> - icons that go along with bootstrap very well</li>
+							<li><a href="http://colourlovers.com">colourlovers</a> - color palettes and patterns</li>
+
+						</ul>
+					</div>
+					<div class="span1"></div>
+				</div>
+			</div>
+			<!-- End of About Content -->
+
+			<!-- Start of Work Content -->
+			<div class='work'>
+				<div class='row-fluid full-row'>
+					<div class='span4 offset2 work-text-light'>
+						<h3>Fluid Simulation</h3>
+						<ul>
+							<li>Project created with Tyler Brabham</li>
+							<li>Final project for CS184: Computer Graphics</li>
+							<li>Simulation using smoothed particle hydrodynamics, marching cubes, and ray marching</li>
+							<li>Written in C++ with OpenGL, FreeImage, and Glut</li>
+						</ul>
+					</div>
+					<div class="span4">
+						<iframe width="640" height="360" src="http://www.youtube.com/embed/oogV7GYl630" frameborder="0" allowfullscreen=""></iframe>
+					</div>
+				</div>
+
+				<div class='row-fluid full-row'>
+					<div class='span4 offset2 work-text-dark'>
+						<h3>Computer Graphics Projects</h3>
+						<ul>
+							<li>Additional pictures and videos for computer graphics projects</li>
+							<li>All projects created with Tyler Brabham for CS184</li>
+						</ul>
+						<a href="graphics.html" class="btn"><i class="icon-eye-open"></i> View</a>
+					</div>
+					<div class="span4">
+						<img src='img/graphics.jpg'>
+					</div>
+				</div>
+
+				<div class='row-fluid full-row'>
+					<div class='span2' id=''>
+					</div>
+					<div class='span4 work-text-light'>
+						<h3>Gordy's Bakery Website</h3>
+						<ul>
+							<li>website initially created with Adobe GoLive, Photoshop, and Illustrator and now being maintained with HTML/CSS/JS</li>
+							<li>optimized for search engines</li>
+							<li>integrated website with social networks, including a facebook widget</li>
+							<li>set up google analytics to track web traffic</li>
+						</ul>
+						<p><a class='btn' href='http://gordysbakery.com'><i class="icon-chevron-sign-right"></i> Visit the site</a></p>
+					</div>
+					<div class="span4">
+						<img src='img/bakery.png'>
+					</div>
+					<div class='span2' id=''>
+					</div>
+				</div>
+
+				<br />
+				<div class='row-fluid full-row'>
+					<div class='span2' id=''>
+					</div>
+					<div class='span4 work-text-dark' id=''>
+						<h3>My Website</h3>
+						<ul>
+							<li>based on Bootstrap responsive grid system</li>
+							<li>HTML/CSS/JS/jQuery</li>
+							<li>Responsive iframes with <a href="https://github.com/toddmotto/fluidvids">fluidvis.js</a></li>
+							<li>it's an eternal work in progress (I always like to update things and test out new libraries/styles/designs)</li>
+						</ul>
+					</div>
+					<div class='span4'>
+						<div ><img src='img/my_site.jpg'></div>
+					</div>
+					<div class='span2'>
+					</div>
+				</div>
+
+				<br />
+				<div class='row-fluid full-row'>
+					<div class='span2' id=''>
+					</div>
+					<div class='span4 work-text-light'>
+						<h3>Pacman AI</h3>
+						<ul>
+							<li>demonstration of my Pacman Q-Learning Agent made for CS188: Introduction to Artificial Intelligence</li>
+							<li>Pacman game framework and graphics made by instructors</li>
+							<li>Written in Python</li>
+						</ul>  
+					</div>
+					<div class='span4' id=''>
+						<iframe width="480" height="360" src="http://www.youtube.com/embed/CnuaOBK_irI?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class='span2' id=''>
+					</div>
+				</div>
+
+				<br />
+				<div class='row-fluid full-row'>
+					<div class='span2' id=''>
+					</div>
+					<div class='span4 work-text-dark' id=''>
+						<h3>EEG</h3>
+						<ul>
+							<li>designed an <a href="http://en.wikipedia.org/wiki/Electroencephalography">EEG</a> for a circuits class</li>
+							<li>my partner and I drew the layout of the components and connections with CAD software</li>
+							<li>the design was sent to a manufacturer</li>
+							<li>we received the physical circuit board a few weeks later and put it together, and it worked!</li>
+						</ul>
+					</div>
+					<div class='span4' id=''>
+						<div><img src='img/eeg.jpg'></div>
+					</div>
+					<div class='span2' id=''>
+					</div>
+				</div>
+
+				<br />
+				<div class='row-fluid full-row'>
+					<div class='span2' id=''>
+					</div>
+					<div class='span4 work-text-light' id=''>
+						<h3>More to come!</h3>
+						<ul>
+							<li>I'm currently working on some other projects, but they're not ready yet!</li>
+							<li>Feel free to check out my <a href="http://github.com/zackm">github</a> as well</li>
+						</ul>
+					</div>
+					<div class='span4' id=''>
+						<div><img style="width:160px;height:160px;" src='img/code1cool.jpg'></div>
+					</div>
+					<div class='span2' id=''>
+					</div>
+				</div>
+
+			</div>
+			<!-- End of Work Content -->
+
+			<!--  Start of Contact Content-->
+			<div class='contact'>
+				<div class='row-fluid'>
+					<div class='span3' id=''>
+					</div>
+					<div class='span3' id='contact-globe'>
+						<i class='icon-globe hidden-phone'></i>
+					</div>
+					<div class='span3' id=''>
+						<ul id='contact-list'>
+							<li><a href='http://www.facebook.com/zack.mayeda'><i class='icon-facebook'></i>facebook</a></li>
+							<li><a href='http://www.linkedin.com/in/zackmayeda'><i class='icon-linkedin'></i>linkedin</a></li>
+							<li><a href='http://github.com/zackm'><i class='icon-github'></i>github</a></li>
+							<li><a href='https://plus.google.com/106934976931731891003/about'><i class='icon-google-plus'></i>google+</a></li>
+							<li><a href='mailto:z@zackmayeda.com'><i class='icon-envelope'></i>email</a></li>
+						</ul>
+					</div>
+					<div class='span3' id=''>
+					</div>
+				</div>
+			</div>
+			<!-- End of Contact Content -->
+			<!-- End of Content -->
 		</div>
+		<div id='push'></div>
+	</div>
+
+	<div class="row-fluid">
+		<div class="span12 light-gray-row" id="color-row"></div>
+	</div>
+	<!-- Start of Footer -->
+	<div id="footer" class="dark-bg">
+		<div class="container">
+			<div class="row-fluid hidden-phone">
+				<div class="span2 site-type-box" id="z-foot-text">
+					<span class="site-type visible-desktop"><i class="icon-desktop"></i> Desktop Version</span>
+					<span class="site-type visible-tablet"><i class="icon-tablet"></i> Tablet Version</span>
+				</div>
+				<div class='span8'>
+					<div id='z-foot-text'>
+						<a href='http://www.facebook.com/zack.mayeda'>facebook</a>
+						<a href='http://www.linkedin.com/in/zackmayeda'>linkedin</a>
+						<a href='http://github.com/zackm'>github</a>
+						<a href='https://plus.google.com/106934976931731891003/about'>google+</a>
+						<a href='mailto:z@zackmayeda.com'>email</a>
+						<p id='z-info'>site by Zack Mayeda <i class="icon-smile"></i></p>
+					</div>
+				</div>
+				<div class="span2"></div>
+			</div>
+
+			<div class="row-fluid visible-phone footer-phone">
+				<span class="site-type"><i class="icon-mobile-phone"></i> Mobile Version</span>
+				<br />
+				<a href='http://www.facebook.com/zack.mayeda'><i class='icon-facebook'></i></a>
+				<a href='http://www.linkedin.com/in/zackmayeda'><i class='icon-linkedin'></i></a>
+				<a href='http://github.com/zackm'><i class='icon-github-alt'></i></a>
+				<a href='https://plus.google.com/106934976931731891003/about'><i class='icon-google-plus'></i></a>
+				<a href='mailto:z@zackmayeda.com'><i class='icon-envelope'></i></a>
+			</div>
 		</div>
-		<!-- End of Contact Content -->
-		<!-- End of Content -->
-    </div>
-        <div id='push'></div>
-        </div>
-		<!-- Start of Footer -->
-		<div id="footer">
-            <div class="container">
-                <div class="row-fluid hidden-phone">
-                    <div class="span2 site-type-box" id="z-foot-text">
-                        <span class="site-type visible-desktop"><i class="icon-desktop"></i> Desktop Version</span>
-                        <span class="site-type visible-tablet"><i class="icon-tablet"></i> Tablet Version</span>
-                    </div>
-                    <div class='span8'>
-                      <div id='z-foot-text'>
-                        <a href='http://www.facebook.com/zack.mayeda'>facebook</a>
-                        <a href='http://www.linkedin.com/in/zackmayeda'>linkedin</a>
-                        <a href='http://github.com/zackm'>github</a>
-                        <a href='https://plus.google.com/106934976931731891003/about'>google+</a>
-                        <a href='mailto:z@zackmayeda.com'>email</a>
-                        <p id='z-info'>site by Zack Mayeda</p>
-                      </div>
-                    </div>
-                    <div class="span2"></div>
-                </div>
-                
-                <div class="row-fluid visible-phone footer-phone">
-                    <span class="site-type"><i class="icon-mobile-phone"></i> Mobile Version</span>
-                    <br />
-                    <a href='http://www.facebook.com/zack.mayeda'><i class='icon-facebook'></i></a>
-                    <a href='http://www.linkedin.com/in/zackmayeda'><i class='icon-linkedin'></i></a>
-                    <a href='http://github.com/zackm'><i class='icon-github-alt'></i></a>
-                    <a href='https://plus.google.com/106934976931731891003/about'><i class='icon-google-plus'></i></a>
-                    <a href='mailto:z@zackmayeda.com'><i class='icon-envelope'></i></a>
-                </div>
-            </div>
-		</div>
-		<!-- End of Footer -->
-        
-    <script src="js/jquery.min.js" type='text/javascript'></script>
+	</div>
+	<!-- End of Footer -->
+
+	<script src="js/jquery.min.js" type='text/javascript'></script>
 	<script src='js/index.js' type='text/javascript'></script>
 	<script src='js/bootstrap.min.js' type='text/javascript'></script>
 	<script src='js/prefixfree.min.js' type='text/javascript'></script>
+	<script src='js/fluidvids.js' type='text/javascript'></script>
 </body>
 </html>
