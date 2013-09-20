@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RoomRight | Bills</title>
+<link href="assets/bootstrap-responsive.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/bootstrap.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/datepicker.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/font-awesome-ie7.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/font-awesome.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/index.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/introjs.css?body=1" media="all" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,300' rel='stylesheet prefetch' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="assets/bootstrap-datepicker.js?body=1" type="text/javascript"></script>
+<script src="assets/bootstrap.min.js?body=1" type="text/javascript"></script>
+<script src="assets/intro.min.js?body=1" type="text/javascript"></script>
+<script src="assets/nod.js?body=1" type="text/javascript"></script>
+<script src="assets/prefixfree.min.js?body=1" type="text/javascript"></script>
+<script src="assets/jquery.ui.core.js?body=1" type="text/javascript"></script>
+</head>
+<body>
+  
+  <div id="wrap">
+    <div class="row-fluid t-nav" data-intro="Thanks for taking the tour! Now you're free to start using RoomRight!" data-step='13'>
+	<div class="span5">
+		<div class="nav-btn pull-right inactive task-btn" data-intro="Click here to see ALL tasks related to your group, including ones that don't include you." data-step='8'>
+			<p> <a href="/tasks" class="tour-link">Tasks</a> </p>
+			<i class="icon-bookmark" id="pagemark"></i>
+		</a>
+	</div>
+	<div class="nav-btn pull-right inactive bill-btn" data-intro="Click here to see your bills and to see balances between roommates." data-step='9'>
+		<p> <a href="/bills" class="tour-link">Bills</a> </p>
+		<i class="icon-bookmark" id="pagemark"></i>
+	</div>
+</div>
+<div class="span2 nav-title" data-intro="Welcome to RoomRight! This is a quick tour!" data-step='1'>
+	<a href="/users/7" class="tour-link">
+		RoomRight <icon class="icon-check"></icon>
+</a>	<div class="triangle"></div>
+</div>
+<div class="span5">
+	<div class="nav-btn pull-left inactive cal-btn" data-intro="Click here to see all incomplete tasks and unpaid bills on a handy calendar!" data-step='10'>
+		<a href="">
+			<p><a href="/calendar" class="tour-link">Calendar</a></p>
+			<i class="icon-bookmark" id="pagemark"></i>
+		</a>
+	</div>
+	<div class="nav-btn pull-left inactive room-btn" data-intro="Take a look at this page to see all members in your group and their contact info." data-step='11'>
+		<a href="">
+			<p><a href="/groups/new" class="tour-link">Roommates</a></p>
+			<!-- Group Invite Red Circle -->
+			
+			<i class="icon-bookmark" id="pagemark"></i>
+		</a>
+
+	</div>
+
+	<div class="pull-right dropdown btn-group login-group">
+		<a class="dropdown-toggle btn log-btn" data-toggle="dropdown" href='#'  data-intro="Click here to logout & view settings." data-step='7' data-position="left">
+			George Michael <b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu account-links" role="menu" arialabelledby="dLabel">
+			<li>
+				<a href="/users/7/edit">
+				<i class="icon-cog"></i> Settings
+</a>			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="/signout" data-method="delete" rel="nofollow">Sign Out</a></li>
+		</ul>
+	</div>
+	<div class="pull-right">
+		<a href="/users/7/edit">
+		<img alt="Profile Picture" class="img-circle profile-nav" height="55" src="assets/gm.jpg" width="55" />
+</a>	</div>
+
+</div>
+</div>
+
+<div style="display:none" id="box"><div class="pull-right login-form" id="log_partial" >
+
+	<form accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="y1hVVP3lIVvPzaPE9o/EoEtHO1dB1LhhpbOujeEDm3s=" /></div>
+
+		<label class="control-label" for="session_email">Email</label>
+		<input id="session_email" name="session[email]" size="30" type="text" />
+
+		<label class="control-label" for="session_password">Password</label>
+		<input id="session_password" name="session[password]" size="30" type="password" />
+        <br />
+		<input class="btn btn-large" name="commit" type="submit" value="Login" />
+</form>
+    <!-- <div class="login-message alert alert-error">Error Message Here</div> -->
+    
+</div></div>
+
+<script>
+$(document).ready(function(){
+	
+});
+</script>
+
+    
+<!-- Nav Button. -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".bill-btn").removeClass("inactive");
+	$(".bill-btn").addClass("active");
+});
+</script>
+
+<div class='container-fluid'>
+
+	<!-- Successful Bill Creation Notification -->
+
+	<!-- IMPORTANT! HTML for view begins here -->
+	<div class="row-fluid">
+		<div class="span1"></div>
+		<div class="span10">
+			<h1>Bills</h1>
+
+		</div>
+		<div class="span1"></div>
+	</div>
+
+	<br />
+
+	<div class="row-fluid">
+		<!-- Balance Section -->
+		<div class="span4 involve-section">
+			<h3>You are involved in 
+				<span class="numbers">1</span>
+				bill
+			</h3>
+			<h3>You own 
+				<span class="numbers">1</span>
+				bill
+			</h3>
+		</div>
+		<div class="span4">
+			<!-- Total balance -->
+			<div class="well">	
+				<h2 class="balance-positive">
+					<i class="icon-circle-arrow-up"></i> Balance: <span class="numbers">$2,805.45</span>
+				</h2>
+
+				<!-- Per user balance -->
+				<h4>
+					<i class="icon-plus"></i> Maeby owes you 
+					<span class="numbers">$905.45</span>
+				</h4>
+				<h4>
+					<i class="icon-plus"></i> Tobias owes you 
+					<span class="numbers">$950.00</span>
+				</h4>
+				<h4>
+					<i class="icon-plus"></i> George Sr. owes you 
+					<span class="numbers">$950.00</span>
+				</h4>
+			</div>
+	
+			<!-- New Bill and Show/Hide Buttons-->
+			<a data-target="#newBill" role="button" class="btn" data-toggle="modal" class="btn"><i class="icon-plus"></i> Add New Bill</a>
+			<a class="btn" id="complete-btn">Show Paid Bills</a>
+
+		</div>
+		<!-- Bill Count Section -->
+		<div class="span4 overdue-section">
+			<h3>
+				<span class="numbers">1</span>
+				Overdue Bill
+			</h3>
+			<h3>
+				<span class="numbers">2</span>
+				Unpaid Bills
+			</h3>
+			<h3>
+				<span class="numbers">1</span>
+				Paid Bill
+			</h3>
+		</div>
+		</div>
+
+	<br />
+	
+	<div class="row-fluid">
+		<div class="span1"></div>
+
+		<div class="span10 well">
+
+				<!-- New Bill Modal -->
+				<div class="modal-scrollable">
+				<div id="newBill" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-height="600">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h3 id="myModalLabel">Create a New Bill</h3>
+					</div>
+					<div class="modal-body">
+						<form accept-charset="UTF-8" action="/bills" class="form-horizontal numbers" id="bill_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="y1hVVP3lIVvPzaPE9o/EoEtHO1dB1LhhpbOujeEDm3s=" /></div>
+	
+	<label for="bill_bill_name">Bill Name</label>
+	<input id="bill_bill_name" name="bill[bill_name]" size="30" type="text" /><br />
+	
+	<label for="bill_due_date">Due Date</label>
+
+  	<input class="center" id="datepicker" name="bill[due_date]" size="30" type="text" value="2013-09-02" />
+        <label for="bill_amount">Amount</label>
+        <div class="input-prepend numbers">
+          <span class="add-on">$</span>
+          <input id="prependedInput" name="bill[amount]" size="30" type="text" /><br />
+        </div> 
+
+	<br />
+        <label for="bill_owner">Bill Paid By:</label>
+        <select id="bill_owner" name="bill[owner]"><option value="6">Maeby</option>
+<option value="7">George Michael</option>
+<option value="9">Tobias</option>
+<option value="10">George Sr.</option></select>
+        <br />
+	<label for="bill_repeat">Repeat Every</label>
+	<input class="span2 numbers right" id="bill_frequency" name="bill[frequency]" size="30" type="text" value="0" />
+        <select class="span3" id="bill_frequency_type" name="bill[frequency_type]"><option value="none">None</option>
+<option value="day" selected="selected">Day(s)</option>
+<option value="week">Week(s)</option>
+<option value="month">Month(s)</option>
+<option value="year">Year(s)</option></select>
+	<br />
+	<br />
+
+        <label for="bill_assignTo">Split the Bill:</label>
+        <div class="btn-group" data-toggle="buttons-radio">
+          <button class="btn amt-btn" onclick="return false;" type="button">By $</button>
+          <button class="btn percent-btn" onclick="return false;" type="button" type="button">By %</button>
+          <button class="btn share-btn" onclick="return false;" type="button">By Shares</button>
+          <button class="btn equally-btn" onclick="return false;" type="button">Equally</button>
+        </div> 
+        <input id="split_type" name="split_type" type="hidden" value="0" />
+        <br />
+        <br />
+          
+              <div class="input-prepend input-append">
+                <label class="add-on" for="bill_split_values_6">Maeby Fünke</label>
+                <input class="span3 amt" id="bill_split_values_6" name="bill[split_values][6]" size="30" type="text" />
+                <div class="split-amt add-on">dollar(s)</div>
+                <div class="split-percent add-on">%</div>
+                <div class="split-share add-on">share(s)</div>
+              </div>
+              <div class="input-prepend input-append">
+                <label class="add-on" for="bill_split_values_7">George Michael Bluth</label>
+                <input class="span3 amt" id="bill_split_values_7" name="bill[split_values][7]" size="30" type="text" />
+                <div class="split-amt add-on">dollar(s)</div>
+                <div class="split-percent add-on">%</div>
+                <div class="split-share add-on">share(s)</div>
+              </div>
+              <div class="input-prepend input-append">
+                <label class="add-on" for="bill_split_values_9">Tobias Fünke</label>
+                <input class="span3 amt" id="bill_split_values_9" name="bill[split_values][9]" size="30" type="text" />
+                <div class="split-amt add-on">dollar(s)</div>
+                <div class="split-percent add-on">%</div>
+                <div class="split-share add-on">share(s)</div>
+              </div>
+              <div class="input-prepend input-append">
+                <label class="add-on" for="bill_split_values_10">George Sr. Bluth</label>
+                <input class="span3 amt" id="bill_split_values_10" name="bill[split_values][10]" size="30" type="text" />
+                <div class="split-amt add-on">dollar(s)</div>
+                <div class="split-percent add-on">%</div>
+                <div class="split-share add-on">share(s)</div>
+              </div>
+	<label for="bill_description">Note</label>
+	<input id="bill_description" name="bill[description]" size="30" type="text" />
+     <br />
+     <br />
+
+	<button class="btn btn-success" id="submit-btn">
+	<i class="icon-plus"></i>
+	Add Bill
+</button>	<button class="btn" type="reset">
+	<i class="icon-repeat"></i>
+	Reset
+</button></form>
+<script>
+$(document).ready(function(){
+	updateDropdownState();
+  chooseSplit();
+
+	// Calendar Date Picker
+	$('#datepicker').datepicker({
+		format : 'yyyy-mm-dd',
+		autoclose: true,
+		todayBtn: true,
+		todayHighlight: true
+	});
+  // client-side validation
+  // make sure repeat field has number
+  var metrics = [
+    [ "#bill_frequency", 'presence',''],
+    [ "#bill_frequency", 'integer',''],
+  ];
+  var options = {
+    'delay': 400,
+    'submitBtnSelector' : "#submit-btn",
+    'errorClass' : 'field_with_errors'
+  };
+  $("#bill_form").nod(metrics,options);
+
+	// Hide split by amount form by default
+});
+
+$('form').bind('submit', function() {
+  $(this).find(".amt").removeAttr('disabled');
+  $(this).find("#frequency").removeAttr('disabled');
+});
+
+function chooseSplit() {
+  if (window.location.href.match(/edit/)) {
+    var type = "";
+      if (type == "0") 
+      amount();
+      else if (type == "1") 
+      percent();
+       else if (type == "2") 
+      share();
+      } else {
+    amount();
+  }
+}
+
+function amount() {
+  $(".amt").removeAttr("disabled");
+  $(".split-amt").show();
+  $(".split-percent").hide();
+  $(".split-share").hide();
+  $("#split_type").val("0");
+}
+
+function percent() {
+  $(".amt").removeAttr("disabled");
+  $(".split-amt").hide();
+  $(".split-percent").show();
+  $(".split-share").hide();
+  $("#split_type").val("1");
+}
+
+function share() {
+  $(".amt").removeAttr("disabled");
+  $(".split-amt").hide();
+  $(".split-percent").hide();
+  $(".split-share").show();
+  $("#split_type").val("2");
+}
+
+function equally() {
+  $(".amt").attr("disabled", "disabled");
+  $(".amt").val("1");
+  $(".split-amt").hide();
+  $(".split-percent").hide();
+  $(".split-share").show();
+  $("#split_type").val("2");
+}
+
+// Click split by amount button
+$(".amt-btn").click(function(){
+  amount();
+});
+// Click split by % button
+$(".percent-btn").click(function(){
+  percent();
+});
+// Click split by shares button
+$(".share-btn").click(function(){
+  share();
+});
+$(".equally-btn").click(function(){
+  equally();
+});
+
+// By default, frequency # is disabled since "None" is default
+// This function disables or enables the number field next to the dropdown
+function updateDropdownState() {
+	var text_val = $("#bill_frequency_type option:selected").text();
+	if (text_val == "None") {
+    $("#bill_frequency").val('0');
+		$("#bill_frequency").attr("disabled", "disabled");
+    $("#submit-btn").removeAttr("disabled");
+    $("#submit-btn").removeClass("disabled");
+    $(".help-inline").remove();
+	} else {
+		if ($("#bill_frequency").val() == "0") {
+			$("#bill_frequency").val("1")
+		}
+		$("#bill_frequency").removeAttr("disabled");
+	}
+}
+
+// set callback when frequency dropdown is changed
+$("#bill_frequency_type").change(updateDropdownState);
+
+</script>
+
+					</div>
+				</div>
+				</div>
+				
+				<div class="row-fluid bill-row" id="bill-title-box">
+					<div class="span3"><b>Bill Name</b></div>
+					<div class="span2"><b>Date</b></div>
+					<div class="span2"><b>Amount Due</b></div>
+					<div class="span2"><b>Nudge</b></div>
+					<div class="span3"><b>Options</b></div>
+				</div>
+				<!-- Display all bills -->
+				  <div class="row-fluid bill-row" id="bill-id">
+	<span class="more-info">
+		<div class="span3" id="bill-name">
+			<!-- Complete/Incomplete/Overdue-->
+			<div class="pull-left" id="overdue-color-box"></div>
+
+			<div class="name-box">
+				<span class="more-info">Skip&#x27;s Scramble Lunch</span>
+			</div>
+		</div>
+
+		<!-- Days Left -->
+		<div class="span2 numbers row-date">
+			1 day overdue!
+		</div>
+
+		<!-- Your Amount Due-->
+		<div class="span2 numbers">
+					<h5 class="balance-negative">$44.55</h5>
+		</div>
+
+	</span>
+
+	<!-- Nudge -->
+	<div class="span2" style="overflow:ellipsis;">
+		<div class="btn-group">
+			<a href="" class="btn dropdown-toggle" data-toggle="dropdown">
+				<i class="icon-hand-right"></i> 
+				Nudge
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="/bills/12/nudge_email">send emails</a></li>
+				<li><a href="/bills/12/nudge_sms">send texts</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Options Buttons -->
+	<div class="span3">
+	<span class="options"> 
+		<span class="pull-right">
+
+		<a href="/bills/12/edit_paid" class="btn btn-success">Record Payment</a>
+		<a href=#12 data-toggle="modal" class="btn btn-danger"><i class="icon-remove"></i></a>
+		</span>
+		<!-- Delete Modal -->
+		<div id=12 class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3>Do you really want to delete this bill?</h3>
+			</div>
+			<div class="modal-body">
+				<a href="/bills/12" class="btn btn-danger" data-method="delete" rel="nofollow">Delete</a>
+				<a href="#" class="btn" data-dismiss="modal">Cancel</a>
+			</div>
+		</div>
+	</span>
+	</div>
+
+</div>
+<div class="hidden-info row-fluid">
+	<div class="span2 numbers">
+		Due: Sun, Sep 01
+	</div>
+	<div class="span2">
+		<b>Paid By:</b>
+		<ul>
+			<li>Maeby Fünke</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Originally Owed:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$0.45</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$44.55</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Currently Paid:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$0.45</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span2">
+		<div>
+			Repeats: 
+			Never
+		</div>
+		<div>
+			Note:
+			
+		</div>
+	</div>
+		
+</div>
+
+				  <div class="row-fluid bill-row" id="bill-id">
+	<span class="more-info">
+		<div class="span3" id="bill-name">
+			<!-- Complete/Incomplete/Overdue-->
+			<div class="pull-left" id="incomplete-color-box"></div>
+
+			<div class="name-box">
+				<i class="icon-repeat"></i>
+				<span class="more-info">Banana Stand Rent</span>
+			</div>
+		</div>
+
+		<!-- Days Left -->
+		<div class="span2 numbers row-date">
+			29 days left
+		</div>
+
+		<!-- Your Amount Due-->
+		<div class="span2 numbers">
+				<h5 class="balance-positive">
+					$2,850.00
+				</h5>
+		</div>
+
+	</span>
+
+	<!-- Nudge -->
+	<div class="span2" style="overflow:ellipsis;">
+		<div class="btn-group">
+			<a href="" class="btn dropdown-toggle" data-toggle="dropdown">
+				<i class="icon-hand-right"></i> 
+				Nudge
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="/bills/11/nudge_email">send emails</a></li>
+				<li><a href="/bills/11/nudge_sms">send texts</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Options Buttons -->
+	<div class="span3">
+	<span class="options"> 
+		<span class="pull-right">
+		<a href="/bills/11/edit" class="btn">Edit</a>
+
+		<a href=#11 data-toggle="modal" class="btn btn-danger"><i class="icon-remove"></i></a>
+		</span>
+		<!-- Delete Modal -->
+		<div id=11 class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3>Do you really want to delete this bill?</h3>
+			</div>
+			<div class="modal-body">
+				<a href="/bills/11" class="btn btn-danger" data-method="delete" rel="nofollow">Delete</a>
+				<a href="#" class="btn" data-dismiss="modal">Cancel</a>
+			</div>
+		</div>
+	</span>
+	</div>
+
+</div>
+<div class="hidden-info row-fluid">
+	<div class="span2 numbers">
+		Due: Tue, Oct 01
+	</div>
+	<div class="span2">
+		<b>Paid By:</b>
+		<ul>
+			<li>George Michael Bluth</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Originally Owed:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$950.00</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$950.00</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$950.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$950.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Currently Paid:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$950.00</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span2">
+		<div>
+			Repeats: 
+			Every month
+		</div>
+		<div>
+			Note:
+			this is important
+		</div>
+	</div>
+		
+</div>
+
+
+
+			<div style="display:none;" id="complete-bills">
+				<!-- Display all bills -->
+				<br />
+				<p class="line-dark-angle"><i class="icon-double-angle-down"></i></p>
+				<h2>Paid Bills</h2>
+				  <div class="row-fluid bill-row" id="bill-id">
+	<span class="more-info">
+		<div class="span3" id="bill-name">
+			<!-- Complete/Incomplete/Overdue-->
+			<div class="pull-left" id="complete-color-box"></div>
+
+			<div class="name-box">
+				<span class="more-info">Frozen Banana</span>
+			</div>
+		</div>
+
+		<!-- Days Left -->
+		<div class="span2 numbers row-date">
+			Wed, Sep 11
+		</div>
+
+		<!-- Your Amount Due-->
+		<div class="span2 numbers">
+				<h5 class="balance-positive">
+					$0.00
+				</h5>
+		</div>
+
+	</span>
+
+	<!-- Nudge -->
+	<div class="span2" style="overflow:ellipsis;">
+			<div style="padding-top:9px;">
+				<i class="icon-thumbs-up"></i>
+			</div>
+	</div>
+
+	<!-- Options Buttons -->
+	<div class="span3">
+	<span class="options"> 
+		<span class="pull-right">
+		<a href="/bills/14/edit" class="btn">Edit</a>
+
+		<a href=#14 data-toggle="modal" class="btn btn-danger"><i class="icon-remove"></i></a>
+		</span>
+		<!-- Delete Modal -->
+		<div id=14 class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3>Do you really want to delete this bill?</h3>
+			</div>
+			<div class="modal-body">
+				<a href="/bills/14" class="btn btn-danger" data-method="delete" rel="nofollow">Delete</a>
+				<a href="#" class="btn" data-dismiss="modal">Cancel</a>
+			</div>
+		</div>
+	</span>
+	</div>
+
+</div>
+<div class="hidden-info row-fluid">
+	<div class="span2 numbers">
+		Due: Wed, Sep 11
+	</div>
+	<div class="span2">
+		<b>Paid By:</b>
+		<ul>
+			<li>George Michael Bluth</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Originally Owed:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$2.50</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Currently Paid:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$2.50</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span2">
+		<div>
+			Repeats: 
+			Never
+		</div>
+		<div>
+			Note:
+			
+		</div>
+	</div>
+		
+</div>
+
+			</div>
+
+			</div>
+
+		<div class="span1"></div>
+	</div>
+
+	<!-- HTML for view ends here -->
+	<div id='push'></div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+	// show extra info dropdown
+	$(".more-info").click(function(){
+		$(this).parent().next().slideToggle(50);
+	});
+
+	$("#complete-btn").click(function(){
+		$("#complete-bills").slideToggle();
+		if ($(this).text() == "Show Paid Bills") {
+			$(this).text("Hide Paid Bills");
+		} else {
+			$(this).text("Show Paid Bills");
+		}
+	});
+
+	// make modal launch when clicking link from dashboard
+	if(location.hash === '#new_button') {
+	     $("#newBill").modal();
+	}
+
+});
+
+$("a").click(function(evt) {
+	evt.preventDefault();
+});
+
+</script>
+
+  </div>
+  <div id="footer">
+    <div class="container-fluid">
+        <div id='z-foot-text'>
+            <span id="z-info" data-intro="Lastly, take a look down here for help or more info about RoomRight." data-step='12' data-position="top">
+            	<a href="/about">about</a>
+            	<i class="icon-circle icon-white"></i> 
+                <a href="/tour">features</a>
+                <i class="icon-circle icon-white"></i>
+            	<a href="/contact">contact</a>
+            	<i class="icon-circle icon-white"></i> 
+            	<a href="/help">help</a>
+            </span>
+            <p id='z-info' class="numbers">&copy; 2013</p>
+        </div>
+    </div>
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RoomRight</title>
+<link href="assets/bootstrap-responsive.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/bootstrap.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/font-awesome-ie7.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/font-awesome.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/index.css?body=1" media="all" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,300' rel='stylesheet prefetch' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="assets/bootstrap-datepicker.js?body=1" type="text/javascript"></script>
+<script src="assets/bootstrap.min.js?body=1" type="text/javascript"></script>
+<script src="assets/intro.min.js?body=1" type="text/javascript"></script>
+<script src="assets/nod.js?body=1" type="text/javascript"></script>
+<script src="assets/prefixfree.min.js?body=1" type="text/javascript"></script>
+<script src="assets/jquery.ui.core.js?body=1" type="text/javascript"></script>
+</head>
+<body>
+  
+  <div id="wrap">
+    <div class="row-fluid t-nav" data-intro="Thanks for taking the tour! Now you're free to start using RoomRight!" data-step='13'>
+	<div class="span5">
+</div>
+<div class="span2 nav-title" data-intro="Welcome to RoomRight! This is a quick tour!" data-step='1'>
+	<a href="/index" class="tour-link">
+		RoomRight <icon class="icon-check"></icon>
+</a>	<div class="triangle"></div>
+</div>
+<div class="span5">
+
+	<div class="btn-group pull-right dropdown">
+		<a href="" class="dropdown-toggle btn btn-success log-btn" data-toggle="dropdown" href="#">Login <b class="caret"></b></a>
+		<ul class="dropdown-menu" role="menu" arialabelledby="dLabel">
+			<div class="pull-right login-form" id="log_partial" >
+
+	<form accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="y1hVVP3lIVvPzaPE9o/EoEtHO1dB1LhhpbOujeEDm3s=" /></div>
+
+		<label class="control-label" for="session_email">Email</label>
+		<input id="session_email" name="session[email]" size="30" type="text" />
+
+		<label class="control-label" for="session_password">Password</label>
+		<input id="session_password" name="session[password]" size="30" type="password" />
+        <br />
+		<input class="btn btn-large" name="commit" type="submit" value="Login" />
+</form>
+    <!-- <div class="login-message alert alert-error">Error Message Here</div> -->
+    
+</div>
+		</ul>
+	</div>
+
+</div>
+</div>
+
+<div style="display:none" id="box"><div class="pull-right login-form" id="log_partial" >
+
+	<form accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="y1hVVP3lIVvPzaPE9o/EoEtHO1dB1LhhpbOujeEDm3s=" /></div>
+
+		<label class="control-label" for="session_email">Email</label>
+		<input id="session_email" name="session[email]" size="30" type="text" />
+
+		<label class="control-label" for="session_password">Password</label>
+		<input id="session_password" name="session[password]" size="30" type="password" />
+        <br />
+		<input class="btn btn-large" name="commit" type="submit" value="Login" />
+</form>
+    <!-- <div class="login-message alert alert-error">Error Message Here</div> -->
+    
+</div></div>
+
+<script>
+$(document).ready(function(){
+	$("a").click(function(evt) {
+		evt.preventDefault();
+	});
+});
+</script>
+
+    
+<div class='container-fluid'>
+	<br />
+	<br />
+	<br />
+	<br />
+	<div class='welcome-content'>
+		<h2 class="check-logo">RoomRight
+		    <icon class="icon-check"></icon>
+		    <p class="block"></p>
+		</h2>
+		<h1>a tool to create peace between roommates</h1>
+		<br />
+		<a href="/users/new" class="btn btn-large big-signup">Sign Up Now!</a>
+	</div>
+	<br />
+	<br />
+	
+	<div id='push'></div>
+</div>
+  </div>
+  <div id="footer">
+    <div class="container-fluid">
+        <div id='z-foot-text'>
+            <span id="z-info" data-intro="Lastly, take a look down here for help or more info about RoomRight." data-step='12' data-position="top">
+            	<a href="/about">about</a>
+            	<i class="icon-circle icon-white"></i> 
+                <a href="/tour">features</a>
+                <i class="icon-circle icon-white"></i>
+            	<a href="/contact">contact</a>
+            	<i class="icon-circle icon-white"></i> 
+            	<a href="/help">help</a>
+            </span>
+            <p id='z-info' class="numbers">&copy; 2013</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

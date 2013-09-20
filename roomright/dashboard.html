@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RoomRight | Dashboard</title>
+<link href="assets/bootstrap-responsive.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/bootstrap.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/datepicker.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/font-awesome-ie7.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/font-awesome.min.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/index.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/introjs.css?body=1" media="all" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,300' rel='stylesheet prefetch' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="assets/bootstrap-datepicker.js?body=1" type="text/javascript"></script>
+<script src="assets/bootstrap.min.js?body=1" type="text/javascript"></script>
+<script src="assets/intro.min.js?body=1" type="text/javascript"></script>
+<script src="assets/nod.js?body=1" type="text/javascript"></script>
+<script src="assets/prefixfree.min.js?body=1" type="text/javascript"></script>
+<script src="assets/jquery.ui.core.js?body=1" type="text/javascript"></script>
+</head>
+<body>
+  
+  <div id="wrap">
+    <div class="row-fluid t-nav" data-intro="Thanks for taking the tour! Now you're free to start using RoomRight!" data-step='13'>
+	<div class="span5">
+		<div class="nav-btn pull-right inactive task-btn" data-intro="Click here to see ALL tasks related to your group, including ones that don't include you." data-step='8'>
+			<p> <a href="/tasks" class="tour-link">Tasks</a> </p>
+			<i class="icon-bookmark" id="pagemark"></i>
+		</a>
+	</div>
+	<div class="nav-btn pull-right inactive bill-btn" data-intro="Click here to see your bills and to see balances between roommates." data-step='9'>
+		<p> <a href="/bills" class="tour-link">Bills</a> </p>
+		<i class="icon-bookmark" id="pagemark"></i>
+	</div>
+</div>
+<div class="span2 nav-title" data-intro="Welcome to RoomRight! This is a quick tour!" data-step='1'>
+	<a href="/users/7" class="tour-link">
+		RoomRight <icon class="icon-check"></icon>
+</a>	<div class="triangle"></div>
+</div>
+<div class="span5">
+	<div class="nav-btn pull-left inactive cal-btn" data-intro="Click here to see all incomplete tasks and unpaid bills on a handy calendar!" data-step='10'>
+		<a href="">
+			<p><a href="/calendar" class="tour-link">Calendar</a></p>
+			<i class="icon-bookmark" id="pagemark"></i>
+		</a>
+	</div>
+	<div class="nav-btn pull-left inactive room-btn" data-intro="Take a look at this page to see all members in your group and their contact info." data-step='11'>
+		<a href="">
+			<p><a href="/groups/new" class="tour-link">Roommates</a></p>
+			<!-- Group Invite Red Circle -->
+			
+			<i class="icon-bookmark" id="pagemark"></i>
+		</a>
+
+	</div>
+
+	<div class="pull-right dropdown btn-group login-group">
+		<a class="dropdown-toggle btn log-btn" data-toggle="dropdown" href='#'  data-intro="Click here to logout & view settings." data-step='7' data-position="left">
+			George Michael <b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu account-links" role="menu" arialabelledby="dLabel">
+			<li>
+				<a href="/users/7/edit">
+				<i class="icon-cog"></i> Settings
+</a>			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="/signout" data-method="delete" rel="nofollow">Sign Out</a></li>
+		</ul>
+	</div>
+	<div class="pull-right">
+		<a href="/users/7/edit">
+		<img alt="Profile Picture" class="img-circle profile-nav" height="55" src="assets/gm.jpg" width="55" />
+</a>	</div>
+
+</div>
+</div>
+
+<div style="display:none" id="box"><div class="pull-right login-form" id="log_partial" >
+
+	<form accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="y1hVVP3lIVvPzaPE9o/EoEtHO1dB1LhhpbOujeEDm3s=" /></div>
+
+		<label class="control-label" for="session_email">Email</label>
+		<input id="session_email" name="session[email]" size="30" type="text" />
+
+		<label class="control-label" for="session_password">Password</label>
+		<input id="session_password" name="session[password]" size="30" type="password" />
+        <br />
+		<input class="btn btn-large" name="commit" type="submit" value="Login" />
+</form>
+    <!-- <div class="login-message alert alert-error">Error Message Here</div> -->
+    
+</div></div>
+
+<script>
+$(document).ready(function(){
+	
+});
+</script>
+
+    
+<div class='container-fluid'>
+
+	<!-- IMPORTANT! HTML for view begins here -->
+	<div class="row-fluid">
+		<div class="span2 well" data-intro="Helpful links are located here!" data-step='5'>
+			<h4>Quick Links</h4>
+			<a href="/bills#new_button" class="btn">
+				<i class="icon-plus"></i> Add New Bill
+</a>			<br />
+			<br />
+			<a href="/tasks#new_button" class="btn">
+				<i class="icon-plus"></i> Add New Task
+</a>			<br />
+			<br />
+			<a href="/users/7/edit" class="btn" id="set-btn">
+				<i class="icon-cog"></i> Settings
+</a>			<br />
+			<br />
+			<p class="line-dark-angle">
+				<i class="icon-double-angle-down"></i>
+			</p>
+			<a href="javascript:void(0);" onclick="javascript:introObj = introJs().start();addDarkClass(); introObj.onexit(removeDarkClass);" class="btn intro-btn"><i class="icon-eye-open"></i> Tour</a>
+			<br />
+			<br />
+			<a href="/tour" class="btn">
+				<i class="icon-star-empty"></i> Features
+</a>		</div>
+
+		<div class="span8">
+
+
+			<h2 class='pull-right'>
+			</h2>
+			<h1 data-intro="This is your dashboard. It displays all info related to YOU." data-step='2'><i class="icon-dashboard"></i> Dashboard </h1>
+			<br />
+
+			<div class="well">
+				<div data-intro="Your unpaid bills will show up here." data-step='3'>
+				<h3>My Unpaid Bills</h3>
+				<div class="row-fluid bill-row" id="bill-title-box">
+					<div class="span3"><b>Bill Name</b></div>
+					<div class="span2"><b>Date</b></div>
+					<div class="span2"><b>Amount Due</b></div>
+					<div class="span5"><b>Options</b></div>
+				</div>
+				<div class="row-fluid bill-row" id="bill-id">
+	<span class="more-info">
+		<div class="span3" id="bill-name">
+			<!-- Complete/Incomplete/Overdue-->
+			<div class="pull-left" id="overdue-color-box"></div>
+
+			<div class="name-box">
+				<span class="more-info">Skip&#x27;s Scramble Lunch</span>
+			</div>
+		</div>
+
+		<!-- Days Left -->
+		<div class="span2 numbers row-date">
+			1 day overdue!
+		</div>
+
+		<!-- Your Amount Due-->
+		<div class="span2 numbers">
+					<h5 class="balance-negative">$44.55</h5>
+		</div>
+
+	</span>
+
+	<!-- Options Buttons -->
+	<div class="span5" style="overflow:ellipsis;">
+		<div class="btn-group pull-left" style="margin-left:8px;">
+			<a href="" class="btn dropdown-toggle" data-toggle="dropdown">
+				<i class="icon-hand-right"></i> 
+				Nudge
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="/bills/12/nudge_email">send emails</a></li>
+				<li><a href="/bills/12/nudge_sms">send texts</a></li>
+			</ul>
+		</div>
+
+		<span class="options"> 
+			<span class="pull-right">
+
+			<a href="/bills/12/edit_paid" class="btn btn-success">Record Payment</a>
+		</span>
+	</div>
+
+</div>
+<div class="hidden-info row-fluid">
+	<div class="span2 numbers">
+		Due: Sun, Sep 01
+	</div>
+	<div class="span2">
+		<b>Paid By:</b>
+		<ul>
+			<li>Maeby Fünke</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Originally Owed:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$0.45</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$44.55</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Currently Paid:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$0.45</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span2">
+		<div>
+			Repeats: 
+			Never
+		</div>
+		<div>
+			Note:
+			
+		</div>
+		<!-- Delete Button -->
+		<a href=#12 data-toggle="modal" class="btn btn-danger pull-right short-delete-btn"><i class="icon-remove"></i></a>
+		</span>
+		<!-- Delete Modal -->
+		<div id=12 class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true" style="text-align:center;">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3>Do you really want to delete this bill?</h3>
+			</div>
+			<div class="modal-body">
+				<a href="/bills/12" class="btn btn-danger" data-method="delete" rel="nofollow">Delete</a>
+				<a href="#" class="btn" data-dismiss="modal">Cancel</a>
+			</div>
+		</div>
+
+	</div>
+		
+</div>
+
+				<div class="row-fluid bill-row" id="bill-id">
+	<span class="more-info">
+		<div class="span3" id="bill-name">
+			<!-- Complete/Incomplete/Overdue-->
+			<div class="pull-left" id="incomplete-color-box"></div>
+
+			<div class="name-box">
+				<i class="icon-repeat"></i>
+				<span class="more-info">Banana Stand Rent</span>
+			</div>
+		</div>
+
+		<!-- Days Left -->
+		<div class="span2 numbers row-date">
+			29 days left
+		</div>
+
+		<!-- Your Amount Due-->
+		<div class="span2 numbers">
+				<h5 class="balance-positive">
+					$2,850.00
+				</h5>
+		</div>
+
+	</span>
+
+	<!-- Options Buttons -->
+	<div class="span5" style="overflow:ellipsis;">
+		<div class="btn-group pull-left" style="margin-left:8px;">
+			<a href="" class="btn dropdown-toggle" data-toggle="dropdown">
+				<i class="icon-hand-right"></i> 
+				Nudge
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="/bills/11/nudge_email">send emails</a></li>
+				<li><a href="/bills/11/nudge_sms">send texts</a></li>
+			</ul>
+		</div>
+
+		<span class="options"> 
+			<span class="pull-right">
+			<a href="/bills/11/edit" class="btn">Edit</a>
+
+		</span>
+	</div>
+
+</div>
+<div class="hidden-info row-fluid">
+	<div class="span2 numbers">
+		Due: Tue, Oct 01
+	</div>
+	<div class="span2">
+		<b>Paid By:</b>
+		<ul>
+			<li>George Michael Bluth</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Originally Owed:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$950.00</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$950.00</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$950.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$950.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span3">
+		<b>Currently Paid:</b>
+		<ul>
+			<li>Maeby Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Michael Bluth: 
+				<span class="numbers">$950.00</span>
+			</li>
+			<li>Tobias Fünke: 
+				<span class="numbers">$0.00</span>
+			</li>
+			<li>George Sr. Bluth: 
+				<span class="numbers">$0.00</span>
+			</li>
+		</ul>
+	</div>
+	<div class="span2">
+		<div>
+			Repeats: 
+			Every month
+		</div>
+		<div>
+			Note:
+			this is important
+		</div>
+		<!-- Delete Button -->
+		<a href=#11 data-toggle="modal" class="btn btn-danger pull-right short-delete-btn"><i class="icon-remove"></i></a>
+		</span>
+		<!-- Delete Modal -->
+		<div id=11 class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true" style="text-align:center;">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3>Do you really want to delete this bill?</h3>
+			</div>
+			<div class="modal-body">
+				<a href="/bills/11" class="btn btn-danger" data-method="delete" rel="nofollow">Delete</a>
+				<a href="#" class="btn" data-dismiss="modal">Cancel</a>
+			</div>
+		</div>
+
+	</div>
+		
+</div>
+
+
+				</div>
+
+				<br />
+				<br />
+
+				<div data-intro="Incomplete assignments involving YOU will show up here." data-step='4'>
+				<h3>Dope, you're done with your tasks!</h3>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="span2 well" data-intro="Your net balance shows up here, along with the number of tasks and bills that are overdue." data-step='6'>
+			<h4>Welcome George Michael!</h4>
+
+				<span class="balance-positive">
+					<h3><i class="icon-circle-arrow-up"></i> Balance: </h3>
+					<h2>
+						<span class="numbers">
+						$2,805.45</span>
+					</h2>
+				</span>
+				
+			<p class="line-dark-angle"><i class="icon-double-angle-down"></i></p>
+
+
+				<h4 class="alert alert-error">Overdue <i class="icon-exclamation-sign"></i> </h4>
+				<h5 class="numbers">1 Overdue Bill</h5>
+				<h5 class="numbers">0 Overdue Tasks</h5>
+
+		</div>
+	</div>
+	<!-- HTML for view ends here -->
+
+	<div id='push'></div>
+</div>
+
+<script>
+
+$(document).ready(function() {
+
+	$(".more-info").click(function(){
+		$(this).parent().next().slideToggle(150);
+	});
+
+});
+
+function addDarkClass() {
+	$(".tour-link").addClass("dark-btn");
+}
+function removeDarkClass() {
+	$(".tour-link").removeClass("dark-btn");
+}
+
+$("a").click(function(evt) {
+	evt.preventDefault();
+});
+
+</script>
+
+
+  </div>
+  <div id="footer">
+    <div class="container-fluid">
+        <div id='z-foot-text'>
+            <span id="z-info" data-intro="Lastly, take a look down here for help or more info about RoomRight." data-step='12' data-position="top">
+            	<a href="/about">about</a>
+            	<i class="icon-circle icon-white"></i> 
+                <a href="/tour">features</a>
+                <i class="icon-circle icon-white"></i>
+            	<a href="/contact">contact</a>
+            	<i class="icon-circle icon-white"></i> 
+            	<a href="/help">help</a>
+            </span>
+            <p id='z-info' class="numbers">&copy; 2013</p>
+        </div>
+    </div>
+</div>
+  
+</body>
+</html>
