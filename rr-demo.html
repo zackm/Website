@@ -75,7 +75,25 @@ _gaq.push(['_trackPageview']);
 
 		<!-- Start of Content-->
 		<div id='content'>
-			<iframe src="file:///Users/ZackMayeda/Documents/Files/12Code/Website/roomright/index.html" frameborder="0" width="90%" height="90%" id="rr-demo"></iframe>
+			<div class="row-fluid">
+				<div class="span6 offset3">
+					<h3 class="center">RoomRight</h3>
+					A project made for UC Berkeley CS169, Software Engineering. I was part of a group of 5 students, and acted as main frontend developer and designer. We developed a product envisioned by a group of UC Berkeley business students, and worked with them during our iterative development process. We created the web app with Rails, PostgreSQL, Bootstrap, and several Javascript libraries, and deployed it on Heroku. View sample pages from the site below. Note: backend functionality has been removed from these pages, they are for viewing only.
+					<div class="links-wrapper center">
+						<div class="btn-group">
+							<a href="#" class="btn landing">Landing Page</a>
+							<a href="#" class="btn dashboard">Dashboard</a>
+							<a href="#" class="btn group">Group Page</a>
+							<a href="#" class="btn bill">Bills Page</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span10 offset1">
+					<iframe src="file:///Users/ZackMayeda/Documents/Files/12Code/Website/roomright/index.html" frameborder="0" width="100%" height="80%" id="rr-demo"></iframe>	
+				</div>
+			</div>
 			
 		<!-- End of Content -->
 		</div>
@@ -123,6 +141,25 @@ _gaq.push(['_trackPageview']);
 <script src='js/bootstrap.min.js' type='text/javascript'></script>
 <script src='js/prefixfree.min.js' type='text/javascript'></script>
 <script src='js/fluidvids.js' type='text/javascript'></script>
+<script type='text/javascript'>
+	// Hook up iframe links
+	$(".landing").click(function() {
+		$("#rr-demo").attr('src', "file:///Users/ZackMayeda/Documents/Files/12Code/Website/roomright/index.html");
+		return false;
+	});
+	$(".dashboard").click(function() {
+		$("#rr-demo").attr('src', "file:///Users/ZackMayeda/Documents/Files/12Code/Website/roomright/dashboard.html");
+		return false;
+	});
+	$(".group").click(function() {
+		$("#rr-demo").attr('src', "file:///Users/ZackMayeda/Documents/Files/12Code/Website/roomright/group.html");
+		return false;
+	});
+	$(".bill").click(function() {
+		$("#rr-demo").attr('src', "file:///Users/ZackMayeda/Documents/Files/12Code/Website/roomright/bills.html");
+		return false;
+	});
+</script>
 
 </body>
 </html>

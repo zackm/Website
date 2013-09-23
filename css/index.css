@@ -445,6 +445,16 @@ p.line:after {
 	display: none;
 }
 
+/* RoomRight Page */
+#rr-demo {
+	min-width: 990px;
+	margin-bottom: 20px;
+}
+.links-wrapper {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
 /* Error page styles */
 .error-index {
 	color:#333333;
