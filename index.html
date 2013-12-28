@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Website created by Zack Mayeda using many elements from Bootstrap. http://twitter.github.com/bootstrap/index.html -->
+	<!-- Website created by Zack Mayeda using many elements from Twitter's Bootstrap. -->
 	<title>Zack Mayeda</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,83 +55,11 @@ _gaq.push(['_trackPageview']);
 
 <body>
 	<!-- Start of Nav -->
-	<div id="wrap">
-		<div class="row-fluid visible-desktop">
-			<div class="span5">
-			</div>
-			<div class='span2 center' id='logo'>
-				<div class='round-container'>
-					<span class="home-button">Z</span>
-				</div>
-			</div>
-			<div class='span5'>
-				<div class='nav-button about-button pull-left'>
-					<span>ABOUT</span>
-				</div>
-				<div class='nav-button work-button pull-left'>
-					<span>WORK</span>
-				</div>
-				<div class='nav-button contact-button pull-left'>
-					<span>CONTACT</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="row-fluid visible-tablet">
-			<div class='span12 center' id='logo'>
-				<div class='round-container'>
-					<span class="home-button">Z</span>
-				</div>
-			</div>
-		</div>
-		<div class="row-fluid visible-tablet">
-			<div class='span12'>
-				<div class='nav-button about-button'>
-					<span>ABOUT</span>
-				</div>
-				<div class='nav-button work-button'>
-					<span>WORK</span>
-				</div>
-				<div class='nav-button contact-button'>
-					<span>CONTACT</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="row-fluid visible-phone">
-			<div class="span12" id='logo'>
-				<div class="container">
-					<div class='round-container'>
-						<span class="home-button">Z</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row-fluid visible-phone">
-			<div class="span12 phone-nav">
-				<div class="about-button"><i class="icon-user"></i></div>
-				<div class="work-button"><i class="icon-folder-open-alt"></i></div>
-				<div class="contact-button"><i class="icon-envelope"></i></div>
-			</div>
-		</div>
-
-		<div class="row-fluid">
-			<div class='span12 gray-row' id='color-row'></div>
-		</div>
-		<div class="row-fluid">
-			<div class="span12 blue-row" id='color-row'></div>
-		</div>
-		<div class="row-fluid">
-			<div class="span12 light-gray-row" id='color-row'></div>
-		</div>
-		<br />
-		<br />
-		<!-- End of Nav -->
 
 		<!-- Start of Content-->
-		<div id='content'>
+		<div id="pt-main" class="pt-perspective">
 			<!-- Start Home Content -->
-			<div class='home active-content'>
+			<div class='pt-page home'>
 				<div class='row-fluid'>
 					<div class='span8 offset2' id=''>
 						<h1 class="lead" id="main-hi">Hi Interwebs</h1>
@@ -158,12 +86,11 @@ _gaq.push(['_trackPageview']);
 						<br />
 					</div>
 				</div>
-
 			</div>
 			<!-- End of Home Content-->
 
 			<!-- Start of About Content -->
-			<div class='about'>
+			<div class='pt-page about'>
 				<div class='row-fluid full-row'>
 					<div class='span1'></div>
 					<div class='span2' style="text-align:center">
@@ -238,11 +165,11 @@ _gaq.push(['_trackPageview']);
 					<div class="span3 link-box">
 						<h3 class='lead link-title'>Programming Stuff</h3>
 						<ul>
-							<li><a href='http://codecademy.com/'>codecademy</a> - a great way to get a taste of programming</li>
-							<li><a href="http://codepen.io">codepen</a> - a schweet site to whip up websites and HTML/CSS/JS gadgets</li>
+							<li><a href="http://codepen.io">codepen</a> - a cool site to whip up websites and HTML/CSS/JS gadgets</li>
 							<li><a href="http://obadger.com/turtle/">turtle drawing</a> - clean online implementation of turtle drawing</li>
-							<li><a href="http://jsfiddle.net">jsfiddle</a> - another site to sketch out websites/web elements</li>
+							<li><a href="http://gruntjs.com">Grunt.js</a> - make web dev so much nicer</li>
 							<li><a href="http://leafletjs.com/">leaflet</a> - open source JS library for maps</li>
+							<li><a href="http://thenews.im">the News</a> - hacker news & designer news together. but prettier</li>
 						</ul>
 					</div>
 					<div class="span4 link-box">
@@ -274,7 +201,7 @@ _gaq.push(['_trackPageview']);
 			<!-- End of About Content -->
 
 			<!-- Start of Work Content -->
-			<div class='work'>
+			<div class='pt-page work'>
 				<div class="row-fluid full-row">
 					<div class="span4 offset2 work-text-light">
 						<h3>RoomRight - Web App</h3>
@@ -414,12 +341,11 @@ _gaq.push(['_trackPageview']);
 					<div class='span2' id=''>
 					</div>
 				</div>
-
 			</div>
 			<!-- End of Work Content -->
 
 			<!--  Start of Contact Content-->
-			<div class='contact'>
+			<div class='pt-page contact'>
 				<div class='row-fluid'>
 					<div class='span3' id=''>
 					</div>
@@ -441,9 +367,40 @@ _gaq.push(['_trackPageview']);
 			</div>
 			<!-- End of Contact Content -->
 			<!-- End of Content -->
+
+			<div id='push'></div>
+
 		</div>
-		<div id='push'></div>
-	</div>
+
+		<div class="row-fluid nav-menu">
+			<div class='span2 center offset5' id='logo'>
+				<div class='nav-link round-container' data-animation='40' data-page='home'>
+					<span class="home-button">Z</span>
+				</div>
+			</div>
+			<div class='span5'>
+				<div class='nav-link nav-button pull-left' data-animation='40' data-page='about'>
+					<span>ABOUT</span>
+				</div>
+				<div class='nav-link nav-button pull-left' data-animation='40' data-page='work'>
+					<span>WORK</span>
+				</div>
+				<div class='nav-link nav-button pull-left' data-animation='40' data-page='contact'>
+					<span>CONTACT</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div class='span12 gray-row' id='color-row'></div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12 blue-row" id='color-row'></div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12 light-gray-row" id='color-row'></div>
+		</div>
+		<!-- End of Nav -->
 
 	<div class="row-fluid">
 		<div class="span12 light-gray-row" id="color-row"></div>
