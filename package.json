@@ -1,0 +1,11 @@
+{
+  "name": "ZackMayedaWebsite",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-stylus": "~0.11.0"
+  }
+}
