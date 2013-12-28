@@ -42,14 +42,14 @@ module.exports = function(grunt) {
 
 		watch: {
 			scripts:  {
-				files: ['js/*.js'],
+				files: ['src/js/*.js'],
 				tasks: ['concat'],
 				options: {
 					spawn: false
 				}
 			},
 			css: {
-				files: ['css/*.styl'],
+				files: ['src/css/*.styl'],
 				tasks: ['stylus'],
 				options: {
 					spawn: false
