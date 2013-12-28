@@ -3,6 +3,9 @@
 html,body
 	height: 100%
 
+body 
+	background-color: #eee
+
 /* Wrapper for page content to push down footer */
 #pt-main
 	height: auto !important
@@ -18,11 +21,27 @@ html,body
 
 #footer 
 	background-color: #7f8c8d
+	padding-top 25px
 	text-align:center
 
-	a 
+	a
+		color: white
 		padding-left:8px
 		padding-right:8px
+
+		&:hover
+			color: #2790B0
+
+	.info 
+		color:white
+		margin-top:5px
+
+	.footer-phone 
+		padding-top:5px
+
+	.footer-phone i 
+		font-size:20px
+		padding-top:8px
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) 
@@ -32,194 +51,65 @@ html,body
 		padding-left: 20px
 		padding-right: 20px
 
-
-.site-type 
-	color:white
-	font-weight:normal
-	padding-top:13px
-
-.site-type-box 
-	text-align:left
-
-#z-foot-text 
-	padding-top:13px  
-
-.footer-phone 
-	padding-top:5px
-
-.footer-phone i 
-	padding-top:8px
-	font-size:20px
-
-/* End footer stuff*/
-
-body 
-	background-color: #eee
-
-#footer a 
-	color: white
-
-#footer a:hover 
-	color: #2790B0
-
-#z-info 
-	color:white
-	margin-top:5px
-
-#title 
-	text-align:center
-	background-image:url(http://zackmayeda.com/img/furley_bg.png)
-	padding:10px
-	margin-top:25px
-	margin-bottom:25px
-	box-shadow:0 0 5px 3px black
-
-
-#title > h1 
-	text-shadow:2px 2px 2px gray
-
-
-#link1 
-	background:-webkit-linear-gradient(left,#3E4B51,#6F737E)
-
-
-#link2 
-	background:-webkit-linear-gradient(left,#3E4B51,#89A09A)
-
-.round-container 
-	font-family:'Krona One',sans serif
-	margin-top: 10px
-	margin-bottom: 9px
-	width: 80px/* 100 */
-	height: 80px/* 100 */
-	border-radius: 40px/* 50 */
-	background: linear-gradient(top, #bbbbbb, #eeeeee)
-	box-shadow: 0 -1px 1px #aaaaaa
-	margin-left: auto
-	margin-right: auto
-
-.home-button 
-	display: block
-	cursor: pointer
-	backface-visibility: hidden
-	transition: transform 200ms ease-in
-	background: linear-gradient(top, #ffffff, #dddddd)
-	background-color: #fff
-	box-shadow: 0 4px 6px #555555
-	position: absolute
-	text-align: center
-	color: rgb(85,85,85)
-	font-size: 35px/* 50 */
-	line-height: 62px/* 80 */
-	margin: 10px/* 10 */
-	width: 60px/* 80 */
-	height: 60px/* 80 */
-	border-radius: 30px/* 40 */
-
-.home-button:hover 
-	background-color: #eee
-	color: rgb(39,144,176)
-	transform: rotate(-15deg) scale(0.9)
-	text-decoration: none
-
-#color-row 
-	min-height: 0px
-
-.gray-row 
-	background-color: rgb(85,85,85)
-	height: 5px
-
-.blue-row 
-	background-color: #2790B0
-	height: 5px
-
-.light-gray-row 
-	background-color: rgb(150,150,150)
-	height: 5px
-
-
-/* Top only inner shadow */
-/* box-shadow:inset 0px 20px 15px -15px black */
-/* Bottom only inner shadow */
-/* box-shadow:inset 0px -15px 20px -15px black */
+// Nav
 .nav-menu 
 	position: absolute
 	top: 0px
-	/*background-color: #ecf0f1*/
+	
+	// Z Circle Button
+	.round-container 
+		background: linear-gradient(top, #bbbbbb, #eeeeee)
+		border-radius: 40px/* 50 */
+		box-shadow: 0 -1px 1px #aaaaaa
+		font-family:'Krona One',sans serif
+		height: 80px/* 100 */
+		margin-bottom: 9px
+		margin-top: 10px
+		margin-left: auto
+		margin-right: auto
+		width: 80px/* 100 */
 
-.nav-button 
-	text-align:center
-	font-weight:normal
-	font-size:1.5em
-	letter-spacing:3px
-	padding-left:8px
-	padding-right:8px
-	padding-top: 25px
-	padding-bottom:25px
-	margin-right:15px
-	display:inline-block
-	border-radius:0 0 10px 10px
-	color: rgb(85,85,85)
+	.home-button 
+		backface-visibility: hidden
+		background: linear-gradient(top, #ffffff, #dddddd)
+		background-color: #fff
+		border-radius: 30px/* 40 */
+		box-shadow: 0 4px 6px #555555
+		color: rgb(85,85,85)
+		cursor: pointer
+		display: block
+		font-size: 35px/* 50 */
+		height: 60px/* 80 */
+		line-height: 62px/* 80 */
+		margin: 10px/* 10 */
+		position: absolute
+		text-align: center
+		transition: transform 200ms ease-in
+		width: 60px/* 80 */
 
-.nav-button:hover 
-	cursor: pointer
-	background-color: rgba(0,0,0,.1)
+	.home-button:hover 
+		background-color: #eee
+		color: rgb(39,144,176)
+		text-decoration: none
+		transform: rotate(-15deg) scale(0.9)
 
-.nav-selected 
-	background-color: rgba(0,0,0,.2)
+	.nav-button 
+		border-radius:0 0 10px 10px
+		color: rgb(85,85,85)
+		display:inline-block
+		font-weight:normal
+		font-size:1.5em
+		letter-spacing:3px
+		margin-right:15px
+		padding-left:8px
+		padding-right:8px
+		padding-top: 25px
+		padding-bottom:25px
+		text-align:center
 
-.phone-nav 
-	text-align:center
-	margin-top:10px
-	margin-bottom:10px
+		&:hover 
+			background-color: rgba(0,0,0,.1)
+			cursor: pointer
 
-.phone-nav div 
-	display:inline
-	font-size:25px
-	margin:10px 10px 10px 10px
-	padding:5px 25px 5px 25px
-
-.phone-nav div:hover 
-	background-color: rgba(0,0,0,.1)
-	cursor: pointer
-
-.phone-nav .nav-selected 
-	background-color: rgba(0,0,0,.2)
-
-.visible-tablet .span12 
-	text-align: center
-
-.visible-tablet .nav-selected span 
-	background-color: rgba(0,0,0,0)
-
-.visible-tablet .nav-selected 
-	background-color: rgba(0,0,0,0)
-
-h3#normal 
-	opacity:1 
-
-#darkblue 
-	color:#2790B0
-
-#lightblue 
-	color:#40C0CB
-
-#green 
-	color:#8FBE00
-
-#lightgray 
-	color:#4E4D4A
-
-#darkgray 
-	color:#353432
-
-#page-title 
-	text-align:center
-	font-size:3em
-	line-height:2em
-	background-color: rgb(80,80,80)
-	color:white
-	margin-bottom:25px
-	padding:10px
-	min-height:0px
-	opacity:.9
+		&.nav-selected 
+			background-color: rgba(0,0,0,.2)
