@@ -170,7 +170,6 @@ body {
 }
 .nav-selected {
 	background-color: rgba(0,0,0,.2);
-	font-weight: bold;
 }
 .phone-nav {
 	text-align:center;
