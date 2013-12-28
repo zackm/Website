@@ -6,7 +6,7 @@ html,body {
 }
 
 /* Wrapper for page content to push down footer */
-#ptp-main {
+#pt-main {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
@@ -21,7 +21,7 @@ html,body {
 }
 #footer {
 	text-align:center;
-	background-color: #34495e;
+	background-color: ##7f8c8d;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
@@ -234,12 +234,6 @@ h3#normal {
 	opacity:.9;
 }
 
-.about, .work, .contact {
-	/*display:none;*/
-}
-.active-content {
-
-}
 /* General Styles */
 .full-row {
 	margin-bottom:35px;
