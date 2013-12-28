@@ -253,10 +253,10 @@ h3#normal {
 }
 p.line {
 	text-align: center;
-	color: #767676;
+	color: #ccc;
 }
 p.line:before {
-	border-top: 1px solid #878787;
+	border-top: 1px solid #ccc;
 	display: block;
 	height: 10px;
 	content: " ";
@@ -266,7 +266,7 @@ p.line:before {
 	top: 20px;
 }
 p.line:after {
-	border-top: 1px solid #878787;
+	border-top: 1px solid #ccc;
 	display: block;
 	height: 10px;
 	content: " ";
