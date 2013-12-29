@@ -1783,15 +1783,14 @@ body{background-color:#ecf0f1}
 .nav-menu .home-button:hover{background-color:#eee;color:#3498db;text-decoration:none;transform:rotate(-15deg) scale(.9)}
 .nav-menu nav a.nav-link{color:#7f8c8d;}
 .nav-menu nav a.nav-link.nav-selected{color:#3498db}
-#main-hi{font-size:5em;text-align:center;line-height:.8em}
-#main-summary{font-weight:normal;text-align:center}
-.blue{color:#2790b0;font-weight:bold}
-.zack{font-size:9em;line-height:1em;letter-spacing:3px}
-.extra-space{letter-spacing:12px}
-#home-hello > span{text-shadow:1px 1px 0 #353432;font-size:26px;font-weight:bold;line-height:10px}
-.nami-circle{background-image:url("http://zackmayeda.com/img/nami.png");background-color:#fff;opacity:.8;height:100px;width:200px;border-radius:0 0 100px 100px;text-align:center;margin-left:auto;margin-right:auto}
-.home-left{text-align:right;padding:15px;padding-top:60px}
-.home-right{text-align:left;padding:15px;padding-top:60px}
+.home .block-line{background-color:#1f608b}
+.home #main-hi{font-size:5em;text-align:center;line-height:.8em}
+.home #main-summary{font-weight:normal;text-align:center}
+.home .zack{font-size:9em;line-height:1em;letter-spacing:3px}
+.home .extra-space{letter-spacing:12px}
+.home #home-hello > span{text-shadow:1px 1px 0 #353432;font-size:26px;font-weight:bold;line-height:10px}
+.home .home-left{text-align:right;padding:15px;padding-top:60px}
+.home .home-right{text-align:left;padding:15px;padding-top:60px}
 .z-pic{width:150px;text-align:center;box-shadow:0 0 5px #808080}
 .link-title{text-align:center}
 .border-sides{border-right:1px solid #bbb;border-left:1px solid #bbb}
@@ -1823,6 +1822,7 @@ body{background-color:#ecf0f1}
 .plain-list{list-style-type:none}
 .center{text-align:center}
 .tab{margin-left:30px}
+.block-line{height:12px}
 p.line{text-align:center;color:#ccc}
 p.line:before{border-top:1px solid #ccc;display:block;height:10px;content:" ";width:45%;position:relative;left:0;top:20px}
 p.line:after{border-top:1px solid #ccc;display:block;height:10px;content:" ";width:45%;position:relative;top:-10px;left:55%}
