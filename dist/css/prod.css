@@ -1809,11 +1809,11 @@ body{background-color:#ecf0f1}
 .work .pad{padding:20px}
 .contact{color:#ecf0f1;}
 .contact a{color:#ecf0f1}
-#contact-list{list-style-type:none;text-align:left}
-#contact-list > li{font-size:2em;margin-bottom:15px}
-#contact-list > li > a > i{margin-right:10px}
-#contact-list > li > a:hover{text-decoration:none;text-shadow:1px 1px 1px #bbb}
-#contact-globe{font-size:15em;text-align:right}
+.contact #contact-list{list-style-type:none;text-align:left}
+.contact #contact-list > li{font-size:2em;margin-bottom:15px}
+.contact #contact-list > li > a > i{margin-right:10px}
+.contact #contact-list > li > a:hover{text-decoration:none;text-shadow:1px 1px 1px #bbb}
+.contact #contact-globe{font-size:15em;text-align:right}
 #graphics-nav{border-radius:0 4px 4px 0;padding:5px;max-width:200px}
 .graphics-btn:hover,#graphics-nav .graphics-btn:hover{cursor:pointer;background-color:rgba(0,0,0,0.1)}
 #graphics-nav .graphics-btn{background-color:#d4e8ed;padding:1px 5px 1px 5px;border-radius:4px}
