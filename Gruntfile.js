@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 				}
 			},
 			css: {
-				files: ['src/css/*.styl'],
+				files: ['src/css/*.styl', 'src/css/*.css'],
 				tasks: ['stylus'],
 				options: {
 					spawn: false
