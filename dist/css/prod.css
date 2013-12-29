@@ -1770,7 +1770,7 @@ html,body{height:100%}
 body{background-color:#eee}
 #pt-main{height:auto !important;height:100%;margin:0 auto 70px;min-height:100%}
 #push,#footer{height:70px}
-#footer{background-color:#7f8c8d;padding-top:25px;text-align:center;}
+#footer{background-color:#7f8c8d;padding-top:12px;text-align:center;}
 #footer a{color:#fff;padding-left:8px;padding-right:8px;}
 #footer a:hover{color:#2790b0}
 #footer .info{color:#fff;margin-top:5px}
@@ -1780,7 +1780,7 @@ body{background-color:#eee}
 }.nav-menu{position:absolute;top:0;}
 .nav-menu .round-container{background:linear-gradient(top,#bbb,#eee);border-radius:40px;box-shadow:0 -1px 1px #aaa;font-family:'Krona One',sans serif;height:80px;margin-bottom:9px;margin-top:10px;margin-left:auto;margin-right:auto;width:80px;}
 .nav-menu .home-button{backface-visibility:hidden;background:linear-gradient(top,#fff,#ddd);background-color:#fff;border-radius:30px;box-shadow:0 4px 6px #555;color:#555;cursor:pointer;display:block;font-size:35px;height:60px;line-height:62px;margin:10px;position:absolute;text-align:center;transition:transform 200ms ease-in;width:60px;}
-.nav-menu .home-button:hover{background-color:#eee;color:#2790b0;text-decoration:none;transform:rotate(-15deg) scale(.9)}
+.nav-menu .home-button:hover{background-color:#eee;color:#3498db;text-decoration:none;transform:rotate(-15deg) scale(.9)}
 .nav-menu nav a.nav-link{color:#7f8c8d;}
 .nav-menu nav a.nav-link.nav-selected{color:#3498db}
 #main-hi{font-size:5em;text-align:center;line-height:.8em}
