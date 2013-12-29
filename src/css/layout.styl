@@ -56,23 +56,34 @@ body
 .nav-menu
 	position: absolute
 	top: 0px
-	
+
+	nav
+		a.nav-link
+			color #7f8c8d
+			&.nav-selected 
+				color #3498db
+				&::before
+					position: absolute;
+					top: 100%;
+					left: 0;
+					width: 100%;
+					height: 4px;
+					background: light_blue;
+					content: '';
+
 	// Z Circle Button
 	.round-container 
-		background linear-gradient(top, #bbbbbb, #eeeeee)
-		border-radius 40px/* 50 */
-		// box-shadow: 0 -1px 1px #aaaaaa
-		height 80px/* 100 */
+		border-radius 40px
+		height 80px
 		margin-bottom 9px
 		margin-top 18px
 		margin-left auto
 		margin-right auto
 		overflow hidden
-		width 80px/* 100 */
+		width 80px
 
 	// Ridiculous long shadow css
 	.long-shadow
-		background-color rgb(52, 152, 219)
 		text-shadow rgb(47, 137, 197) 1px 1px,
 			rgb(47, 137, 197) 2px 2px,
 			rgb(47, 137, 197) 3px 3px,
@@ -111,29 +122,22 @@ body
 	.home-button 
 		backface-visibility hidden
 		background-color light_blue
-		border-radius 30px/* 40 */
+		border-radius 30px
 		color white
 		cursor pointer
 		display block
-		font-size 45px/* 50 */
+		font-size 45px
 		font-weight bold
-		height 60px/* 80 */
-		line-height 60px/* 80 */
-		// margin 10px
+		height 60px
+		line-height 60px
 		overflow hidden
 		position absolute
 		text-align center
 		transition transform 200ms ease-in,
 			color 200ms ease
-		width 60px/* 80 */
+		width 60px
 
 	.home-button:hover 
 		background-color lighten(light_blue, 15%)
 		text-decoration none
 		transform rotate(-15deg) scale(0.9)
-
-	nav
-		a.nav-link
-			color #7f8c8d
-			&.nav-selected 
-				color #3498db

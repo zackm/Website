@@ -26,8 +26,6 @@ nav a:focus {
 	text-decoration: none;
 }
 
-/* Effect 3: bottom line slides/fades in */
-
 nav a::after {
 	position: absolute;
 	top: 100%;
