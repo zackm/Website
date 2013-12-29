@@ -59,34 +59,73 @@ body
 	
 	// Z Circle Button
 	.round-container 
-		background: linear-gradient(top, #bbbbbb, #eeeeee)
-		border-radius: 40px/* 50 */
-		box-shadow: 0 -1px 1px #aaaaaa
-		font-family:'Krona One',sans serif
-		height: 80px/* 100 */
-		margin-bottom: 9px
-		margin-top: 10px
-		margin-left: auto
-		margin-right: auto
-		width: 80px/* 100 */
+		background linear-gradient(top, #bbbbbb, #eeeeee)
+		border-radius 40px/* 50 */
+		// box-shadow: 0 -1px 1px #aaaaaa
+		height 80px/* 100 */
+		margin-bottom 9px
+		margin-top 10px
+		margin-left auto
+		margin-right auto
+		overflow hidden
+		width 80px/* 100 */
+
+	// Ridiculous long shadow css
+	.shape
+		background-color rgb(52, 152, 219)
+		text-shadow rgb(47, 137, 197) 1px 1px,
+			rgb(47, 137, 197) 2px 2px,
+			rgb(47, 137, 197) 3px 3px,
+			rgb(47, 137, 197) 4px 4px,
+			rgb(47, 137, 197) 5px 5px,
+			rgb(47, 137, 197) 6px 6px,
+			rgb(47, 137, 197) 7px 7px,
+			rgb(47, 137, 197) 8px 8px,
+			rgb(47, 137, 197) 9px 9px,
+			rgb(47, 137, 197) 10px 10px,
+			rgb(47, 137, 197) 11px 11px,
+			rgb(47, 137, 197) 12px 12px,
+			rgb(47, 137, 198) 13px 13px,
+			rgb(47, 138, 199) 14px 14px,
+			rgb(47, 139, 200) 15px 15px,
+			rgb(48, 140, 201) 16px 16px,
+			rgb(48, 141, 203) 17px 17px,
+			rgb(48, 142, 204) 18px 18px,
+			rgb(48, 142, 205) 19px 19px,
+			rgb(49, 143, 206) 20px 20px,
+			rgb(49, 144, 208) 21px 21px,
+			rgb(49, 145, 209) 22px 22px,
+			rgb(50, 146, 210) 23px 23px,
+			rgb(50, 147, 211) 24px 24px,
+			rgb(50, 147, 212) 25px 25px,
+			rgb(50, 148, 214) 26px 26px,
+			rgb(51, 149, 215) 27px 27px,
+			rgb(51, 150, 216) 28px 28px,
+			rgb(51, 151, 217) 29px 29px,
+			rgb(52, 152, 219) 30px 30px
+		height 100%
+		width 100%
+		font-size 75px
+		text-align center
 
 	.home-button 
-		backface-visibility: hidden
-		background: linear-gradient(top, #ffffff, #dddddd)
-		background-color: #fff
-		border-radius: 30px/* 40 */
-		box-shadow: 0 4px 6px #555555
-		color: rgb(85,85,85)
-		cursor: pointer
-		display: block
-		font-size: 35px/* 50 */
-		height: 60px/* 80 */
-		line-height: 62px/* 80 */
-		margin: 10px/* 10 */
-		position: absolute
-		text-align: center
-		transition: transform 200ms ease-in
-		width: 60px/* 80 */
+		backface-visibility hidden
+		background-color light_blue
+		border-radius 30px/* 40 */
+		// box-shadow 0 4px 6px #555555
+		color white
+		cursor pointer
+		display block
+		font-size 45px/* 50 */
+		font-weight bold
+		height 60px/* 80 */
+		line-height 60px/* 80 */
+		margin 10px/* 10 */
+		overflow hidden
+		position absolute
+		text-align center
+		transition transform 200ms ease-in
+		width 60px/* 80 */
 
 	.home-button:hover 
 		background-color #eee
