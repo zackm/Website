@@ -1791,12 +1791,13 @@ body{background-color:#ecf0f1}
 .home #home-hello > span{text-shadow:1px 1px 0 #353432;font-size:26px;font-weight:bold;line-height:10px}
 .home .home-left{text-align:right;padding:15px;padding-top:60px}
 .home .home-right{text-align:left;padding:15px;padding-top:60px}
-.z-pic{width:150px;text-align:center;box-shadow:0 0 5px #808080}
-.link-title{text-align:center}
-.border-sides{border-right:1px solid #bbb;border-left:1px solid #bbb}
-.link-title-wide{background-color:#ecf0f1;text-align:center;color:#27ae60;font-size:2em;line-height:2.5em}
-.link-box{padding-right:10px;padding-left:10px}
-.z-title{font-size:2em;font-weight:bold}
+.about .block-line{background-color:#1d8348}
+.about .z-pic{width:150px;text-align:center;box-shadow:0 0 5px #808080}
+.about .link-title{text-align:center}
+.about .border-sides{border-right:1px solid #bbb;border-left:1px solid #bbb}
+.about .link-title-wide{background-color:#ecf0f1;text-align:center;color:#27ae60;font-size:2em;line-height:2.5em}
+.about .link-box{padding-right:10px;padding-left:10px}
+.about .z-title{font-size:2em;font-weight:bold}
 .work-text-light{padding:7px 15px 10px 25px;background-color:#c8c8c8}
 .work-text-dark{padding:7px 15px 10px 25px;color:#fff;background-color:#646464}
 #left-block{margin-right:0}
