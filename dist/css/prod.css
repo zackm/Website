@@ -1798,14 +1798,15 @@ body{background-color:#ecf0f1}
 .about .link-title-wide{background-color:#ecf0f1;text-align:center;color:#27ae60;font-size:2em;line-height:2.5em}
 .about .link-box{padding-right:10px;padding-left:10px}
 .about .z-title{font-size:2em;font-weight:bold}
-.work-text-light{padding:7px 15px 10px 25px;background-color:#c8c8c8}
-.work-text-dark{padding:7px 15px 10px 25px;color:#fff;background-color:#646464}
-#left-block{margin-right:0}
-#right-block{margin-left:0}
-.video{min-height:360px}
-#img-container{height:100%}
-.no-pad{padding:0}
-.pad{padding:20px}
+.work{padding-top:100px;}
+.work .work-text-light{padding:7px 15px 10px 25px;background-color:#c8c8c8}
+.work .work-text-dark{padding:7px 15px 10px 25px;color:#fff;background-color:#646464}
+.work #left-block{margin-right:0}
+.work #right-block{margin-left:0}
+.work .video{min-height:360px}
+.work #img-container{height:100%}
+.work .no-pad{padding:0}
+.work .pad{padding:20px}
 .contact{color:#ecf0f1;}
 .contact a{color:#ecf0f1}
 #contact-list{list-style-type:none;text-align:left}
