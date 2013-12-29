@@ -39,9 +39,11 @@ var PageTransitions = (function() {
 
 			$item.click( function( ev ) {
 				ev.preventDefault();
-				if (current == $pageName) {
+				if (current == $pageName || isAnimating) {
 					return false;
 				}
+				$(".nav-selected").removeClass('nav-selected');
+				$(this).addClass('nav-selected');
 				nextPage( $animNum, $pageName );
 			});
 		});

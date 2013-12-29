@@ -4,23 +4,20 @@
 	color #ecf0f1
 
 	a
-		color #ecf0f1
+		color light_gray
 
-	#contact-list 
+		&:hover
+			color darken(dark_turquoise, 30%)
+			text-decoration none
+
+	.contact-list 
 		list-style-type none
 		text-align left
 
-	#contact-list > li 
-		font-size 2em
-		margin-bottom 15px
+		li 
+			font-size 2em
+			margin-bottom 15px
 
-	#contact-list > li > a > i 
-		margin-right 10px
-
-	#contact-list > li > a:hover 
-		text-decoration none
-		text-shadow 1px 1px 1px #bbbbbb
-
-	#contact-globe 
+	.contact-globe 
 		font-size 15em
 		text-align right

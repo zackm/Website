@@ -80,9 +80,11 @@ var PageTransitions = (function() {
 
 			$item.click( function( ev ) {
 				ev.preventDefault();
-				if (current == $pageName) {
+				if (current == $pageName || isAnimating) {
 					return false;
 				}
+				$(".nav-selected").removeClass('nav-selected');
+				$(this).addClass('nav-selected');
 				nextPage( $animNum, $pageName );
 			});
 		});
@@ -417,15 +419,5 @@ var PageTransitions = (function() {
 })();
 
 $(document).ready(function(){
-	
-  // Nav Button Highlighting
-  $("nav .nav-link").click(function() {
-    $('nav .nav-link').removeClass('nav-selected');
-    $(this).addClass('nav-selected');
-  });
-  // Home Nav Button
-  $('#logo').click(function() {
-    $('nav .nav-link').removeClass('nav-selected');
-  });
 
 });
