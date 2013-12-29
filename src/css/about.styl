@@ -1,9 +1,16 @@
 /* About Page Styles */
+secondary_green = darken(dark_green, 25%)
 .about
 	background-color dark_green
 
+	a
+		color lighten(light_green, 25%)
+
+		&:hover
+			color lighten(light_green, 40%)
+
 	.block-line
-		background-color darken(dark_green, 25%)
+		background-color secondary_green
 
 	.z-pic 
 		width 150px
@@ -14,13 +21,13 @@
 		text-align center
 
 	.border-sides 
-		border-right 1px solid #BBBBBB
-		border-left 1px solid #BBBBBB
+		border-right 5px solid secondary_green
+		border-left 5px solid secondary_green
 
 	.link-title-wide
 		background-color #ecf0f1
 		text-align center
-		color #27ae60
+		color secondary_green
 		font-size 2em
 		line-height 2.5em
 

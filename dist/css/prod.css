@@ -1793,11 +1793,13 @@ body{background-color:#ecf0f1}
 .home .home-left{text-align:right;padding:15px;padding-top:60px}
 .home .home-right{text-align:left;padding:15px;padding-top:60px}
 .about{background-color:#27ae60;}
+.about a{color:#60db94;}
+.about a:hover{color:#80e2aa}
 .about .block-line{background-color:#1d8348}
 .about .z-pic{width:150px;text-align:center;box-shadow:0 0 5px #808080}
 .about .link-title{text-align:center}
-.about .border-sides{border-right:1px solid #bbb;border-left:1px solid #bbb}
-.about .link-title-wide{background-color:#ecf0f1;text-align:center;color:#27ae60;font-size:2em;line-height:2.5em}
+.about .border-sides{border-right:5px solid #1d8348;border-left:5px solid #1d8348}
+.about .link-title-wide{background-color:#ecf0f1;text-align:center;color:#1d8348;font-size:2em;line-height:2.5em}
 .about .link-box{padding-right:10px;padding-left:10px}
 .about .z-title{font-size:2em;font-weight:bold}
 .work{background-color:#34495e;padding-top:100px;}
