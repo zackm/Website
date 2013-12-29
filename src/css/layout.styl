@@ -1,18 +1,18 @@
 /* Sticky footer styles */
 /* The html and body elements cannot have any padding or margin. */
 html,body
-	height: 100%
+	height 100%
 
 body 
-	background-color: #eee
+	background-color #eee
 
 /* Wrapper for page content to push down footer */
 #pt-main
-	height: auto !important
-	height: 100%
+	height auto !important
+	height 100%
 	/* Negative indent footer by it's height */
-	margin: 0 auto 70px
-	min-height: 100%
+	margin 0 auto 70px
+	min-height 100%
 
 /* Set the fixed height of the footer here */
 #push,
@@ -52,7 +52,7 @@ body
 		padding-right: 20px
 
 // Nav
-.nav-menu 
+.nav-menu
 	position: absolute
 	top: 0px
 	
@@ -88,28 +88,13 @@ body
 		width: 60px/* 80 */
 
 	.home-button:hover 
-		background-color: #eee
-		color: rgb(39,144,176)
-		text-decoration: none
-		transform: rotate(-15deg) scale(0.9)
+		background-color #eee
+		color rgb(39,144,176)
+		text-decoration none
+		transform rotate(-15deg) scale(0.9)
 
-	.nav-button 
-		border-radius:0 0 10px 10px
-		color: rgb(85,85,85)
-		display:inline-block
-		font-weight:normal
-		font-size:1.5em
-		letter-spacing:3px
-		margin-right:15px
-		padding-left:8px
-		padding-right:8px
-		padding-top: 25px
-		padding-bottom:25px
-		text-align:center
-
-		&:hover 
-			background-color: rgba(0,0,0,.1)
-			cursor: pointer
-
-		&.nav-selected 
-			background-color: rgba(0,0,0,.2)
+	nav
+		a.nav-link
+			color #7f8c8d
+			&.nav-selected 
+				color #3498db

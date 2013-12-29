@@ -1670,6 +1670,60 @@
 .pt-page-ontop {
 	z-index: 999;
 }
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+	padding: 8px 0;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+/* Effect 3: bottom line slides/fades in */
+
+nav a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: rgba(0,0,0,0.1);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+nav a:hover::after,
+nav a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
 /*!
  * Bootstrap v2.3.0
  *
@@ -1727,9 +1781,8 @@ body{background-color:#eee}
 .nav-menu .round-container{background:linear-gradient(top,#bbb,#eee);border-radius:40px;box-shadow:0 -1px 1px #aaa;font-family:'Krona One',sans serif;height:80px;margin-bottom:9px;margin-top:10px;margin-left:auto;margin-right:auto;width:80px;}
 .nav-menu .home-button{backface-visibility:hidden;background:linear-gradient(top,#fff,#ddd);background-color:#fff;border-radius:30px;box-shadow:0 4px 6px #555;color:#555;cursor:pointer;display:block;font-size:35px;height:60px;line-height:62px;margin:10px;position:absolute;text-align:center;transition:transform 200ms ease-in;width:60px;}
 .nav-menu .home-button:hover{background-color:#eee;color:#2790b0;text-decoration:none;transform:rotate(-15deg) scale(.9)}
-.nav-menu .nav-button{border-radius:0 0 10px 10px;color:#555;display:inline-block;font-weight:normal;font-size:1.5em;letter-spacing:3px;margin-right:15px;padding-left:8px;padding-right:8px;padding-top:25px;padding-bottom:25px;text-align:center;}
-.nav-menu .nav-button:hover{background-color:rgba(0,0,0,0.1);cursor:pointer}
-.nav-menu .nav-button.nav-selected{background-color:rgba(0,0,0,0.2)}
+.nav-menu nav a.nav-link{color:#7f8c8d;}
+.nav-menu nav a.nav-link.nav-selected{color:#3498db}
 #main-hi{font-size:5em;text-align:center;line-height:.8em}
 #main-summary{font-weight:normal;text-align:center}
 .blue{color:#2790b0;font-weight:bold}
