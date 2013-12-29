@@ -1778,10 +1778,10 @@ body{background-color:#ecf0f1}
 #footer .footer-phone i{font-size:20px;padding-top:8px}
 @media (max-width: 767px){#footer{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}
 }.nav-menu{position:absolute;top:0;}
-.nav-menu .round-container{background:linear-gradient(top,#bbb,#eee);border-radius:40px;height:80px;margin-bottom:9px;margin-top:10px;margin-left:auto;margin-right:auto;overflow:hidden;width:80px;}
-.nav-menu .shape{background-color:#3498db;text-shadow:#2f89c5 1px 1px,#2f89c5 2px 2px,#2f89c5 3px 3px,#2f89c5 4px 4px,#2f89c5 5px 5px,#2f89c5 6px 6px,#2f89c5 7px 7px,#2f89c5 8px 8px,#2f89c5 9px 9px,#2f89c5 10px 10px,#2f89c5 11px 11px,#2f89c5 12px 12px,#2f89c6 13px 13px,#2f8ac7 14px 14px,#2f8bc8 15px 15px,#308cc9 16px 16px,#308dcb 17px 17px,#308ecc 18px 18px,#308ecd 19px 19px,#318fce 20px 20px,#3190d0 21px 21px,#3191d1 22px 22px,#3292d2 23px 23px,#3293d3 24px 24px,#3293d4 25px 25px,#3294d6 26px 26px,#3395d7 27px 27px,#3396d8 28px 28px,#3397d9 29px 29px,#3498db 30px 30px;height:100%;width:100%;font-size:75px;text-align:center}
-.nav-menu .home-button{backface-visibility:hidden;background-color:#3498db;border-radius:30px;color:#fff;cursor:pointer;display:block;font-size:45px;font-weight:bold;height:60px;line-height:60px;margin:10px;overflow:hidden;position:absolute;text-align:center;transition:transform 200ms ease-in;width:60px;}
-.nav-menu .home-button:hover{background-color:#eee;color:#3498db;text-decoration:none;transform:rotate(-15deg) scale(.9)}
+.nav-menu .round-container{background:linear-gradient(top,#bbb,#eee);border-radius:40px;height:80px;margin-bottom:9px;margin-top:18px;margin-left:auto;margin-right:auto;overflow:hidden;width:80px;}
+.nav-menu .long-shadow{background-color:#3498db;text-shadow:#2f89c5 1px 1px,#2f89c5 2px 2px,#2f89c5 3px 3px,#2f89c5 4px 4px,#2f89c5 5px 5px,#2f89c5 6px 6px,#2f89c5 7px 7px,#2f89c5 8px 8px,#2f89c5 9px 9px,#2f89c5 10px 10px,#2f89c5 11px 11px,#2f89c5 12px 12px,#2f89c6 13px 13px,#2f8ac7 14px 14px,#2f8bc8 15px 15px,#308cc9 16px 16px,#308dcb 17px 17px,#308ecc 18px 18px,#308ecd 19px 19px,#318fce 20px 20px,#3190d0 21px 21px,#3191d1 22px 22px,#3292d2 23px 23px,#3293d3 24px 24px,#3293d4 25px 25px,#3294d6 26px 26px,#3395d7 27px 27px,#3396d8 28px 28px,#3397d9 29px 29px,#3498db 30px 30px;height:60px;width:60px;font-size:75px;text-align:center}
+.nav-menu .home-button{backface-visibility:hidden;background-color:#3498db;border-radius:30px;color:#fff;cursor:pointer;display:block;font-size:45px;font-weight:bold;height:60px;line-height:60px;overflow:hidden;position:absolute;text-align:center;transition:transform 200ms ease-in,color 200ms ease;width:60px;}
+.nav-menu .home-button:hover{background-color:#52a7e0;text-decoration:none;transform:rotate(-15deg) scale(.9)}
 .nav-menu nav a.nav-link{color:#7f8c8d;}
 .nav-menu nav a.nav-link.nav-selected{color:#3498db}
 .home{background-color:#2980b9;}
