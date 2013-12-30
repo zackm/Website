@@ -1786,6 +1786,7 @@ body{background-color:#ecf0f1}
 .home{background-color:#2980b9;}
 .home h1{color:#174666}
 .home .block-line{background-color:#1f608b}
+.home .wait{color:#7bbce8;font-size:1.4em;padding-top:100px;text-align:center}
 .home #main-hi{font-size:5em;text-align:center;line-height:.8em}
 .home #main-summary{font-weight:normal;text-align:center}
 .home .zack{font-size:9em;line-height:1em;letter-spacing:3px}
