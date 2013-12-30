@@ -1843,6 +1843,14 @@ body{background-color:#ecf0f1}
 .graphics .well{background-color:#fff;border:none;color:#7f8c8d;}
 .graphics .well h2,.graphics .well h3,.graphics .well h4{color:#525b5c}
 .graphics .well.graphics-btn:hover{background-color:#eff0f1;cursor:pointer}
+.rr-body{background-color:#bdc3c7}
+.rr-demo{margin-top:66px;padding-top:25px;}
+.rr-demo .btn-custom{background-color:#34495e;color:#ecf0f1;}
+.rr-demo .btn-custom:hover{background-color:#2a3a4b;color:#f2f5f5}
+.rr-demo .btn-group a.btn-custom:first-child{border-radius:3px 0 0 3px}
+.rr-demo .btn-group a.btn-custom:last-child{border-radius:0 3px 3px 0;border-right:none}
+.rr-demo .btn-group .btn-custom{border-radius:0;padding:6px 15px;border-right:2px solid #2c3e50}
+.rr-demo #rr-demo{height:80%;min-height:600px}
 .full-row{margin-bottom:35px}
 .plain-list{list-style-type:none}
 .center{text-align:center}

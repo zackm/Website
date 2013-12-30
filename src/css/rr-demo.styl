@@ -1,0 +1,29 @@
+.rr-body
+	background-color med_light_gray
+
+.rr-demo
+	margin-top 66px
+	padding-top 25px
+
+	.btn-custom
+		background-color blue_gray
+		color light_gray
+
+		&:hover
+			background-color darken(blue_gray, 20%)
+			color lighten(light_gray, 30%)
+
+	.btn-group
+		a.btn-custom:first-child
+			border-radius 3px 0 0 3px
+		a.btn-custom:last-child
+			border-radius 0 3px 3px 0
+			border-right none
+		.btn-custom
+			border-radius 0
+			padding 6px 15px
+			border-right 2px solid dark_blue_gray
+
+	#rr-demo
+		height 80%
+		min-height 600px
