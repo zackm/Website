@@ -14,6 +14,29 @@ module.exports = function(grunt) {
 					'src/js/index.js'
 				],
 				dest: 'dist/js/prod.js'
+			},
+			rr_js: {
+				src: [
+					'roomright/assets/jquery.js',
+					'roomright/assets/jquery_ujs.js',
+					'roomright/assets/bootstrap-datepicker.js',
+					'roomright/assets/bootstrap.min.js',
+					'roomright/assets/intro.min.js',
+					'roomright/assets/nod.js',
+					'roomright/assets/prefixfree.min.js',
+					'roomright/assets/jquery.ui.core.js',
+				],
+				dest: 'roomright/assets/prod.js'
+			},
+			rr_css: {
+				src: [
+					'roomright/assets/bootstrap-responsive.min.css',
+					'roomright/assets/bootstrap.min.css',
+					'roomright/assets/font-awesome-ie7.min.css',
+					'roomright/assets/font-awesome.min.css',
+					'roomright/assets/index.css'
+				],
+				dest: 'roomright/assets/prod.css'
 			}
 		},
 
