@@ -40,6 +40,19 @@ module.exports = function(grunt) {
 			}
 		},
 
+		jade: {
+			compile: {
+				options: {
+					data: {
+						debug: true
+					}
+				},
+				files: {
+					'temp.html': ['src/jade/index.jade']
+				}
+			}
+		},
+
 		watch: {
 			scripts:  {
 				files: ['src/js/*.js'],
@@ -61,6 +74,13 @@ module.exports = function(grunt) {
 				options: {
 					spawn: false
 				}
+			},
+			html: {
+				files: ['src/jade/*.jade', 'src/jade/includes/*.jade'],
+				tasks: ['jade'],
+				options: {
+					spawn: false
+				}
 			}
 		}
 
@@ -69,7 +89,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-stylus');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-contrib-jade')
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['concat', 'stylus', 'imagemin', 'watch']);
+	grunt.registerTask('default', ['jade', 'concat', 'stylus', 'imagemin', 'watch']);
 };
