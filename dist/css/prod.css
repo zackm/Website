@@ -1779,6 +1779,7 @@ body{background-color:#ecf0f1}
 .nav-menu nav a.nav-link{color:#7f8c8d;}
 .nav-menu nav a.nav-link.nav-selected{color:#3498db;}
 .nav-menu nav a.nav-link.nav-selected::before{position:absolute;top:100%;left:0;width:100%;height:4px;background:#3498db;content:''}
+.nav-menu.static-nav{background-color:#ecf0f1;height:66px}
 .nav-menu .round-container{border-radius:40px;height:80px;margin-bottom:9px;margin-top:18px;margin-left:auto;margin-right:auto;overflow:hidden;width:80px}
 .nav-menu .long-shadow{text-shadow:#2f89c5 1px 1px,#2f89c5 2px 2px,#2f89c5 3px 3px,#2f89c5 4px 4px,#2f89c5 5px 5px,#2f89c5 6px 6px,#2f89c5 7px 7px,#2f89c5 8px 8px,#2f89c5 9px 9px,#2f89c5 10px 10px,#2f89c5 11px 11px,#2f89c5 12px 12px,#2f89c6 13px 13px,#2f8ac7 14px 14px,#2f8bc8 15px 15px,#308cc9 16px 16px,#308dcb 17px 17px,#308ecc 18px 18px,#308ecd 19px 19px,#318fce 20px 20px,#3190d0 21px 21px,#3191d1 22px 22px,#3292d2 23px 23px,#3293d3 24px 24px,#3293d4 25px 25px,#3294d6 26px 26px,#3395d7 27px 27px,#3396d8 28px 28px,#3397d9 29px 29px,#3498db 30px 30px;height:60px;width:60px;font-size:75px;text-align:center}
 .nav-menu .home-button{backface-visibility:hidden;background-color:#3498db;border-radius:30px;color:#fff;cursor:pointer;display:block;font-size:45px;font-weight:bold;height:60px;line-height:60px;overflow:hidden;position:absolute;text-align:center;transition:transform 200ms ease-in,color 200ms ease;width:60px}
@@ -1828,12 +1829,13 @@ body{background-color:#ecf0f1}
 .contact .contact-list li a{background-color:#149078;display:block;font-size:2em;height:60px;margin-bottom:15px;padding-top:16px;width:60px;}
 .contact .contact-list li a:hover{background-color:#12806a;color:#0b5042}
 .contact .contact-globe{font-size:25em;height:245px;overflow:hidden;text-align:center}
-#graphics-nav{border-radius:0 4px 4px 0;padding:5px;max-width:200px}
-.graphics-btn:hover,#graphics-nav .graphics-btn:hover{cursor:pointer;background-color:rgba(0,0,0,0.1)}
-#graphics-nav .graphics-btn{background-color:#d4e8ed;padding:1px 5px 1px 5px;border-radius:4px}
-#graphics-nav div + div{margin-top:5px}
-#graphics-nav .graphics-btn.nav-selected{background-color:#b5c7cc}
-.ray-page,.bez-page,.fluid-page{display:none}
+.graphics-body{background-color:#ecf0f1}
+.graphics-nav{background-color:#bdc3c7;margin-top:66px;text-align:center;}
+.graphics-nav .graphics-btn{color:#6b767e;display:inline-block;padding:10px 15px;}
+.graphics-nav .graphics-btn:hover{cursor:pointer;background-color:#a8b0b5}
+.graphics-nav .graphics-btn.selected{background-color:#7e8a92;color:#ecf0f1}
+.graphics .active-content{display:block}
+.graphics .ray-page,.graphics .bez-page,.graphics .fluid-page{display:none}
 .full-row{margin-bottom:35px}
 .plain-list{list-style-type:none}
 .center{text-align:center}

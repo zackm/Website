@@ -1,23 +1,31 @@
 /* Graphics Page */
-#graphics-nav 
-	border-radius: 0px 4px 4px 0px
-	padding: 5px
-	max-width: 200px
+.graphics-body
+	background-color light_gray
 
-.graphics-btn:hover, #graphics-nav .graphics-btn:hover 
-	cursor: pointer
-	background-color: rgba(0,0,0,.1)
+.graphics-nav
+	background-color med_light_gray
+	margin-top 66px
+	text-align center
 
-#graphics-nav .graphics-btn 
-	background-color: #D4E8ED
-	padding: 1px 5px 1px 5px
-	border-radius: 4px
+	.graphics-btn
+		color darken(med_light_gray, 40%)
+		display inline-block
+		padding 10px 15px
 
-#graphics-nav div + div 
-	margin-top: 5px
+		&:hover
+			cursor pointer
+			background-color darken(med_light_gray, 10%)
 
-#graphics-nav .graphics-btn.nav-selected 
-	background-color: #B5C7CC
+		&.selected
+			background-color darken(med_light_gray, 30%)
+			color light_gray
 
-.ray-page, .bez-page, .fluid-page 
-	display: none
+.graphics
+	
+	.active-content
+		display block
+
+	.ray-page
+	.bez-page
+	.fluid-page 
+		display none

@@ -54,8 +54,8 @@ _gaq.push(['_trackPageview']);
 	</div>
 	<!-- End of Nav -->
 
-	<div class='well graphics-nav'>
-		<div class="graphics-home-button graphics-btn">
+	<div class='graphics-nav'>
+		<div class="graphics-home-button graphics-btn selected">
 			<h4>Graphics Home<h4>
 		</div>
 		<div class='ray-page-button graphics-btn'>
@@ -70,8 +70,9 @@ _gaq.push(['_trackPageview']);
 	</div>
 
 		<!-- Start of Content-->
-	<div id='content graphics'>
-		
+	<div id='content' class='graphics'>
+
+		<!-- Home content -->
 		<div class="graphics-home active-content">
 			<div class="row-fluid">
 				<div class="span6 offset3 center">
@@ -82,7 +83,6 @@ _gaq.push(['_trackPageview']);
 			<br />
 			<div class="row-fluid">
 				<div class="span12">
-					<!-- Home content -->
 					<div class="center">
 						<div class="row-fluid">
 							<div class="span3 offset2 well ray-page-button graphics-btn">
@@ -96,311 +96,310 @@ _gaq.push(['_trackPageview']);
 							<div class="span3 well bez-page-button graphics-btn">
 								<h3>Bezier Surfaces<h3>
 									<img src="dist/img/bez/teapot.jpg" alt="">
-								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- End Home content -->
-
-			<!-- Start Raytracing Content -->
-			<div class="ray-page">
-				<div class="row-fluid">
-					<div class="span10 offset1">
-						<div class="center">
-							<h2>Raytracing</h2>
-							<p>Assignment was to create a raytracer from scratch using C++ and OpenGL. Project parameters:
-								<ul class="plain-list">
-									<li>render spheres,ellipsoids, and triangles</li>
-									<li>diffuse, specular, ambient light</li>
-									<li>reflection and shadow</li>
-									<li>interpolation of triangle vertex normals</li>
-								</ul>
-							</p>
-							<br />
-							<div class="row-fluid">
-								<div class="span4 well">
-									<img src="dist/img/ray/image-01.png" />
-									<h3>Full Scene with Reflection</h3>
-									<p>Features: triangles, spheres, Phong shading, reflections, shadows, directional lights, transformation (rotate by 90), writing out image to .png</p>
-									<p>Computation Time: 40 seconds</p>
-								</div>
-
-								<div class="span4 well" style="">
-									<img src="dist/img/ray/image-02.png" />
-									<h3>Ambient Only</h3>
-									<p>Features: triangles, spheres, ambient only light, transformation (rotate by 90), writing out image to .png</p>
-									<p>Computation Time: 23 seconds</p>
-								</div>
-								<div class="span4 well">
-									<img src="dist/img/ray/image-03.png" />
-									<h3>Diffuse</h3>
-									<p>Features: triangles, spheres, diffuse only light, shadows, directional lights, transformation (rotate by 90), writing out image to .png</p>
-									<p>Computation Time: 24 seconds</p>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span4 well">
-									<img src="dist/img/ray/image-04.png" />
-									<h3>Specular Only</h3>
-									<p>Features: triangles, spheres, Specular only (no reflection), directional lights, transformation (rotate by 90), writing out image to .png</p>
-									<p>Computation Time: 25 seconds</p>
-								</div>
-								<div class="span4 well" style="">
-									<img src="dist/img/ray/image-05.png" />
-									<h3>Depth 1 Reflection</h3>
-									<p>Features: triangles, spheres, Ambient, Diffuse, Specular with reflections (maxdepth 1), shadows, directional lights, transformation (rotate by 90), writing out image to .png</p>
-									<p>Computation Time: 36 seconds</p>
-								</div>
-								<div class="span4 well">
-									<img src="dist/img/ray/image-06.png" />
-									<h3>Depth 10 Reflection</h3>
-									<p>Features: triangles, spheres, Ambient, Diffuse, Specular with reflections (maxdepth 10), shadows, directional lights, transformation (rotate by 90), writing out image to .png</p>
-									<p>Computation Time: 46 seconds</p>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span6 well" style="">
-									<img src="dist/img/ray/image-07.png" />
-									<h3>Trinormals and Ellipsoids</h3>
-									<p>Features: trinormals, ellipsoids, Phong shading, reflections (maxdepth 10), shadows, directional and point lights, arbitrary transformations (rotations, scales, translations), writing out image to .png</p>
-									<p>Computation Time: 35 seconds</p>
-								</div>
-								<div class="span6 well">
-									<img src="dist/img/ray/image-08.png" />
-									<h3>Planet Earth</h3>
-									<p>Features: spheres, phong shading, shadows</p>
-									<p>Computation Time: 10 seconds</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Raytracing Content -->
-
-			<!-- Start Bezier Content -->
-			<div class="bez-page">
-				<div class="row-fluid">
-					<div class="span10 offset1 center">
-						<h2>Bezier Surfaces</h2>
-						<p>Assignment was to render bezier surfaces given a bezier patch of 16 control points. Project parameters:</p>
-						<ul class="plain-list">
-							<li>uniform subdivision</li>
-							<li>adaptive subdivision</li>
-							<li>used OpenGL shader</li>
-						</ul>
-						<br />
-						<div class="row-fluid">
-							<div class="span6 offset3 well">
-								<iframe width="640" height="480" src="http://www.youtube.com/embed/on_hRb7D93w" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</div>
-
-						<div class="row-fluid">
-							<div class="span3 well">
-								<img src="dist/img/bez/image-01.jpg" />
-								<h4>Teapot Uniform, Smooth Shading</h4>
-							</div>
-							<div class="span3 well">
-								<img src="dist/img/bez/image-02.jpg" />
-								<h4>Teapot Uniform, Flat Shading</h4>
-							</div>
-							<div class="span3 well">
-								<img src="dist/img/bez/image-04.jpg" />
-								<h4>Teapot Uniform, Wireframe</h4>
-							</div>
-							<div class="span3 well">
-								<img src="dist/img/bez/image-27.jpg" />
-								<h4>Teapot Uniform, Hidden Line Mode</h4>
-							</div>
-						</div>
-
-						<div class="row-fluid">
-							<div class="span3 well">
-								<img src="dist/img/bez/image-06.jpg" />
-								<h4>Max Curvature</h4>
-							</div>
-							<div class="span3 well">
-								<img src="dist/img/bez/image-07.jpg" />
-								<h4>Min Curvature</h4>
-							</div>
-							<div class="span3 well">
-								<img src="dist/img/bez/image-03.jpg" />
-								<h4>Gaussian Curvature</h4>
-							</div>
-							<div class="span3 well">
-								<img src="dist/img/bez/image-05.jpg" />
-								<h4>Mean Curvature</h4>
-							</div>
-						</div>
-
-						<div class="row-fluid">
-							<div class="span4 well">
-								<img src="dist/img/bez/image-08.jpg" />
-								<h4>Teapot Adaptive, Smooth Shading</h4>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/bez/image-09.jpg" />
-								<h4>Teapot Adaptive, Wireframe</h4>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/bez/image-10.jpg" />
-								<h4>Teapot Adaptive, Flat Shading</h4>
-							</div>
-						</div>
-
-						<div class="row-fluid">
-							<div class="span4 well">
-								<img src="dist/img/bez/image-11.jpg" />
-								<h4>Teapot Adaptive, Smooth Shading</h4>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/bez/image-12.jpg" />
-								<h4>Teapot Adaptive, Wireframe</h4>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/bez/image-13.jpg" />
-								<h4>Teapot Adaptive, Flat Shading</h4>
-							</div>
-						</div>
-						<div class="row-fluid">
-							<div class="span4 well">
-								<img src="dist/img/bez/image-20.jpg" />
-								<h4>Custom Shape</h4>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/bez/image-21.jpg" />
-								<h4>Custom Shape Gaussian Curvature</h4>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/bez/image-22.jpg" />
-								<h4>Custom Shape Wireframe</h4>
-							</div>
-						</div>
-
-						<div class="row-fluid">
-							<div class="span4 well offset2">
-								<img src="dist/img/bez/image-23.jpg" />
-								<h4>Elephant</h4>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/bez/image-24.jpg" />
-								<h4>Elephant Wireframe</h4>
-							</div>
-						</div>
-
-						<div class="row-fluid">
-							<div class="span4 well">
-								<img src="dist/img/bez/image-25.jpg" />
-								<h4>Monkey</h4>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/bez/image-33.jpg" />
-								<h4>Monkey Hidden Line Mode</h4>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/bez/image-28.jpg" />
-								<h4>Monkey Approximate Gaussian Curvature</h4>
-							</div>
-						</div>
-						<div class="row-fluid">
-							<div class="span6 well offset3 center">
-								<h3>Resources and Citations</h3>
-								<ul style="list-style-type:none;">
-									<li><a href="http://www.blender-models.com/model-downloads/objects/id/heart/">Blender Repository - heart.obj</a></li>
-									<li><a href="http://www.glprogramming.com/red/chapter14.html#name16">Hidden Line Mode Info</a></li>
-									<li><a href="http://www.opengl.org/archives/resources/faq/technical/viewing.htm">Camera Setting Info</a></li>
-									<li><a href="http://prideout.net/blog/?p=49">Elephant Patch Info</a></li>
-									<li><a href="http://people.sc.fsu.edu/~jburkardt/data/obj/">OBJ Models</a></li>
-									<li><a href="http://www.holmes3d.net/graphics/roffview/tools/patchoff/">BEZ Files</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Bezier Content -->
-
-			<!-- Start Fluid Content -->
-			<div class="fluid-page">
-				<div class="row-fluid">
-					<div class="span10 offset1 center">
-						<h2>Fluid Simulation</h2>
-						<h4>using Smoothed Particle Simulation</h4>
-						<a href="final_paper.pdf">Writeup</a> | 
-						<a href="https://github.com/zackm/CS184_Final_Project">Code</a>
-
-						<br />
-						<br />
-
-						<div class="row-fluid">
-							<div class="span8 offset2 well">
-								<iframe width="640" height="360" src="http://www.youtube.com/embed/oogV7GYl630" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</div>
-
-						<div class="row-fluid">
-							<div class="span4 well">
-								<img src="dist/img/fluid/97k-particles.png" />
-								<h3>97k Particles</h3>
-								<p>High Viscosity and Surface Tension</p>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/fluid/88k-particles.jpg" />
-								<h3>88k Particles</h3>
-								<p>High Viscosity and Surface Tension</p>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/fluid/79k-particles.jpg" />
-								<h3>79k Particles</h3>
-							</div>
-						</div>
-
-						<div class="row-fluid">
-							<div class="span4 well">
-								<img src="dist/img/fluid/18ke-1-march.jpg" />
-								<h3>1800 Particles</h3>
-								<p>Marching Cubes Surface Reconstruction</p>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/fluid/21k-march.png" />
-								<h3>21k Particles</h3>
-								<p>Marching Cubes Surface Reconstruction</p>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/fluid/towers.png" />
-								<h3>1800 Particles</h3>
-								<p>Ray Marching Surface Reconstruction</p>
-							</div>
-						</div>
-
-						<div class="row-fluid">
-							<div class="span4 well">
-								<img src="dist/img/fluid/2k-ray-active.png" />
-								<h3>1800 Particles</h3>
-								<p>Ray Marching Surface Reconstruction</p>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/fluid/2k-ray-settled.png" />
-								<h3>1800 Particles</h3>
-								<p>Ray Marching Surface Reconstruction</p>
-							</div>
-							<div class="span4 well">
-								<img src="dist/img/fluid/raytrace.png" />
-								<h3>1800 Particles</h3>
-								<p>Ray Marching Surface Reconstruction</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Fluid Content -->
-			<!-- End of Content -->
 		</div>
-		<div id='push'></div>
+		<!-- End Home content -->
+
+		<!-- Start Raytracing Content -->
+		<div class="ray-page">
+			<div class="row-fluid">
+				<div class="span10 offset1">
+					<div class="center">
+						<h2>Raytracing</h2>
+						<p>Assignment was to create a raytracer from scratch using C++ and OpenGL. Project parameters:
+							<ul class="plain-list">
+								<li>render spheres,ellipsoids, and triangles</li>
+								<li>diffuse, specular, ambient light</li>
+								<li>reflection and shadow</li>
+								<li>interpolation of triangle vertex normals</li>
+							</ul>
+						</p>
+						<br />
+						<div class="row-fluid">
+							<div class="span4 well">
+								<img src="dist/img/ray/image-01.png" />
+								<h3>Full Scene with Reflection</h3>
+								<p>Features: triangles, spheres, Phong shading, reflections, shadows, directional lights, transformation (rotate by 90), writing out image to .png</p>
+								<p>Computation Time: 40 seconds</p>
+							</div>
+
+							<div class="span4 well" style="">
+								<img src="dist/img/ray/image-02.png" />
+								<h3>Ambient Only</h3>
+								<p>Features: triangles, spheres, ambient only light, transformation (rotate by 90), writing out image to .png</p>
+								<p>Computation Time: 23 seconds</p>
+							</div>
+							<div class="span4 well">
+								<img src="dist/img/ray/image-03.png" />
+								<h3>Diffuse</h3>
+								<p>Features: triangles, spheres, diffuse only light, shadows, directional lights, transformation (rotate by 90), writing out image to .png</p>
+								<p>Computation Time: 24 seconds</p>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span4 well">
+								<img src="dist/img/ray/image-04.png" />
+								<h3>Specular Only</h3>
+								<p>Features: triangles, spheres, Specular only (no reflection), directional lights, transformation (rotate by 90), writing out image to .png</p>
+								<p>Computation Time: 25 seconds</p>
+							</div>
+							<div class="span4 well" style="">
+								<img src="dist/img/ray/image-05.png" />
+								<h3>Depth 1 Reflection</h3>
+								<p>Features: triangles, spheres, Ambient, Diffuse, Specular with reflections (maxdepth 1), shadows, directional lights, transformation (rotate by 90), writing out image to .png</p>
+								<p>Computation Time: 36 seconds</p>
+							</div>
+							<div class="span4 well">
+								<img src="dist/img/ray/image-06.png" />
+								<h3>Depth 10 Reflection</h3>
+								<p>Features: triangles, spheres, Ambient, Diffuse, Specular with reflections (maxdepth 10), shadows, directional lights, transformation (rotate by 90), writing out image to .png</p>
+								<p>Computation Time: 46 seconds</p>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span6 well" style="">
+								<img src="dist/img/ray/image-07.png" />
+								<h3>Trinormals and Ellipsoids</h3>
+								<p>Features: trinormals, ellipsoids, Phong shading, reflections (maxdepth 10), shadows, directional and point lights, arbitrary transformations (rotations, scales, translations), writing out image to .png</p>
+								<p>Computation Time: 35 seconds</p>
+							</div>
+							<div class="span6 well">
+								<img src="dist/img/ray/image-08.png" />
+								<h3>Planet Earth</h3>
+								<p>Features: spheres, phong shading, shadows</p>
+								<p>Computation Time: 10 seconds</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Raytracing Content -->
+
+		<!-- Start Bezier Content -->
+		<div class="bez-page">
+			<div class="row-fluid">
+				<div class="span10 offset1 center">
+					<h2>Bezier Surfaces</h2>
+					<p>Assignment was to render bezier surfaces given a bezier patch of 16 control points. Project parameters:</p>
+					<ul class="plain-list">
+						<li>uniform subdivision</li>
+						<li>adaptive subdivision</li>
+						<li>used OpenGL shader</li>
+					</ul>
+					<br />
+					<div class="row-fluid">
+						<div class="span6 offset3 well">
+							<iframe width="640" height="480" src="http://www.youtube.com/embed/on_hRb7D93w" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span3 well">
+							<img src="dist/img/bez/image-01.jpg" />
+							<h4>Teapot Uniform, Smooth Shading</h4>
+						</div>
+						<div class="span3 well">
+							<img src="dist/img/bez/image-02.jpg" />
+							<h4>Teapot Uniform, Flat Shading</h4>
+						</div>
+						<div class="span3 well">
+							<img src="dist/img/bez/image-04.jpg" />
+							<h4>Teapot Uniform, Wireframe</h4>
+						</div>
+						<div class="span3 well">
+							<img src="dist/img/bez/image-27.jpg" />
+							<h4>Teapot Uniform, Hidden Line Mode</h4>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span3 well">
+							<img src="dist/img/bez/image-06.jpg" />
+							<h4>Max Curvature</h4>
+						</div>
+						<div class="span3 well">
+							<img src="dist/img/bez/image-07.jpg" />
+							<h4>Min Curvature</h4>
+						</div>
+						<div class="span3 well">
+							<img src="dist/img/bez/image-03.jpg" />
+							<h4>Gaussian Curvature</h4>
+						</div>
+						<div class="span3 well">
+							<img src="dist/img/bez/image-05.jpg" />
+							<h4>Mean Curvature</h4>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4 well">
+							<img src="dist/img/bez/image-08.jpg" />
+							<h4>Teapot Adaptive, Smooth Shading</h4>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/bez/image-09.jpg" />
+							<h4>Teapot Adaptive, Wireframe</h4>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/bez/image-10.jpg" />
+							<h4>Teapot Adaptive, Flat Shading</h4>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4 well">
+							<img src="dist/img/bez/image-11.jpg" />
+							<h4>Teapot Adaptive, Smooth Shading</h4>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/bez/image-12.jpg" />
+							<h4>Teapot Adaptive, Wireframe</h4>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/bez/image-13.jpg" />
+							<h4>Teapot Adaptive, Flat Shading</h4>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4 well">
+							<img src="dist/img/bez/image-20.jpg" />
+							<h4>Custom Shape</h4>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/bez/image-21.jpg" />
+							<h4>Custom Shape Gaussian Curvature</h4>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/bez/image-22.jpg" />
+							<h4>Custom Shape Wireframe</h4>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4 well offset2">
+							<img src="dist/img/bez/image-23.jpg" />
+							<h4>Elephant</h4>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/bez/image-24.jpg" />
+							<h4>Elephant Wireframe</h4>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4 well">
+							<img src="dist/img/bez/image-25.jpg" />
+							<h4>Monkey</h4>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/bez/image-33.jpg" />
+							<h4>Monkey Hidden Line Mode</h4>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/bez/image-28.jpg" />
+							<h4>Monkey Approximate Gaussian Curvature</h4>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span6 well offset3 center">
+							<h3>Resources and Citations</h3>
+							<ul style="list-style-type:none;">
+								<li><a href="http://www.blender-models.com/model-downloads/objects/id/heart/">Blender Repository - heart.obj</a></li>
+								<li><a href="http://www.glprogramming.com/red/chapter14.html#name16">Hidden Line Mode Info</a></li>
+								<li><a href="http://www.opengl.org/archives/resources/faq/technical/viewing.htm">Camera Setting Info</a></li>
+								<li><a href="http://prideout.net/blog/?p=49">Elephant Patch Info</a></li>
+								<li><a href="http://people.sc.fsu.edu/~jburkardt/data/obj/">OBJ Models</a></li>
+								<li><a href="http://www.holmes3d.net/graphics/roffview/tools/patchoff/">BEZ Files</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Bezier Content -->
+
+		<!-- Start Fluid Content -->
+		<div class="fluid-page">
+			<div class="row-fluid">
+				<div class="span10 offset1 center">
+					<h2>Fluid Simulation</h2>
+					<h4>using Smoothed Particle Simulation</h4>
+					<a href="final_paper.pdf">Writeup</a> | 
+					<a href="https://github.com/zackm/CS184_Final_Project">Code</a>
+
+					<br />
+					<br />
+
+					<div class="row-fluid">
+						<div class="span8 offset2 well">
+							<iframe width="640" height="360" src="http://www.youtube.com/embed/oogV7GYl630" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4 well">
+							<img src="dist/img/fluid/97k-particles.png" />
+							<h3>97k Particles</h3>
+							<p>High Viscosity and Surface Tension</p>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/fluid/88k-particles.jpg" />
+							<h3>88k Particles</h3>
+							<p>High Viscosity and Surface Tension</p>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/fluid/79k-particles.jpg" />
+							<h3>79k Particles</h3>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4 well">
+							<img src="dist/img/fluid/18ke-1-march.jpg" />
+							<h3>1800 Particles</h3>
+							<p>Marching Cubes Surface Reconstruction</p>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/fluid/21k-march.png" />
+							<h3>21k Particles</h3>
+							<p>Marching Cubes Surface Reconstruction</p>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/fluid/towers.png" />
+							<h3>1800 Particles</h3>
+							<p>Ray Marching Surface Reconstruction</p>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4 well">
+							<img src="dist/img/fluid/2k-ray-active.png" />
+							<h3>1800 Particles</h3>
+							<p>Ray Marching Surface Reconstruction</p>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/fluid/2k-ray-settled.png" />
+							<h3>1800 Particles</h3>
+							<p>Ray Marching Surface Reconstruction</p>
+						</div>
+						<div class="span4 well">
+							<img src="dist/img/fluid/raytrace.png" />
+							<h3>1800 Particles</h3>
+							<p>Ray Marching Surface Reconstruction</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Fluid Content -->
+		<!-- End of Content -->
 	</div>
+	<div id='push'></div>
 
 	<script src="dist/js/prod.js" type='text/javascript'></script>
 
@@ -408,8 +407,8 @@ _gaq.push(['_trackPageview']);
 	// Graphics Page Stuff
 	// Nav Button Highlighting
 	$("div.graphics-btn").click(function() {
-		$('div.graphics-btn').removeClass('nav-selected');
-		$(this).addClass('nav-selected');
+		$('.graphics-btn').removeClass('selected');
+		$(this).addClass('selected');
 	});
 	g_pages = ['graphics-home','ray-page','bez-page','fluid-page'];
 
