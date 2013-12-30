@@ -54,6 +54,13 @@ module.exports = function(grunt) {
 				options: {
 					spawn: false
 				}
+			},
+			images: {
+				files: ['src/img/*'],
+				tasks: ['imagemin'],
+				options: {
+					spawn: false
+				}
 			}
 		}
 
