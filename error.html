@@ -43,26 +43,29 @@ _gaq.push(['_trackPageview']);
 <!-- End of Google Analytics -->
 </head>
 
-<body>
+<body class='error-body'>
 	<div id="wrap">
 		<!-- Start of Nav -->
-		<div class="nav-menu row-fluid">
+		<div class="nav-menu row-fluid static-nav">
 			<div class='span2 center offset5' id='logo'>
 				<div class='long-shadow nav-link round-container' data-animation='40' data-page='home'>
-					<span class="home-button">Z</span>
+					<a href='index.html' class="home-button">Z</a>
 				</div>
 			</div>
 		</div>
 		<!-- End of Nav -->
 
 		<!-- Start of Content-->
-		<div id='content'>
+		<div id='content' class='error'>
 			<div class="row-fluid">
 				<div class="span12 error-box">
-					<i class="icon-remove-sign"></i> Whoops! My bad. Looks like there was an error.
+					Whoops! My bad. Looks like there was an error.
 					<br />
 					<br />
-					Want to head back <a href="index.html">home</a>?
+					<span class='smaller'>Want to head back <a href="index.html">home</a>?</span>
+				</div>
+				<div class="remove-wrapper">
+					<i class="icon-remove-sign"></i>
 				</div>
 			</div>
 			<!-- End of Content -->

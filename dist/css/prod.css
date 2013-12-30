@@ -1851,6 +1851,15 @@ body{background-color:#ecf0f1}
 .rr-demo .btn-group a.btn-custom:last-child{border-radius:0 3px 3px 0;border-right:none}
 .rr-demo .btn-group .btn-custom{border-radius:0;padding:6px 15px;border-right:2px solid #2c3e50}
 .rr-demo #rr-demo{height:80%;min-height:600px}
+.error-body{background-color:#c0392b;}
+.error-body .static-nav{z-index:1}
+.error{color:#fff;margin-top:66px;padding-top:80px;}
+.error .error-box{z-index:2;}
+.error .error-box .smaller{font-size:.8em}
+.error .remove-wrapper{overflow:hidden;z-index:0}
+.error .icon-remove-sign{color:#a33025;font-size:25em;position:absolute;top:0;left:300px;z-index:-1}
+.error a{color:#e38c83;}
+.error a:hover{color:#edb6b0}
 .full-row{margin-bottom:35px}
 .plain-list{list-style-type:none}
 .center{text-align:center}

@@ -1,0 +1,35 @@
+.error-body
+	background-color error_red
+
+	.static-nav
+		z-index 1
+
+
+.error
+	color white
+	margin-top 66px
+	padding-top 80px
+
+	.error-box
+		z-index 2
+
+		.smaller
+			font-size .8em
+
+	.remove-wrapper
+		overflow hidden
+		z-index 0
+
+	.icon-remove-sign
+		color darken(error_red, 15%)
+		font-size 25em
+		position absolute
+		top 0px
+		left 300px
+		z-index -1
+
+	a
+		color lighten(error_red, 45%)
+
+		&:hover
+			color lighten(error_red, 65%)
