@@ -4,7 +4,7 @@
 	padding-top 100px // need to add more here
 
 	h3
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		font-size: 21px;
 		font-weight: 200;
 		line-height: 30px;
@@ -14,10 +14,26 @@
 		color dark_blue_gray
 		padding 7px 15px 10px 25px
 
+		.btn-custom
+			background-color dark_blue_gray
+			color light_gray
+
+			&:hover
+				background-color lighten(dark_blue_gray, 10%)
+				color lighten(light_gray, 20%)
+
 	.work-text-dark 
 		background-color dark_blue_gray
 		color light_gray
 		padding 7px 15px 10px 25px
+
+		.btn-custom
+			background-color light_gray
+			color dark_blue_gray
+
+			&:hover
+				background-color darken(light_gray, 20%)
+				color darken(dark_blue_gray, 20%)
 
 	#left-block 
 		margin-right 0px
