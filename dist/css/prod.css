@@ -1829,13 +1829,20 @@ body{background-color:#ecf0f1}
 .contact .contact-list li a{background-color:#149078;display:block;font-size:2em;height:60px;margin-bottom:15px;padding-top:16px;width:60px;}
 .contact .contact-list li a:hover{background-color:#12806a;color:#0b5042}
 .contact .contact-globe{font-size:25em;height:245px;overflow:hidden;text-align:center}
-.graphics-body{background-color:#ecf0f1}
+.graphics-body{background-color:#dee1e3}
 .graphics-nav{background-color:#bdc3c7;margin-top:66px;text-align:center;}
-.graphics-nav .graphics-btn{color:#6b767e;display:inline-block;padding:10px 15px;}
+.graphics-nav .graphics-btn{color:#6b767e;display:inline-block;padding:10px 20px;}
 .graphics-nav .graphics-btn:hover{cursor:pointer;background-color:#a8b0b5}
 .graphics-nav .graphics-btn.selected{background-color:#7e8a92;color:#ecf0f1}
 .graphics .active-content{display:block}
-.graphics .ray-page,.graphics .bez-page,.graphics .fluid-page{display:none}
+.graphics .ray-page,.graphics .bez-page,.graphics .fluid-page{display:none;padding-top:10px;}
+.graphics .ray-page h2,.graphics .bez-page h2,.graphics .fluid-page h2,.graphics .ray-page h3,.graphics .bez-page h3,.graphics .fluid-page h3,.graphics .ray-page h4,.graphics .bez-page h4,.graphics .fluid-page h4{font-weight:200}
+.graphics .graphics-home h1{font-size:2.2em;padding-top:15px}
+.graphics .graphics-home h3{color:#454d4e}
+.graphics .graphics-home h4{font-weight:normal}
+.graphics .well{background-color:#fff;border:none;color:#7f8c8d;}
+.graphics .well h2,.graphics .well h3,.graphics .well h4{color:#525b5c}
+.graphics .well.graphics-btn:hover{background-color:#eff0f1;cursor:pointer}
 .full-row{margin-bottom:35px}
 .plain-list{list-style-type:none}
 .center{text-align:center}

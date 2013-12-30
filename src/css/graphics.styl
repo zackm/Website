@@ -1,6 +1,6 @@
 /* Graphics Page */
 .graphics-body
-	background-color light_gray
+	background-color lighten(med_light_gray, 50%)
 
 .graphics-nav
 	background-color med_light_gray
@@ -10,7 +10,7 @@
 	.graphics-btn
 		color darken(med_light_gray, 40%)
 		display inline-block
-		padding 10px 15px
+		padding 10px 20px
 
 		&:hover
 			cursor pointer
@@ -21,7 +21,7 @@
 			color light_gray
 
 .graphics
-	
+
 	.active-content
 		display block
 
@@ -29,3 +29,34 @@
 	.bez-page
 	.fluid-page 
 		display none
+		padding-top 10px
+
+		h2
+		h3
+		h4
+			font-weight 200
+
+	.graphics-home
+		h1
+			font-size 2.2em
+			padding-top 15px
+
+		h3
+			color darken(dark_gray, 45%)
+
+		h4
+			font-weight normal
+
+	.well
+		background-color white
+		border none
+		color dark_gray
+
+		h2
+		h3
+		h4
+			color darken(dark_gray, 35%)
+
+		&.graphics-btn:hover
+			background-color lighten(med_light_gray, 75%)
+			cursor pointer
