@@ -1784,6 +1784,7 @@ body{background-color:#ecf0f1}
 .nav-menu .home-button{backface-visibility:hidden;background-color:#3498db;border-radius:30px;color:#fff;cursor:pointer;display:block;font-size:45px;font-weight:bold;height:60px;line-height:60px;overflow:hidden;position:absolute;text-align:center;transition:transform 200ms ease-in,color 200ms ease;width:60px}
 .nav-menu .home-button:hover{background-color:#52a7e0;text-decoration:none;transform:rotate(-15deg) scale(.9)}
 .home{background-color:#2980b9;}
+.home h1{color:#174666}
 .home .block-line{background-color:#1f608b}
 .home #main-hi{font-size:5em;text-align:center;line-height:.8em}
 .home #main-summary{font-weight:normal;text-align:center}
@@ -1805,6 +1806,7 @@ body{background-color:#ecf0f1}
 .about .z-title{font-size:2em;font-weight:bold;margin:0;padding-left:5px}
 .about small{padding-left:5px;color:#156035}
 .work{background-color:#34495e;padding-top:100px;}
+.work h3{margin-bottom:20px;font-size:21px;font-weight:200;line-height:30px}
 .work .work-text-light{background-color:#bdc3c7;color:#2c3e50;padding:7px 15px 10px 25px}
 .work .work-text-dark{background-color:#2c3e50;color:#ecf0f1;padding:7px 15px 10px 25px}
 .work #left-block{margin-right:0}
