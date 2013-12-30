@@ -1813,10 +1813,12 @@ body{background-color:#ecf0f1}
 .work .pad{padding:20px}
 .contact{background-color:#16a085;color:#ecf0f1;}
 .contact a{color:#ecf0f1;}
-.contact a:hover{color:#0f705d;text-decoration:none}
-.contact .contact-list{list-style-type:none;text-align:left;}
-.contact .contact-list li{font-size:2em;margin-bottom:15px}
-.contact .contact-globe{font-size:15em;text-align:right}
+.contact a:hover{text-decoration:none}
+.contact .contact-list{list-style-type:none;margin-left:auto;margin-right:auto;text-align:center;}
+.contact .contact-list li{display:inline-block;}
+.contact .contact-list li a{background-color:#149078;display:block;font-size:2em;height:60px;margin-bottom:15px;padding-top:16px;width:60px;}
+.contact .contact-list li a:hover{background-color:#12806a;color:#0b5042}
+.contact .contact-globe{font-size:25em;height:245px;overflow:hidden;text-align:center}
 #graphics-nav{border-radius:0 4px 4px 0;padding:5px;max-width:200px}
 .graphics-btn:hover,#graphics-nav .graphics-btn:hover{cursor:pointer;background-color:rgba(0,0,0,0.1)}
 #graphics-nav .graphics-btn{background-color:#d4e8ed;padding:1px 5px 1px 5px;border-radius:4px}
