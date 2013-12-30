@@ -1775,7 +1775,7 @@ body{background-color:#ecf0f1}
 #footer .footer-phone{padding-top:5px}
 #footer .footer-phone i{font-size:20px;padding-top:8px}
 @media (max-width: 767px){#footer{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}
-}.nav-menu{position:absolute;top:0;}
+}.nav-menu{position:absolute;top:0;z-index:5;}
 .nav-menu nav a.nav-link{color:#7f8c8d;}
 .nav-menu nav a.nav-link.nav-selected{color:#3498db;}
 .nav-menu nav a.nav-link.nav-selected::before{position:absolute;top:100%;left:0;width:100%;height:4px;background:#3498db;content:''}
@@ -1784,11 +1784,10 @@ body{background-color:#ecf0f1}
 .nav-menu .home-button{backface-visibility:hidden;background-color:#3498db;border-radius:30px;color:#fff;cursor:pointer;display:block;font-size:45px;font-weight:bold;height:60px;line-height:60px;overflow:hidden;position:absolute;text-align:center;transition:transform 200ms ease-in,color 200ms ease;width:60px}
 .nav-menu .home-button:hover{background-color:#52a7e0;text-decoration:none;transform:rotate(-15deg) scale(.9)}
 .home{background-color:#2980b9;}
-.home h1{color:#174666}
 .home .block-line{background-color:#1f608b}
 .home .wait{color:#7bbce8;font-size:1.4em;padding-top:100px;text-align:center}
-.home #main-hi{font-size:5em;text-align:center;line-height:.8em}
-.home #main-summary{font-weight:normal;text-align:center}
+.home h1.hi{color:#1f608b;font-weight:bold;font-size:5em;margin-bottom:12px;margin-left:-5px}
+.home .summary{font-weight:normal;text-align:center}
 .home .zack{font-size:9em;line-height:1em;letter-spacing:3px}
 .home .extra-space{letter-spacing:12px}
 .home #home-hello > span{text-shadow:1px 1px 0 #353432;font-size:26px;font-weight:bold;line-height:10px}
