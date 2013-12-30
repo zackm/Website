@@ -412,8 +412,6 @@ var PageTransitions = (function() {
 		$inpage.attr( 'class', $inpage.data( 'originalClassList' ) + ' pt-page-current' );
 	}
 
-	init();
-
 	return { init : init };
 
 })();
