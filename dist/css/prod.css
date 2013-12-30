@@ -1795,13 +1795,15 @@ body{background-color:#ecf0f1}
 .about{background-color:#27ae60;}
 .about a{color:#6ade9b;}
 .about a:hover{color:#8ae5b1}
+.about h3,.about h4{color:#156035}
 .about .block-line{background-color:#1d8348}
-.about .z-pic{width:150px;text-align:center;box-shadow:0 0 5px #808080}
+.about .z-pic{width:150px;text-align:center}
 .about .link-title{text-align:center}
 .about .border-sides{border-right:5px solid #1d8348;border-left:5px solid #1d8348}
 .about .link-title-wide{background-color:#ecf0f1;text-align:center;color:#1d8348;font-size:2em;line-height:2.5em}
 .about .link-box{padding-right:10px;padding-left:10px}
-.about .z-title{font-size:2em;font-weight:bold}
+.about .z-title{font-size:2em;font-weight:bold;margin:0;padding-left:5px}
+.about small{padding-left:5px;color:#156035}
 .work{background-color:#34495e;padding-top:100px;}
 .work .work-text-light{background-color:#bdc3c7;color:#2c3e50;padding:7px 15px 10px 25px}
 .work .work-text-dark{background-color:#2c3e50;color:#ecf0f1;padding:7px 15px 10px 25px}
