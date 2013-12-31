@@ -68,7 +68,8 @@ var PageTransitions = (function() {
 	function init() {
 		$pages.each( function() {
 			var $page = $( this );
-			$page.data( 'originalClassList', $page.attr( 'class' ) );
+			var $classes = $page.attr( 'class' ).replace('pt-page-current', '');
+			$page.data( 'originalClassList', $classes );
 		} );
 
 		$(".nav-link").each( function( el ) {
