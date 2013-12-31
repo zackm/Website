@@ -76,6 +76,18 @@ module.exports = function(grunt) {
 			}
 		},
 
+		compress: {
+			main: {
+				options: {
+					mode: 'gzip'
+				},
+				expand: true,
+				cwd: '',
+				src: ['*.html', 'dist/css/prod.css', 'dist/js/prod.js'],
+				dest: 'compressed/'
+			}
+		},
+
 		watch: {
 			scripts:  {
 				files: ['src/js/*.js'],
@@ -112,8 +124,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-stylus');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-jade')
+	grunt.loadNpmTasks('grunt-contrib-jade');
+	grunt.loadNpmTasks('grunt-contrib-compress');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['jade', 'concat', 'stylus', 'imagemin', 'watch']);
+	grunt.registerTask('default', ['jade', 'concat', 'stylus', 'compress', 'imagemin', 'watch']);
 };
