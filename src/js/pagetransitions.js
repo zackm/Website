@@ -30,8 +30,6 @@ var PageTransitions = (function() {
 			$page.data( 'originalClassList', $page.attr( 'class' ) );
 		} );
 
-		$pages.eq( pageMap[current] ).addClass( 'pt-page-current' );
-
 		$(".nav-link").each( function( el ) {
 			var $item = $( this );
 			var $animNum = $item.data( 'animation' );
