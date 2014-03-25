@@ -1785,7 +1785,7 @@ body{background-color:#ecf0f1}
 .nav-menu .home-button{backface-visibility:hidden;background-color:#3498db;border-radius:30px;color:#fff;cursor:pointer;display:block;font-size:45px;font-weight:bold;height:60px;line-height:60px;overflow:hidden;position:absolute;text-align:center;transition:transform 200ms ease-in,color 200ms ease;width:60px}
 .nav-menu .home-button:hover{background-color:#52a7e0;text-decoration:none;transform:rotate(-15deg) scale(.9)}
 .home{background-color:#2980b9;}
-.home .block-line{background-color:#1f608b}
+.home .block-line{background-color:#1f608b;display:block}
 .home .view{color:#7bbce8;font-size:1.4em;padding-top:100px;text-align:center;}
 .home .view a{color:#1f608b;}
 .home .view a:hover{color:#236d9d}
@@ -1799,7 +1799,7 @@ body{background-color:#ecf0f1}
 .about a{color:#6ade9b;}
 .about a:hover{color:#8ae5b1}
 .about h3,.about h4{color:#156035}
-.about .block-line{background-color:#1d8348}
+.about .span12.block-line{background-color:#1d8348;height:12px;margin:0}
 .about .z-pic{width:150px;text-align:center}
 .about .link-title{text-align:center}
 .about .border-sides{border-right:5px solid #1d8348;border-left:5px solid #1d8348}
@@ -1824,6 +1824,8 @@ body{background-color:#ecf0f1}
 .contact{background-color:#16a085;color:#ecf0f1;}
 .contact a{color:#ecf0f1;}
 .contact a:hover{text-decoration:none}
+.contact a.contact-link{color:#fff;font-size:1.6em;}
+.contact a.contact-link:hover{color:#0b5042}
 .contact .contact-list{list-style-type:none;margin-left:auto;margin-right:auto;text-align:center;}
 .contact .contact-list li{display:inline-block;}
 .contact .contact-list li a{background-color:#149078;display:block;font-size:2em;height:60px;margin-bottom:15px;padding-top:16px;width:60px;}
