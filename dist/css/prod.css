@@ -1660,7 +1660,8 @@
 .no-js .pt-page {
 	visibility: visible;
 	z-index: 1;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .no-js body {
