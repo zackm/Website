@@ -15,7 +15,10 @@ function setWelcomeMsg() {
     	msg = 'Good evening night owl!';
     }
 
-    $("#welcome-title").text(msg);
+    $("#welcome-title").fadeOut(400, function() {
+	    $("#welcome-title").text(msg);
+	    $("#welcome-title").fadeIn();
+    });
 }
 
 $(document).ready(function(){
