@@ -442,7 +442,7 @@ $(document).ready(function(){
 	// Home page time-sensitive welcome message
 	setWelcomeMsg();
 
-	$(".pt-page.pt-page-current").find("#loading-hide").fadeIn(300, function() {
+	$("#loading-hide").fadeIn(300, function() {
 		$(this).removeAttr("id","loading-hide");
 	});
 
