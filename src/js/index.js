@@ -14,17 +14,20 @@ function setWelcomeMsg() {
     } else if (time < 25) {
     	msg = 'Good evening night owl!';
     }
-
-    $("#welcome-title").fadeOut(400, function() {
-	    $("#welcome-title").text(msg);
-	    $("#welcome-title").fadeIn();
-    });
+    $("#welcome-title").text(msg);
 }
 
 $(document).ready(function(){
 
+	// Close loading spinner
+	$(".loading-spinner").fadeOut(300);
+
 	// Home page time-sensitive welcome message
 	setWelcomeMsg();
+
+	$(".pt-page.pt-page-current").find("#loading-hide").fadeIn(300, function() {
+		$(this).removeAttr("id","loading-hide");
+	});
 
 	if (window.usePageTransitions) {
 		PageTransitions.init();
