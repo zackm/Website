@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 		g_pages = ['graphics-home','ray-page','bez-page','fluid-page'];
 
-		$.each(g_pages,function(i,val) {
+		$.each(g_pages, function(i,val) {
 			var name = '.' + val;
 			$(name+'-button').click(function() {
 				var currentPage = $('.active-content');
