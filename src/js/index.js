@@ -19,11 +19,11 @@ function setWelcomeMsg() {
 
 $(document).ready(function(){
 
-	// Close loading spinner
-	$(".loading-spinner").fadeOut(300);
-
 	// Home page time-sensitive welcome message
 	setWelcomeMsg();
+
+	// Close loading spinner
+	$(".loading-spinner").fadeOut(300);
 
 	$("#loading-hide").fadeIn(300, function() {
 		$(this).removeAttr("id","loading-hide");
