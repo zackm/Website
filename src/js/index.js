@@ -29,6 +29,8 @@ $(document).ready(function(){
 		$(this).removeAttr("id","loading-hide");
 	});
 
+	$(".work .span4").matchHeight(true);
+
 	if (window.usePageTransitions) {
 		PageTransitions.init();
 	}
