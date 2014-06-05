@@ -1812,6 +1812,9 @@ body{background-color:#ecf0f1}
 .work .video{min-height:360px}
 .work .no-pad{padding:0}
 .work .pad{padding:20px}
+.work .code-img{float:right;height:100%}
+.work .full-row div.future{padding-bottom:0;padding-right:0;padding-top:0;}
+.work .full-row div.future h3{padding-top:7px}
 .contact{background-color:#16a085;color:#ecf0f1;}
 .contact a{color:#ecf0f1;}
 .contact a:hover{text-decoration:none}
