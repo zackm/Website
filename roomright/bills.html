@@ -5,7 +5,6 @@
 	<link href="assets/prod.css" media="all" rel="stylesheet" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,300' rel='stylesheet prefetch' type='text/css'>
   <link rel="shortcut icon" href="favicon.ico">
-  <script src="assets/prod.js" type="text/javascript"></script>
 </head>
 <body>
   
@@ -70,21 +69,6 @@
     <!-- <div class="login-message alert alert-error">Error Message Here</div> -->
     
 </div></div>
-
-<script>
-$(document).ready(function(){
-	
-});
-</script>
-
-    
-<!-- Nav Button. -->
-<script type="text/javascript">
-$(document).ready(function(){
-	$(".bill-btn").removeClass("inactive");
-	$(".bill-btn").addClass("active");
-});
-</script>
 
 <div class='container-fluid'>
 
@@ -255,124 +239,6 @@ $(document).ready(function(){
 	<i class="icon-repeat"></i>
 	Reset
 </button></form>
-<script>
-$(document).ready(function(){
-	updateDropdownState();
-  chooseSplit();
-
-	// Calendar Date Picker
-	$('#datepicker').datepicker({
-		format : 'yyyy-mm-dd',
-		autoclose: true,
-		todayBtn: true,
-		todayHighlight: true
-	});
-  // client-side validation
-  // make sure repeat field has number
-  var metrics = [
-    [ "#bill_frequency", 'presence',''],
-    [ "#bill_frequency", 'integer',''],
-  ];
-  var options = {
-    'delay': 400,
-    'submitBtnSelector' : "#submit-btn",
-    'errorClass' : 'field_with_errors'
-  };
-  $("#bill_form").nod(metrics,options);
-
-	// Hide split by amount form by default
-});
-
-$('form').bind('submit', function() {
-  $(this).find(".amt").removeAttr('disabled');
-  $(this).find("#frequency").removeAttr('disabled');
-});
-
-function chooseSplit() {
-  if (window.location.href.match(/edit/)) {
-    var type = "";
-      if (type == "0") 
-      amount();
-      else if (type == "1") 
-      percent();
-       else if (type == "2") 
-      share();
-      } else {
-    amount();
-  }
-}
-
-function amount() {
-  $(".amt").removeAttr("disabled");
-  $(".split-amt").show();
-  $(".split-percent").hide();
-  $(".split-share").hide();
-  $("#split_type").val("0");
-}
-
-function percent() {
-  $(".amt").removeAttr("disabled");
-  $(".split-amt").hide();
-  $(".split-percent").show();
-  $(".split-share").hide();
-  $("#split_type").val("1");
-}
-
-function share() {
-  $(".amt").removeAttr("disabled");
-  $(".split-amt").hide();
-  $(".split-percent").hide();
-  $(".split-share").show();
-  $("#split_type").val("2");
-}
-
-function equally() {
-  $(".amt").attr("disabled", "disabled");
-  $(".amt").val("1");
-  $(".split-amt").hide();
-  $(".split-percent").hide();
-  $(".split-share").show();
-  $("#split_type").val("2");
-}
-
-// Click split by amount button
-$(".amt-btn").click(function(){
-  amount();
-});
-// Click split by % button
-$(".percent-btn").click(function(){
-  percent();
-});
-// Click split by shares button
-$(".share-btn").click(function(){
-  share();
-});
-$(".equally-btn").click(function(){
-  equally();
-});
-
-// By default, frequency # is disabled since "None" is default
-// This function disables or enables the number field next to the dropdown
-function updateDropdownState() {
-	var text_val = $("#bill_frequency_type option:selected").text();
-	if (text_val == "None") {
-    $("#bill_frequency").val('0');
-		$("#bill_frequency").attr("disabled", "disabled");
-    $("#submit-btn").removeAttr("disabled");
-    $("#submit-btn").removeClass("disabled");
-    $(".help-inline").remove();
-	} else {
-		if ($("#bill_frequency").val() == "0") {
-			$("#bill_frequency").val("1")
-		}
-		$("#bill_frequency").removeAttr("disabled");
-	}
-}
-
-// set callback when frequency dropdown is changed
-$("#bill_frequency_type").change(updateDropdownState);
-
-</script>
 
 					</div>
 				</div>
@@ -753,9 +619,13 @@ $("#bill_frequency_type").change(updateDropdownState);
 	<div id='push'></div>
 
 </div>
-
+<script src="assets/prod.js" type="text/javascript"></script>
 <script>
 $(document).ready(function() {
+
+	$(".bill-btn").removeClass("inactive");
+	$(".bill-btn").addClass("active");
+
 	// show extra info dropdown
 	$(".more-info").click(function(){
 		$(this).parent().next().slideToggle(50);
@@ -775,10 +645,124 @@ $(document).ready(function() {
 	     $("#newBill").modal();
 	}
 
-});
+	$("a").click(function(evt) {
+		evt.preventDefault();
+	});
 
-$("a").click(function(evt) {
-	evt.preventDefault();
+	updateDropdownState();
+	chooseSplit();
+
+	// Calendar Date Picker
+	$('#datepicker').datepicker({
+		format : 'yyyy-mm-dd',
+		autoclose: true,
+		todayBtn: true,
+		todayHighlight: true
+	});
+	// client-side validation
+	// make sure repeat field has number
+	var metrics = [
+	[ "#bill_frequency", 'presence',''],
+	[ "#bill_frequency", 'integer',''],
+	];
+	var options = {
+	'delay': 400,
+	'submitBtnSelector' : "#submit-btn",
+	'errorClass' : 'field_with_errors'
+	};
+	$("#bill_form").nod(metrics,options);
+
+	// Hide split by amount form by default
+
+	$('form').bind('submit', function() {
+	  $(this).find(".amt").removeAttr('disabled');
+	  $(this).find("#frequency").removeAttr('disabled');
+	});
+
+	function chooseSplit() {
+	  if (window.location.href.match(/edit/)) {
+	    var type = "";
+	      if (type == "0") 
+	      amount();
+	      else if (type == "1") 
+	      percent();
+	       else if (type == "2") 
+	      share();
+	      } else {
+	    amount();
+	  }
+	}
+
+	function amount() {
+	  $(".amt").removeAttr("disabled");
+	  $(".split-amt").show();
+	  $(".split-percent").hide();
+	  $(".split-share").hide();
+	  $("#split_type").val("0");
+	}
+
+	function percent() {
+	  $(".amt").removeAttr("disabled");
+	  $(".split-amt").hide();
+	  $(".split-percent").show();
+	  $(".split-share").hide();
+	  $("#split_type").val("1");
+	}
+
+	function share() {
+	  $(".amt").removeAttr("disabled");
+	  $(".split-amt").hide();
+	  $(".split-percent").hide();
+	  $(".split-share").show();
+	  $("#split_type").val("2");
+	}
+
+	function equally() {
+	  $(".amt").attr("disabled", "disabled");
+	  $(".amt").val("1");
+	  $(".split-amt").hide();
+	  $(".split-percent").hide();
+	  $(".split-share").show();
+	  $("#split_type").val("2");
+	}
+
+	// Click split by amount button
+	$(".amt-btn").click(function(){
+	  amount();
+	});
+	// Click split by % button
+	$(".percent-btn").click(function(){
+	  percent();
+	});
+	// Click split by shares button
+	$(".share-btn").click(function(){
+	  share();
+	});
+	$(".equally-btn").click(function(){
+	  equally();
+	});
+
+	// By default, frequency # is disabled since "None" is default
+	// This function disables or enables the number field next to the dropdown
+	function updateDropdownState() {
+		var text_val = $("#bill_frequency_type option:selected").text();
+		if (text_val == "None") {
+	    $("#bill_frequency").val('0');
+			$("#bill_frequency").attr("disabled", "disabled");
+	    $("#submit-btn").removeAttr("disabled");
+	    $("#submit-btn").removeClass("disabled");
+	    $(".help-inline").remove();
+		} else {
+			if ($("#bill_frequency").val() == "0") {
+				$("#bill_frequency").val("1")
+			}
+			$("#bill_frequency").removeAttr("disabled");
+		}
+	}
+
+	// set callback when frequency dropdown is changed
+	$("#bill_frequency_type").change(updateDropdownState);
+
 });
 
 </script>
