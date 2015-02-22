@@ -14,17 +14,22 @@ function setWelcomeMsg() {
     } else if (time < 25) {
     	msg = 'Good evening night owl!';
     }
-
-    $("#welcome-title").fadeOut(400, function() {
-	    $("#welcome-title").text(msg);
-	    $("#welcome-title").fadeIn();
-    });
+    $("#welcome-title").text(msg);
 }
 
 $(document).ready(function(){
 
 	// Home page time-sensitive welcome message
 	setWelcomeMsg();
+
+	// Close loading spinner
+	$(".loading-spinner").fadeOut(300);
+
+	$("#loading-hide").fadeIn(300, function() {
+		$(this).removeAttr("id","loading-hide");
+	});
+
+	$(".work .span4").matchHeight(true);
 
 	if (window.usePageTransitions) {
 		PageTransitions.init();
@@ -45,7 +50,7 @@ $(document).ready(function(){
 
 		g_pages = ['graphics-home','ray-page','bez-page','fluid-page'];
 
-		$.each(g_pages,function(i,val) {
+		$.each(g_pages, function(i,val) {
 			var name = '.' + val;
 			$(name+'-button').click(function() {
 				var currentPage = $('.active-content');

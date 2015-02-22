@@ -5,7 +5,6 @@
   <link href="assets/prod.css" media="all" rel="stylesheet" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,300' rel='stylesheet prefetch' type='text/css'>
   <link rel="shortcut icon" href="favicon.ico">
-  <script src="assets/prod.js" type="text/javascript"></script>
 </head>
 <body>
   
@@ -70,13 +69,6 @@
     <!-- <div class="login-message alert alert-error">Error Message Here</div> -->
     
 </div></div>
-
-<script>
-$(document).ready(function(){
-	
-});
-</script>
-
     
 <div class='container-fluid'>
 
@@ -395,7 +387,7 @@ $(document).ready(function(){
 
 	<div id='push'></div>
 </div>
-
+<script src="assets/prod.js" type="text/javascript"></script>
 <script>
 
 $(document).ready(function() {
@@ -404,17 +396,16 @@ $(document).ready(function() {
 		$(this).parent().next().slideToggle(150);
 	});
 
-});
+	function addDarkClass() {
+		$(".tour-link").addClass("dark-btn");
+	}
+	function removeDarkClass() {
+		$(".tour-link").removeClass("dark-btn");
+	}
 
-function addDarkClass() {
-	$(".tour-link").addClass("dark-btn");
-}
-function removeDarkClass() {
-	$(".tour-link").removeClass("dark-btn");
-}
-
-$("a").click(function(evt) {
-	evt.preventDefault();
+	$("a").click(function(evt) {
+		evt.preventDefault();
+	});
 });
 
 </script>

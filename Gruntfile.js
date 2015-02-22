@@ -6,6 +6,7 @@ module.exports = function(grunt) {
 			dist: {
 				src: [
 					'src/js/jquery.min.js',
+					'src/js/jquery.matchHeight.min.js',
 					'src/js/modernizr.custom.js',
 					'src/js/bootstrap.min.js',
 					'src/js/fluidvids.min.js',
