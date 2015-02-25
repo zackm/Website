@@ -1,0 +1,39 @@
+nav {
+ background-color:white;
+  height: 80px;
+}
+nav img {
+ height: 50px;
+  padding-left: 25px;
+  padding-top: 19px;
+}
+img.maeda {
+  height: 90px;
+  margin: 0 auto;
+  display: block;
+}
+
+nav a {
+  color: inherit;
+  font-size: 170%;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-top: 27px;
+  float: right;
+}
+nav a:first-child {
+  margin-left: 80px;
+}
+
+body {
+  background-color: #ECF0F1;
+  margin: 0 0;
+}
+
+section.homepage {
+  margin-top: 45px;
+  text-align: center;
+}
+.profile-img {
+  border-radius: 5px;
+}
