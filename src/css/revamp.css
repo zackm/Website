@@ -1,6 +1,7 @@
 nav {
   background-color:white;
   height: 80px;
+  padding: 0px 70px;
 }
 nav img {
   height: 45px;
@@ -14,12 +15,15 @@ img.maeda {
 }
 
 nav a {
-  color: inherit;
+  color: #506A85;
   font-size: 170%;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 50px;
   margin-top: 27px;
   float: right;
+}
+nav a:hover {
+  
 }
 nav a:first-child {
   margin-left: 80px;
