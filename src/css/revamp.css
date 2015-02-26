@@ -1,11 +1,11 @@
 nav {
- background-color:white;
+  background-color:white;
   height: 80px;
 }
 nav img {
- height: 50px;
+  height: 45px;
   padding-left: 25px;
-  padding-top: 19px;
+  padding-top: 21px;
 }
 img.maeda {
   height: 90px;
@@ -36,4 +36,15 @@ section.homepage {
 }
 .profile-img {
   border-radius: 5px;
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+}
+
+footer img {
+  width: 20px;
 }
