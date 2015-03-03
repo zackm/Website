@@ -36,7 +36,24 @@ section.homepage {
 .profile-img {
   border-radius: 5px;
   margin-bottom: 15px;
+  float: left;
+  margin-left: 150px;
 }
+.tagline {
+  float: left;
+  padding-top: 40px;
+  padding-left: 25px;
+  font-size: 1.2em;
+}
+.landing-img {
+  display:inline-block;
+  width: 30%;
+  border-radius: 4px;
+}
+.landing-img:first-child, .landing-img:last-child {
+  width: 23%; 
+}
+
 
 footer {
   display: block;
