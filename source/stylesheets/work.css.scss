@@ -1,0 +1,12 @@
+.outline-link {
+  border: 2px solid $linkColor;
+  color: $linkColor;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+
+  &:hover {
+    color: $linkHoverColor;
+    background-color: rgba($linkColor, .1);
+  }
+}

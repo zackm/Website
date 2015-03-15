@@ -1,3 +1,4 @@
+
 nav {
   background-color: white;
   height: 80px;
@@ -8,16 +9,17 @@ nav {
     padding-left: 25px;
     padding-top: 21px;
   }
-
+  
   a {
-    color: #506A85;
+    color: $linkColor;
     font-size: 170%;
     font-weight: bold;
     margin-right: 50px;
     margin-top: 27px;
     float: right;
+
     &:hover {
-      
+      color: $linkHoverColor;
     }
     &:first-child {
       margin-left: 80px;
@@ -27,11 +29,11 @@ nav {
 
 footer {
   display: block;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   text-align: center;
   width: 100%;
-  
+
   img {
     width: 20px;
     padding: 10px 0px;
