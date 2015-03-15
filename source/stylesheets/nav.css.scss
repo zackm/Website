@@ -1,0 +1,40 @@
+nav {
+  background-color: white;
+  height: 80px;
+  padding: 0px 70px;
+
+  img {
+    height: 45px;
+    padding-left: 25px;
+    padding-top: 21px;
+  }
+
+  a {
+    color: #506A85;
+    font-size: 170%;
+    font-weight: bold;
+    margin-right: 50px;
+    margin-top: 27px;
+    float: right;
+    &:hover {
+      
+    }
+    &:first-child {
+      margin-left: 80px;
+    }
+  }
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  
+  img {
+    width: 20px;
+    padding: 10px 0px;
+    opacity: .3;
+}
+}
