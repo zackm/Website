@@ -1,12 +1,59 @@
 .outline-link {
-  border: 2px solid $linkColor;
-  color: $linkColor;
-  padding: 5px 8px;
+  border: 2px solid $darkBorderColor;
+  color: $darkBorderColor;
+  padding: 7px 10px;
   border-radius: 4px;
   font-weight: bold;
+  margin: 6px 6px;
 
   &:hover {
-    color: $linkHoverColor;
-    background-color: rgba($linkColor, .1);
+    color: darken($darkBorderColor, 15%);
+    background-color: $darkBackground;
   }
+}
+
+
+.work-container {
+  // background-color: $darkBackground;
+  // text-align: center;
+}
+.work-nav {
+  border-right: 4px solid $borderColor;
+}
+.work-nav-img {
+  opacity: 0.4;
+  filter: blur(1.5px);
+  -webkit-filter: blur(1.5px);
+}
+.work-nav-item h2 {
+  color: darken($darkBorderColor, 10%);
+  position: absolute;
+  padding: 20px 25px;
+}
+
+.work-browser-wrap {
+  width: 90%;
+  text-align: center;
+}
+.browser-mockup {
+  margin: 0px auto;
+  border-top: 2em solid rgba(230, 230, 230, 0.7);
+  // box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 3px 3px 3px 3px;
+}
+.browser-mockup img {
+  border-radius: 0px 0px 3px 3px;
+}
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #D6645C;
+  box-shadow: 0 0 0 2px #D6645C, 1.5em 0 0 2px #DDAA55, 3em 0 0 2px #74B44A;
 }
