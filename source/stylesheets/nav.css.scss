@@ -1,8 +1,9 @@
 
 nav {
-  background-color: white;
+  background-color: $darkBackground;
   height: 80px;
   padding: 0px 70px;
+  border-bottom: 3px solid $borderColor;
 
   img {
     height: 45px;
@@ -11,7 +12,7 @@ nav {
   }
   
   a {
-    color: $linkColor;
+    color: $darkBorderColor;
     font-size: 170%;
     font-weight: bold;
     margin-right: 50px;
@@ -19,7 +20,7 @@ nav {
     float: right;
 
     &:hover {
-      color: $linkHoverColor;
+      color: $darkBorderColor;
     }
     &:first-child {
       margin-left: 80px;
