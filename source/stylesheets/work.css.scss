@@ -24,16 +24,36 @@
   opacity: 0.4;
   filter: blur(1.5px);
   -webkit-filter: blur(1.5px);
+  &:hover {
+    opacity: 0.5;
+  }
 }
-.work-nav-item h2 {
-  color: darken($darkBorderColor, 10%);
-  position: absolute;
-  padding: 20px 25px;
+.work-nav-item {
+  height: 200px;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  h2 {
+    color: darken($darkBorderColor, 10%);
+    position: absolute;
+    padding: 20px 25px;
+  }
+}
+
+.work-display-item {
+  &.inactive {
+    display: none;
+  }
 }
 
 .work-browser-wrap {
   width: 90%;
   text-align: center;
+  margin-top: 65px;
+  margin-left: 35px;
 }
 .browser-mockup {
   margin: 0px auto;
