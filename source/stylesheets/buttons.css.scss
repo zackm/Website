@@ -1,0 +1,14 @@
+.outline-link {
+  border: 2px solid $darkBorderColor;
+  color: $darkBorderColor;
+  padding: 9px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 4px 4px;
+  display: inline-block;
+
+  &:hover {
+    color: white;
+    background-color: $darkBorderColor;
+  }
+}
