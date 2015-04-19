@@ -5,15 +5,15 @@ title: Stuff made by Zack Mayeda
 %section
   .row-fluid
     .span3.work-nav
+      .work-nav-item{:'data-work-name' => 'keehn'}
+        %h2 Keehn on Dogs
+        %img.work-nav-img{:src => "images/keehn_nav.png"}
       .work-nav-item{:'data-work-name' => 'sage'}
         %h2 Sage Garden Project
         %img.work-nav-img{:src => "images/sage_nav.png"}
       .work-nav-item{:'data-work-name' => 'bridge'}
         %h2 Cal Steel Bridge Team
         %img.work-nav-img{:src => "images/bridge_nav.png"}
-      .work-nav-item{:'data-work-name' => 'roomright'}
-        %h2 Roomright
-        %img.work-nav-img{:src => "images/rr.jpg", :alt => ""}
       .work-nav-item{:'data-work-name' => 'fluid'}
         %h2 Computer Graphics Projects
         %img.work-nav-img{:src => "images/graphics_nav.png", :alt => ""}
@@ -23,13 +23,15 @@ title: Stuff made by Zack Mayeda
 
     .span9.work-container
       .work-display-item{:'data-work-item' => 'sage'}
-        .work-browser-wrap
-          .browser-mockup
-            %img{:src => "images/sage_fullsize.jpg", :alt => "Sage Garden Site"}
-        
         .row-fluid
-          .span6
-            %h4 2013
+          .span8
+            .work-browser-wrap
+              .browser-mockup
+                %img{:src => "images/sage_fullsize.jpg", :alt => "Sage Garden Site"}
+          .span4
+            %h1 Sage Garden Project
+            %h3 2013
+            %h4 Design & Development
             %ul
               %li
                 created a recipe management system for a nonprofit, the 
@@ -41,25 +43,31 @@ title: Stuff made by Zack Mayeda
               %li Rails/HTML/Sass/Coffeescript/jQuery
             %p
               %a.outline-link(href='http://sagegardenproject.herokuapp.com')
-                Visit the Site
-          .span6
+                Take a look &rarr;
+        .row-fluid
+          .span4
             %img{:src => "images/sage_secondary.png"}
 
       .work-display-item.inactive{:'data-work-item' => 'bridge'}
-        .work-browser-wrap
-          .browser-mockup
-            %img{:src => "images/bridge_fullsize.jpg", :alt => "Cal Steel Bridge Site"}/
         .row-fluid
-        .span6
-          %h2 Cal Steel Bridge Team
-          %ul
-            %li redesigned the website for UC Berkeley's Steel Bridge Competition team
-            %li
-              thoroughly documented file structure and build system for continued development in the future
-            %li HTML/Sass/Javascript/Grunt.js
-          %p
-            %a.outline-link(href='http://zackm.github.io/SteelBridgeRevamp')
-              Visit the Site
+          .span8
+            .work-browser-wrap
+              .browser-mockup
+                %img{:src => "images/bridge_fullsize.jpg", :alt => "Cal Steel Bridge Site"}/
+          .span4
+            %h1 Cal Steel Bridge Team
+            %h3 2014
+            %h4 Design & Development
+            %ul
+              %li redesigned the website for UC Berkeley's Steel Bridge Competition team
+              %li
+                thoroughly documented file structure and build system for continued development in the future
+              %li HTML/Sass/Javascript/Grunt.js
+            %p
+              %a.outline-link(href='http://zackm.github.io/SteelBridgeRevamp')
+                Visit the Site
+        .row-fluid
+          .span6
 
       .work-display-item.inactive{:'data-work-item' => 'roomright'}
         .work-browser-wrap
