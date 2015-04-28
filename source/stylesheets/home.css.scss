@@ -3,6 +3,28 @@ body {
   margin: 0 0;
 }
 
+#home-map {
+  z-index: 3;
+
+  .map-overlay-content {
+    z-index: 5;
+  }
+
+  .leaflet-map-pane {
+    z-index: -1;
+  }
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 38px;
+  bottom: 0;
+
+  &:hover {
+    cursor: auto;
+  }
+}
+
 section.homepage {
   margin-top: 45px;
   text-align: center;
